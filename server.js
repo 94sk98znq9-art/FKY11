@@ -4,6 +4,7 @@ import cors from "cors";
 import compression from "compression";
 import path from "path";
 import fs from "fs";
+import crypto from "crypto";
 import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -25,9 +26,141 @@ function loadDotEnvSync() {
 }
 loadDotEnvSync();
 
+// ── AUTH ─────────────────────────────────────────────────────────────────────
+const AUTH_USER      = String(process.env.AUTH_USER || "").trim();
+const AUTH_PASS      = String(process.env.AUTH_PASS || "").trim();
+const AUTH_SECRET    = String(process.env.SESSION_SECRET || "").trim();
+const AUTH_ENABLED   = Boolean(AUTH_USER && AUTH_PASS && AUTH_SECRET);
+const SESSION_COOKIE = "fky_session";
+const SESSION_MAX_AGE = 8 * 60 * 60; // 8 saat (saniye)
+const IS_PRODUCTION  = process.env.NODE_ENV === "production" || Boolean(process.env.VERCEL);
+const AUTH_PUBLIC    = new Set(["/auth/login", "/auth/logout"]);
+
+function parseCookies(req) {
+  const out = {};
+  const raw = req.headers.cookie || "";
+  for (const part of raw.split(";")) {
+    const idx = part.indexOf("=");
+    if (idx < 0) continue;
+    const k = part.slice(0, idx).trim();
+    const v = decodeURIComponent(part.slice(idx + 1).trim());
+    out[k] = v;
+  }
+  return out;
+}
+
+function signValue(val) {
+  return crypto.createHmac("sha256", AUTH_SECRET).update(String(val)).digest("hex");
+}
+
+function makeSessionToken() {
+  const ts = String(Date.now());
+  return `${ts}.${signValue(ts)}`;
+}
+
+function verifySessionToken(token) {
+  if (!AUTH_SECRET || !token) return false;
+  const dot = token.lastIndexOf(".");
+  if (dot < 0) return false;
+  const ts  = token.slice(0, dot);
+  const sig = token.slice(dot + 1);
+  const expected = signValue(ts);
+  try {
+    if (!crypto.timingSafeEqual(Buffer.from(sig), Buffer.from(expected))) return false;
+  } catch { return false; }
+  const ageMs = Date.now() - Number(ts);
+  return ageMs >= 0 && ageMs < SESSION_MAX_AGE * 1000;
+}
+
+function buildSessionCookie(token) {
+  const flags = [`Max-Age=${SESSION_MAX_AGE}`, "Path=/", "HttpOnly", "SameSite=Lax"];
+  if (IS_PRODUCTION) flags.push("Secure");
+  return `${SESSION_COOKIE}=${encodeURIComponent(token)}; ${flags.join("; ")}`;
+}
+
+function clearSessionCookie() {
+  return `${SESSION_COOKIE}=; Max-Age=0; Path=/; HttpOnly; SameSite=Lax`;
+}
+
+function escapeHtml(str) {
+  return String(str || "")
+    .replace(/&/g, "&amp;").replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+
+function buildLoginPage(errorMsg) {
+  const err = errorMsg
+    ? `<div class="err">${escapeHtml(errorMsg)}</div>`
+    : "";
+  return `<!DOCTYPE html>
+<html lang="tr">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>FKY — Giriş</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--b0:#04050a;--b1:#080b12;--b2:#0c1018;--l3:rgba(255,255,255,.12);
+  --au:#d4a843;--au2:#e8c060;--au-bg:rgba(212,168,67,.08);--au-bd:rgba(212,168,67,.2);
+  --r:#e05252;--r-bg:rgba(224,82,82,.08);--r-bd:rgba(224,82,82,.2);
+  --t1:#eef0f6;--t2:#9ba5bc;--t3:#5a6478;
+  --mono:'IBM Plex Mono',monospace;--disp:'Barlow Condensed',sans-serif}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:13px;-webkit-font-smoothing:antialiased}
+body{background:var(--b0);color:var(--t1);font-family:var(--mono);min-height:100vh;
+  display:flex;align-items:center;justify-content:center;
+  background-image:radial-gradient(ellipse 80% 50% at 50% -20%,rgba(212,168,67,.04) 0%,transparent 60%)}
+.card{background:var(--b2);border:1px solid var(--l3);border-radius:8px;padding:40px 36px;width:100%;max-width:360px}
+.logo{font-family:var(--disp);font-size:28px;font-weight:700;color:var(--au);letter-spacing:2px;margin-bottom:4px}
+.sub{font-size:10px;color:var(--t3);letter-spacing:1px;text-transform:uppercase;margin-bottom:32px}
+label{display:block;font-size:10px;color:var(--t3);letter-spacing:1px;text-transform:uppercase;margin-bottom:6px}
+input{width:100%;background:var(--b1);border:1px solid var(--l3);border-radius:4px;color:var(--t1);
+  font-family:var(--mono);font-size:13px;padding:10px 12px;outline:none;transition:border-color .15s;margin-bottom:16px}
+input:focus{border-color:var(--au-bd)}
+input[type=password]{letter-spacing:2px}
+.btn{width:100%;background:var(--au-bg);border:1px solid var(--au-bd);border-radius:4px;color:var(--au2);
+  font-family:var(--disp);font-size:15px;font-weight:600;letter-spacing:1px;padding:11px;
+  cursor:pointer;transition:background .15s,border-color .15s;margin-top:4px}
+.btn:hover{background:rgba(212,168,67,.14);border-color:var(--au)}
+.err{background:var(--r-bg);border:1px solid var(--r-bd);border-radius:4px;color:var(--r);
+  font-size:11px;padding:10px 12px;margin-bottom:20px}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="logo">FKY</div>
+  <div class="sub">Terminal — BİST Analiz</div>
+  ${err}
+  <form method="POST" action="/auth/login">
+    <label for="u">Kullanıcı Adı</label>
+    <input id="u" name="username" type="text" autocomplete="username" required autofocus>
+    <label for="p">Şifre</label>
+    <input id="p" name="password" type="password" autocomplete="current-password" required>
+    <button class="btn" type="submit">GİRİŞ YAP</button>
+  </form>
+</div>
+</body></html>`;
+}
+
+function requireAuth(req, res, next) {
+  if (!AUTH_ENABLED) return next();
+  if (AUTH_PUBLIC.has(req.path)) return next();
+  const cookies = parseCookies(req);
+  const token = cookies[SESSION_COOKIE];
+  if (!verifySessionToken(token)) {
+    if (token) res.setHeader("Set-Cookie", clearSessionCookie());
+    if (req.path.startsWith("/api/")) {
+      return res.status(401).json({ error: "unauthorized" });
+    }
+    return res.redirect("/auth/login");
+  }
+  next();
+}
+// ─────────────────────────────────────────────────────────────────────────────
+
 const app = express();
 app.use(cors());
 app.use(compression());
+app.use(express.urlencoded({ extended: false }));
+app.use(requireAuth);
 app.use(express.static(__dirname));
 
 const PRICE_CACHE_MS = 60_000;
@@ -1931,6 +2064,39 @@ async function getQuote(symbol, options = {}) {
   return merged;
 }
 
+// ── AUTH ROUTES ───────────────────────────────────────────────────────────────
+app.get("/auth/login", (_req, res) => {
+  res.setHeader("Content-Type", "text/html; charset=utf-8");
+  res.send(buildLoginPage());
+});
+
+app.post("/auth/login", (req, res) => {
+  if (!AUTH_ENABLED) return res.redirect("/");
+  const { username = "", password = "" } = req.body || {};
+  let valid = false;
+  try {
+    const uBuf = Buffer.from(username.trim());
+    const pBuf = Buffer.from(password);
+    const uExp = Buffer.from(AUTH_USER);
+    const pExp = Buffer.from(AUTH_PASS);
+    const uOk = uBuf.length === uExp.length && crypto.timingSafeEqual(uBuf, uExp);
+    const pOk = pBuf.length === pExp.length && crypto.timingSafeEqual(pBuf, pExp);
+    valid = uOk && pOk;
+  } catch { valid = false; }
+  if (valid) {
+    res.setHeader("Set-Cookie", buildSessionCookie(makeSessionToken()));
+    return res.redirect("/");
+  }
+  res.setHeader("Content-Type", "text/html; charset=utf-8");
+  res.send(buildLoginPage("Kullanıcı adı veya şifre hatalı."));
+});
+
+app.get("/auth/logout", (_req, res) => {
+  res.setHeader("Set-Cookie", clearSessionCookie());
+  res.redirect("/auth/login");
+});
+// ─────────────────────────────────────────────────────────────────────────────
+
 app.get("/api/quotes", async (req, res) => {
   try {
     const symbolsParam = String(req.query.symbols || "");
@@ -2209,28 +2375,32 @@ app.get("/api/market-overview", async (_req, res) => {
   });
 });
 
-const PORT = Number(process.env.PORT || 3000);
-const HOST = process.env.HOST ? String(process.env.HOST) : null;
+export default app;
 
-const server = HOST
-  ? app.listen(PORT, HOST, () => {
-      console.log(`FKY LIVE çalışıyor -> http://${HOST}:${PORT}`);
-    })
-  : app.listen(PORT, () => {
-      console.log(`FKY LIVE çalışıyor -> http://localhost:${PORT}`);
-      console.log(`Yerel erişim -> http://127.0.0.1:${PORT}`);
-    });
+if (!process.env.VERCEL) {
+  const PORT = Number(process.env.PORT || 3000);
+  const HOST = process.env.HOST ? String(process.env.HOST) : null;
 
-server.on("error", (err) => {
-  if (err?.code === "EADDRINUSE") {
-    console.error(`[START] Port kullanımda: ${HOST || "0.0.0.0"}:${PORT}. Farklı port deneyin (örn. PORT=3001 npm start).`);
-    return;
-  }
-  if (err?.code === "EPERM") {
-    console.error(
-      `[START] Port dinleme izni yok: ${HOST || "0.0.0.0"}:${PORT}. HOST=127.0.0.1 ve farklı bir PORT (örn. 3001) deneyin.`
-    );
-    return;
-  }
-  console.error("[START] Sunucu başlatma hatası:", err);
-});
+  const server = HOST
+    ? app.listen(PORT, HOST, () => {
+        console.log(`FKY LIVE çalışıyor -> http://${HOST}:${PORT}`);
+      })
+    : app.listen(PORT, () => {
+        console.log(`FKY LIVE çalışıyor -> http://localhost:${PORT}`);
+        console.log(`Yerel erişim -> http://127.0.0.1:${PORT}`);
+      });
+
+  server.on("error", (err) => {
+    if (err?.code === "EADDRINUSE") {
+      console.error(`[START] Port kullanımda: ${HOST || "0.0.0.0"}:${PORT}. Farklı port deneyin (örn. PORT=3001 npm start).`);
+      return;
+    }
+    if (err?.code === "EPERM") {
+      console.error(
+        `[START] Port dinleme izni yok: ${HOST || "0.0.0.0"}:${PORT}. HOST=127.0.0.1 ve farklı bir PORT (örn. 3001) deneyin.`
+      );
+      return;
+    }
+    console.error("[START] Sunucu başlatma hatası:", err);
+  });
+}
