@@ -1,0 +1,2107 @@
+{
+  "generatedAt": 1773223022710,
+  "symbolCount": 100,
+  "provider": "api/quotes metricMode=kap_truth",
+  "coverage": {
+    "marketCap": {
+      "nonNull": 100,
+      "null": 0,
+      "coveragePct": 100.0
+    },
+    "trailingPE": {
+      "nonNull": 100,
+      "null": 0,
+      "coveragePct": 100.0
+    },
+    "forwardPE": {
+      "nonNull": 0,
+      "null": 100,
+      "coveragePct": 0.0
+    },
+    "priceToBook": {
+      "nonNull": 100,
+      "null": 0,
+      "coveragePct": 100.0
+    },
+    "trailingEps": {
+      "nonNull": 100,
+      "null": 0,
+      "coveragePct": 100.0
+    },
+    "dividendYield": {
+      "nonNull": 72,
+      "null": 28,
+      "coveragePct": 72.0
+    },
+    "returnOnEquity": {
+      "nonNull": 100,
+      "null": 0,
+      "coveragePct": 100.0
+    },
+    "returnOnAssets": {
+      "nonNull": 100,
+      "null": 0,
+      "coveragePct": 100.0
+    },
+    "debtToEquity": {
+      "nonNull": 100,
+      "null": 0,
+      "coveragePct": 100.0
+    },
+    "currentRatio": {
+      "nonNull": 91,
+      "null": 9,
+      "coveragePct": 91.0
+    },
+    "revenueGrowth": {
+      "nonNull": 94,
+      "null": 6,
+      "coveragePct": 94.0
+    },
+    "earningsGrowth": {
+      "nonNull": 100,
+      "null": 0,
+      "coveragePct": 100.0
+    },
+    "grossMargins": {
+      "nonNull": 92,
+      "null": 8,
+      "coveragePct": 92.0
+    },
+    "operatingMargins": {
+      "nonNull": 90,
+      "null": 10,
+      "coveragePct": 90.0
+    },
+    "profitMargins": {
+      "nonNull": 94,
+      "null": 6,
+      "coveragePct": 94.0
+    },
+    "freeCashflow": {
+      "nonNull": 90,
+      "null": 10,
+      "coveragePct": 90.0
+    },
+    "totalDebt": {
+      "nonNull": 100,
+      "null": 0,
+      "coveragePct": 100.0
+    },
+    "totalCash": {
+      "nonNull": 100,
+      "null": 0,
+      "coveragePct": 100.0
+    },
+    "enterpriseValue": {
+      "nonNull": 100,
+      "null": 0,
+      "coveragePct": 100.0
+    },
+    "ebitda": {
+      "nonNull": 88,
+      "null": 12,
+      "coveragePct": 88.0
+    },
+    "pegRatio": {
+      "nonNull": 59,
+      "null": 41,
+      "coveragePct": 59.0
+    },
+    "beta": {
+      "nonNull": 100,
+      "null": 0,
+      "coveragePct": 100.0
+    },
+    "priceToSalesTrailing12Months": {
+      "nonNull": 94,
+      "null": 6,
+      "coveragePct": 94.0
+    },
+    "assetTurnover": {
+      "nonNull": 94,
+      "null": 6,
+      "coveragePct": 94.0
+    },
+    "epsGrowth": {
+      "nonNull": 100,
+      "null": 0,
+      "coveragePct": 100.0
+    },
+    "netDebtToEbitda": {
+      "nonNull": 88,
+      "null": 12,
+      "coveragePct": 88.0
+    },
+    "interestCoverage": {
+      "nonNull": 88,
+      "null": 12,
+      "coveragePct": 88.0
+    },
+    "quickRatio": {
+      "nonNull": 91,
+      "null": 9,
+      "coveragePct": 91.0
+    },
+    "cfoToNetIncome": {
+      "nonNull": 93,
+      "null": 7,
+      "coveragePct": 93.0
+    },
+    "debtMaturityRatio": {
+      "nonNull": 87,
+      "null": 13,
+      "coveragePct": 87.0
+    },
+    "fxNetPositionRatio": {
+      "nonNull": 0,
+      "null": 100,
+      "coveragePct": 0.0
+    },
+    "profitabilityStability": {
+      "nonNull": 94,
+      "null": 6,
+      "coveragePct": 94.0
+    },
+    "growthStability": {
+      "nonNull": 94,
+      "null": 6,
+      "coveragePct": 94.0
+    },
+    "divPolicyScore": {
+      "nonNull": 100,
+      "null": 0,
+      "coveragePct": 100.0
+    },
+    "buybackPolicyScore": {
+      "nonNull": 100,
+      "null": 0,
+      "coveragePct": 100.0
+    },
+    "dilutionPolicyScore": {
+      "nonNull": 100,
+      "null": 0,
+      "coveragePct": 100.0
+    },
+    "capitalAllocationScore": {
+      "nonNull": 100,
+      "null": 0,
+      "coveragePct": 100.0
+    },
+    "governanceScore": {
+      "nonNull": 100,
+      "null": 0,
+      "coveragePct": 100.0
+    },
+    "revenue": {
+      "nonNull": 100,
+      "null": 0,
+      "coveragePct": 100.0
+    },
+    "netIncome": {
+      "nonNull": 100,
+      "null": 0,
+      "coveragePct": 100.0
+    },
+    "equity": {
+      "nonNull": 100,
+      "null": 0,
+      "coveragePct": 100.0
+    },
+    "assets": {
+      "nonNull": 100,
+      "null": 0,
+      "coveragePct": 100.0
+    },
+    "cfo": {
+      "nonNull": 93,
+      "null": 7,
+      "coveragePct": 93.0
+    },
+    "capex": {
+      "nonNull": 97,
+      "null": 3,
+      "coveragePct": 97.0
+    },
+    "sharesOutstanding": {
+      "nonNull": 100,
+      "null": 0,
+      "coveragePct": 100.0
+    },
+    "interestExpense": {
+      "nonNull": 92,
+      "null": 8,
+      "coveragePct": 92.0
+    },
+    "currentBorrowings": {
+      "nonNull": 89,
+      "null": 11,
+      "coveragePct": 89.0
+    },
+    "nonCurrentBorrowings": {
+      "nonNull": 90,
+      "null": 10,
+      "coveragePct": 90.0
+    },
+    "inventories": {
+      "nonNull": 89,
+      "null": 11,
+      "coveragePct": 89.0
+    },
+    "currentAssets": {
+      "nonNull": 91,
+      "null": 9,
+      "coveragePct": 91.0
+    },
+    "currentLiabilities": {
+      "nonNull": 91,
+      "null": 9,
+      "coveragePct": 91.0
+    },
+    "totalLiabilities": {
+      "nonNull": 100,
+      "null": 0,
+      "coveragePct": 100.0
+    },
+    "grossProfit": {
+      "nonNull": 98,
+      "null": 2,
+      "coveragePct": 98.0
+    },
+    "operatingProfit": {
+      "nonNull": 96,
+      "null": 4,
+      "coveragePct": 96.0
+    },
+    "depreciationAmortization": {
+      "nonNull": 90,
+      "null": 10,
+      "coveragePct": 90.0
+    },
+    "annualDividendPerShare": {
+      "nonNull": 72,
+      "null": 28,
+      "coveragePct": 72.0
+    },
+    "lastDividendPerShare": {
+      "nonNull": 72,
+      "null": 28,
+      "coveragePct": 72.0
+    },
+    "lastDividendDateMs": {
+      "nonNull": 72,
+      "null": 28,
+      "coveragePct": 72.0
+    },
+    "dividendPayoutPct": {
+      "nonNull": 72,
+      "null": 28,
+      "coveragePct": 72.0
+    },
+    "paidYears3y": {
+      "nonNull": 72,
+      "null": 28,
+      "coveragePct": 72.0
+    },
+    "regularityScore": {
+      "nonNull": 72,
+      "null": 28,
+      "coveragePct": 72.0
+    },
+    "eventCount": {
+      "nonNull": 72,
+      "null": 28,
+      "coveragePct": 72.0
+    }
+  },
+  "summaryMissing": [
+    {
+      "metric": "forwardPE",
+      "null": 100,
+      "coveragePct": 0.0
+    },
+    {
+      "metric": "fxNetPositionRatio",
+      "null": 100,
+      "coveragePct": 0.0
+    },
+    {
+      "metric": "pegRatio",
+      "null": 41,
+      "coveragePct": 59.0
+    },
+    {
+      "metric": "dividendYield",
+      "null": 28,
+      "coveragePct": 72.0
+    },
+    {
+      "metric": "annualDividendPerShare",
+      "null": 28,
+      "coveragePct": 72.0
+    },
+    {
+      "metric": "lastDividendPerShare",
+      "null": 28,
+      "coveragePct": 72.0
+    },
+    {
+      "metric": "lastDividendDateMs",
+      "null": 28,
+      "coveragePct": 72.0
+    },
+    {
+      "metric": "dividendPayoutPct",
+      "null": 28,
+      "coveragePct": 72.0
+    },
+    {
+      "metric": "paidYears3y",
+      "null": 28,
+      "coveragePct": 72.0
+    },
+    {
+      "metric": "regularityScore",
+      "null": 28,
+      "coveragePct": 72.0
+    },
+    {
+      "metric": "eventCount",
+      "null": 28,
+      "coveragePct": 72.0
+    },
+    {
+      "metric": "debtMaturityRatio",
+      "null": 13,
+      "coveragePct": 87.0
+    },
+    {
+      "metric": "ebitda",
+      "null": 12,
+      "coveragePct": 88.0
+    },
+    {
+      "metric": "netDebtToEbitda",
+      "null": 12,
+      "coveragePct": 88.0
+    },
+    {
+      "metric": "interestCoverage",
+      "null": 12,
+      "coveragePct": 88.0
+    },
+    {
+      "metric": "currentBorrowings",
+      "null": 11,
+      "coveragePct": 89.0
+    },
+    {
+      "metric": "inventories",
+      "null": 11,
+      "coveragePct": 89.0
+    },
+    {
+      "metric": "operatingMargins",
+      "null": 10,
+      "coveragePct": 90.0
+    },
+    {
+      "metric": "freeCashflow",
+      "null": 10,
+      "coveragePct": 90.0
+    },
+    {
+      "metric": "nonCurrentBorrowings",
+      "null": 10,
+      "coveragePct": 90.0
+    },
+    {
+      "metric": "depreciationAmortization",
+      "null": 10,
+      "coveragePct": 90.0
+    },
+    {
+      "metric": "currentRatio",
+      "null": 9,
+      "coveragePct": 91.0
+    },
+    {
+      "metric": "quickRatio",
+      "null": 9,
+      "coveragePct": 91.0
+    },
+    {
+      "metric": "currentAssets",
+      "null": 9,
+      "coveragePct": 91.0
+    },
+    {
+      "metric": "currentLiabilities",
+      "null": 9,
+      "coveragePct": 91.0
+    },
+    {
+      "metric": "grossMargins",
+      "null": 8,
+      "coveragePct": 92.0
+    },
+    {
+      "metric": "interestExpense",
+      "null": 8,
+      "coveragePct": 92.0
+    },
+    {
+      "metric": "cfoToNetIncome",
+      "null": 7,
+      "coveragePct": 93.0
+    },
+    {
+      "metric": "cfo",
+      "null": 7,
+      "coveragePct": 93.0
+    },
+    {
+      "metric": "revenueGrowth",
+      "null": 6,
+      "coveragePct": 94.0
+    },
+    {
+      "metric": "profitMargins",
+      "null": 6,
+      "coveragePct": 94.0
+    },
+    {
+      "metric": "priceToSalesTrailing12Months",
+      "null": 6,
+      "coveragePct": 94.0
+    },
+    {
+      "metric": "assetTurnover",
+      "null": 6,
+      "coveragePct": 94.0
+    },
+    {
+      "metric": "profitabilityStability",
+      "null": 6,
+      "coveragePct": 94.0
+    },
+    {
+      "metric": "growthStability",
+      "null": 6,
+      "coveragePct": 94.0
+    },
+    {
+      "metric": "operatingProfit",
+      "null": 4,
+      "coveragePct": 96.0
+    },
+    {
+      "metric": "capex",
+      "null": 3,
+      "coveragePct": 97.0
+    },
+    {
+      "metric": "grossProfit",
+      "null": 2,
+      "coveragePct": 98.0
+    }
+  ],
+  "missingSymbols": {
+    "marketCap": [],
+    "trailingPE": [],
+    "forwardPE": [
+      "AEFES",
+      "AGHOL",
+      "AKBNK",
+      "AKSA",
+      "AKSEN",
+      "ALARK",
+      "ALTNY",
+      "ANSGR",
+      "ARCLK",
+      "ASTOR",
+      "BALSU",
+      "BIMAS",
+      "BRSAN",
+      "BRYAT",
+      "BSOKE",
+      "BTCIM",
+      "CANTE",
+      "CCOLA",
+      "CIMSA",
+      "CWENE",
+      "DAPGM",
+      "DOAS",
+      "DOHOL",
+      "DSTKF",
+      "ECILC",
+      "EFOR",
+      "EGEEN",
+      "EKGYO",
+      "ENERY",
+      "ENJSA",
+      "ENKAI",
+      "EREGL",
+      "EUPWR",
+      "FENER",
+      "FROTO",
+      "GARAN",
+      "GENIL",
+      "GESAN",
+      "GLRMK",
+      "GRSEL",
+      "GRTHO",
+      "GSRAY",
+      "GUBRF",
+      "HALKB",
+      "HEKTS",
+      "ISCTR",
+      "ISMEN",
+      "IZENR",
+      "KCAER",
+      "KCHOL",
+      "KLRHO",
+      "KONTR",
+      "KRDMD",
+      "KTLEV",
+      "KUYAS",
+      "MAGEN",
+      "MAVI",
+      "MGROS",
+      "MIATK",
+      "MPARK",
+      "OBAMS",
+      "ODAS",
+      "OTKAR",
+      "OYAKC",
+      "PASEU",
+      "PATEK",
+      "PETKM",
+      "PGSUS",
+      "QUAGR",
+      "RALYH",
+      "REEDR",
+      "SAHOL",
+      "SASA",
+      "SISE",
+      "SKBNK",
+      "TABGD",
+      "TAVHL",
+      "TCELL",
+      "THYAO",
+      "TKFEN",
+      "TOASO",
+      "TRALT",
+      "TRENJ",
+      "TRMET",
+      "TSKB",
+      "TTKOM",
+      "TTRAK",
+      "TUKAS",
+      "TUPRS",
+      "TUREX",
+      "TURSG",
+      "ULKER",
+      "VAKBN",
+      "VESTL",
+      "YEOTK",
+      "YKBNK",
+      "ZOREN",
+      "ASELS",
+      "CVKMD",
+      "SOKM"
+    ],
+    "priceToBook": [],
+    "trailingEps": [],
+    "dividendYield": [
+      "SASA",
+      "SISE",
+      "SKBNK",
+      "TABGD",
+      "TAVHL",
+      "TCELL",
+      "THYAO",
+      "TKFEN",
+      "TOASO",
+      "TRALT",
+      "TRENJ",
+      "TRMET",
+      "TSKB",
+      "TTKOM",
+      "TTRAK",
+      "TUKAS",
+      "TUPRS",
+      "TUREX",
+      "TURSG",
+      "ULKER",
+      "VAKBN",
+      "VESTL",
+      "YEOTK",
+      "YKBNK",
+      "ZOREN",
+      "ASELS",
+      "CVKMD",
+      "SOKM"
+    ],
+    "returnOnEquity": [],
+    "returnOnAssets": [],
+    "debtToEquity": [],
+    "currentRatio": [
+      "AKBNK",
+      "DSTKF",
+      "GARAN",
+      "HALKB",
+      "ISCTR",
+      "KTLEV",
+      "SKBNK",
+      "VAKBN",
+      "YKBNK"
+    ],
+    "revenueGrowth": [
+      "AKBNK",
+      "HALKB",
+      "ISCTR",
+      "SKBNK",
+      "VAKBN",
+      "YKBNK"
+    ],
+    "earningsGrowth": [],
+    "grossMargins": [
+      "AKBNK",
+      "ANSGR",
+      "HALKB",
+      "ISCTR",
+      "SKBNK",
+      "TURSG",
+      "VAKBN",
+      "YKBNK"
+    ],
+    "operatingMargins": [
+      "AKBNK",
+      "ANSGR",
+      "DSTKF",
+      "HALKB",
+      "ISCTR",
+      "KTLEV",
+      "SKBNK",
+      "TURSG",
+      "VAKBN",
+      "YKBNK"
+    ],
+    "profitMargins": [
+      "AKBNK",
+      "HALKB",
+      "ISCTR",
+      "SKBNK",
+      "VAKBN",
+      "YKBNK"
+    ],
+    "freeCashflow": [
+      "AKBNK",
+      "ANSGR",
+      "BRYAT",
+      "GARAN",
+      "HALKB",
+      "ISCTR",
+      "SKBNK",
+      "TURSG",
+      "VAKBN",
+      "YKBNK"
+    ],
+    "totalDebt": [],
+    "totalCash": [],
+    "enterpriseValue": [],
+    "ebitda": [
+      "AKBNK",
+      "ANSGR",
+      "BRYAT",
+      "DSTKF",
+      "GARAN",
+      "HALKB",
+      "ISCTR",
+      "KTLEV",
+      "SKBNK",
+      "TURSG",
+      "VAKBN",
+      "YKBNK"
+    ],
+    "pegRatio": [
+      "AEFES",
+      "AGHOL",
+      "ALARK",
+      "ARCLK",
+      "BSOKE",
+      "BTCIM",
+      "CANTE",
+      "CCOLA",
+      "CIMSA",
+      "DAPGM",
+      "DOAS",
+      "EFOR",
+      "EGEEN",
+      "EKGYO",
+      "EREGL",
+      "FROTO",
+      "GESAN",
+      "GLRMK",
+      "GSRAY",
+      "GUBRF",
+      "HEKTS",
+      "IZENR",
+      "KONTR",
+      "KRDMD",
+      "MGROS",
+      "MIATK",
+      "MPARK",
+      "ODAS",
+      "OYAKC",
+      "PETKM",
+      "QUAGR",
+      "REEDR",
+      "SASA",
+      "SKBNK",
+      "TAVHL",
+      "TKFEN",
+      "TTRAK",
+      "TUKAS",
+      "ZOREN",
+      "CVKMD",
+      "SOKM"
+    ],
+    "beta": [],
+    "priceToSalesTrailing12Months": [
+      "AKBNK",
+      "HALKB",
+      "ISCTR",
+      "SKBNK",
+      "VAKBN",
+      "YKBNK"
+    ],
+    "assetTurnover": [
+      "AKBNK",
+      "HALKB",
+      "ISCTR",
+      "SKBNK",
+      "VAKBN",
+      "YKBNK"
+    ],
+    "epsGrowth": [],
+    "netDebtToEbitda": [
+      "AKBNK",
+      "ANSGR",
+      "BRYAT",
+      "DSTKF",
+      "GARAN",
+      "HALKB",
+      "ISCTR",
+      "KTLEV",
+      "SKBNK",
+      "TURSG",
+      "VAKBN",
+      "YKBNK"
+    ],
+    "interestCoverage": [
+      "AKBNK",
+      "ANSGR",
+      "BRYAT",
+      "DSTKF",
+      "GARAN",
+      "HALKB",
+      "ISCTR",
+      "KTLEV",
+      "SKBNK",
+      "TURSG",
+      "VAKBN",
+      "YKBNK"
+    ],
+    "quickRatio": [
+      "AKBNK",
+      "DSTKF",
+      "GARAN",
+      "HALKB",
+      "ISCTR",
+      "KTLEV",
+      "SKBNK",
+      "VAKBN",
+      "YKBNK"
+    ],
+    "cfoToNetIncome": [
+      "AKBNK",
+      "GARAN",
+      "HALKB",
+      "ISCTR",
+      "SKBNK",
+      "VAKBN",
+      "YKBNK"
+    ],
+    "debtMaturityRatio": [
+      "AKBNK",
+      "ANSGR",
+      "ASTOR",
+      "BRYAT",
+      "DSTKF",
+      "GARAN",
+      "HALKB",
+      "ISCTR",
+      "KTLEV",
+      "SKBNK",
+      "TURSG",
+      "VAKBN",
+      "YKBNK"
+    ],
+    "fxNetPositionRatio": [
+      "AEFES",
+      "AGHOL",
+      "AKBNK",
+      "AKSA",
+      "AKSEN",
+      "ALARK",
+      "ALTNY",
+      "ANSGR",
+      "ARCLK",
+      "ASTOR",
+      "BALSU",
+      "BIMAS",
+      "BRSAN",
+      "BRYAT",
+      "BSOKE",
+      "BTCIM",
+      "CANTE",
+      "CCOLA",
+      "CIMSA",
+      "CWENE",
+      "DAPGM",
+      "DOAS",
+      "DOHOL",
+      "DSTKF",
+      "ECILC",
+      "EFOR",
+      "EGEEN",
+      "EKGYO",
+      "ENERY",
+      "ENJSA",
+      "ENKAI",
+      "EREGL",
+      "EUPWR",
+      "FENER",
+      "FROTO",
+      "GARAN",
+      "GENIL",
+      "GESAN",
+      "GLRMK",
+      "GRSEL",
+      "GRTHO",
+      "GSRAY",
+      "GUBRF",
+      "HALKB",
+      "HEKTS",
+      "ISCTR",
+      "ISMEN",
+      "IZENR",
+      "KCAER",
+      "KCHOL",
+      "KLRHO",
+      "KONTR",
+      "KRDMD",
+      "KTLEV",
+      "KUYAS",
+      "MAGEN",
+      "MAVI",
+      "MGROS",
+      "MIATK",
+      "MPARK",
+      "OBAMS",
+      "ODAS",
+      "OTKAR",
+      "OYAKC",
+      "PASEU",
+      "PATEK",
+      "PETKM",
+      "PGSUS",
+      "QUAGR",
+      "RALYH",
+      "REEDR",
+      "SAHOL",
+      "SASA",
+      "SISE",
+      "SKBNK",
+      "TABGD",
+      "TAVHL",
+      "TCELL",
+      "THYAO",
+      "TKFEN",
+      "TOASO",
+      "TRALT",
+      "TRENJ",
+      "TRMET",
+      "TSKB",
+      "TTKOM",
+      "TTRAK",
+      "TUKAS",
+      "TUPRS",
+      "TUREX",
+      "TURSG",
+      "ULKER",
+      "VAKBN",
+      "VESTL",
+      "YEOTK",
+      "YKBNK",
+      "ZOREN",
+      "ASELS",
+      "CVKMD",
+      "SOKM"
+    ],
+    "profitabilityStability": [
+      "AKBNK",
+      "HALKB",
+      "ISCTR",
+      "SKBNK",
+      "VAKBN",
+      "YKBNK"
+    ],
+    "growthStability": [
+      "AKBNK",
+      "HALKB",
+      "ISCTR",
+      "SKBNK",
+      "VAKBN",
+      "YKBNK"
+    ],
+    "divPolicyScore": [],
+    "buybackPolicyScore": [],
+    "dilutionPolicyScore": [],
+    "capitalAllocationScore": [],
+    "governanceScore": [],
+    "revenue": [],
+    "netIncome": [],
+    "equity": [],
+    "assets": [],
+    "cfo": [
+      "AKBNK",
+      "GARAN",
+      "HALKB",
+      "ISCTR",
+      "SKBNK",
+      "VAKBN",
+      "YKBNK"
+    ],
+    "capex": [
+      "ANSGR",
+      "BRYAT",
+      "TURSG"
+    ],
+    "sharesOutstanding": [],
+    "interestExpense": [
+      "AKBNK",
+      "BRYAT",
+      "GARAN",
+      "HALKB",
+      "ISCTR",
+      "SKBNK",
+      "VAKBN",
+      "YKBNK"
+    ],
+    "currentBorrowings": [
+      "AKBNK",
+      "ANSGR",
+      "DSTKF",
+      "GARAN",
+      "HALKB",
+      "ISCTR",
+      "KTLEV",
+      "SKBNK",
+      "TURSG",
+      "VAKBN",
+      "YKBNK"
+    ],
+    "nonCurrentBorrowings": [
+      "AKBNK",
+      "BRYAT",
+      "DSTKF",
+      "GARAN",
+      "HALKB",
+      "ISCTR",
+      "KTLEV",
+      "SKBNK",
+      "VAKBN",
+      "YKBNK"
+    ],
+    "inventories": [
+      "AKBNK",
+      "BRYAT",
+      "DSTKF",
+      "GARAN",
+      "HALKB",
+      "ISCTR",
+      "KTLEV",
+      "SKBNK",
+      "TSKB",
+      "VAKBN",
+      "YKBNK"
+    ],
+    "currentAssets": [
+      "AKBNK",
+      "DSTKF",
+      "GARAN",
+      "HALKB",
+      "ISCTR",
+      "KTLEV",
+      "SKBNK",
+      "VAKBN",
+      "YKBNK"
+    ],
+    "currentLiabilities": [
+      "AKBNK",
+      "DSTKF",
+      "GARAN",
+      "HALKB",
+      "ISCTR",
+      "KTLEV",
+      "SKBNK",
+      "VAKBN",
+      "YKBNK"
+    ],
+    "totalLiabilities": [],
+    "grossProfit": [
+      "ANSGR",
+      "TURSG"
+    ],
+    "operatingProfit": [
+      "ANSGR",
+      "DSTKF",
+      "KTLEV",
+      "TURSG"
+    ],
+    "depreciationAmortization": [
+      "AKBNK",
+      "BRYAT",
+      "DSTKF",
+      "GARAN",
+      "HALKB",
+      "ISCTR",
+      "KTLEV",
+      "SKBNK",
+      "VAKBN",
+      "YKBNK"
+    ],
+    "annualDividendPerShare": [
+      "SASA",
+      "SISE",
+      "SKBNK",
+      "TABGD",
+      "TAVHL",
+      "TCELL",
+      "THYAO",
+      "TKFEN",
+      "TOASO",
+      "TRALT",
+      "TRENJ",
+      "TRMET",
+      "TSKB",
+      "TTKOM",
+      "TTRAK",
+      "TUKAS",
+      "TUPRS",
+      "TUREX",
+      "TURSG",
+      "ULKER",
+      "VAKBN",
+      "VESTL",
+      "YEOTK",
+      "YKBNK",
+      "ZOREN",
+      "ASELS",
+      "CVKMD",
+      "SOKM"
+    ],
+    "lastDividendPerShare": [
+      "SASA",
+      "SISE",
+      "SKBNK",
+      "TABGD",
+      "TAVHL",
+      "TCELL",
+      "THYAO",
+      "TKFEN",
+      "TOASO",
+      "TRALT",
+      "TRENJ",
+      "TRMET",
+      "TSKB",
+      "TTKOM",
+      "TTRAK",
+      "TUKAS",
+      "TUPRS",
+      "TUREX",
+      "TURSG",
+      "ULKER",
+      "VAKBN",
+      "VESTL",
+      "YEOTK",
+      "YKBNK",
+      "ZOREN",
+      "ASELS",
+      "CVKMD",
+      "SOKM"
+    ],
+    "lastDividendDateMs": [
+      "SASA",
+      "SISE",
+      "SKBNK",
+      "TABGD",
+      "TAVHL",
+      "TCELL",
+      "THYAO",
+      "TKFEN",
+      "TOASO",
+      "TRALT",
+      "TRENJ",
+      "TRMET",
+      "TSKB",
+      "TTKOM",
+      "TTRAK",
+      "TUKAS",
+      "TUPRS",
+      "TUREX",
+      "TURSG",
+      "ULKER",
+      "VAKBN",
+      "VESTL",
+      "YEOTK",
+      "YKBNK",
+      "ZOREN",
+      "ASELS",
+      "CVKMD",
+      "SOKM"
+    ],
+    "dividendPayoutPct": [
+      "SASA",
+      "SISE",
+      "SKBNK",
+      "TABGD",
+      "TAVHL",
+      "TCELL",
+      "THYAO",
+      "TKFEN",
+      "TOASO",
+      "TRALT",
+      "TRENJ",
+      "TRMET",
+      "TSKB",
+      "TTKOM",
+      "TTRAK",
+      "TUKAS",
+      "TUPRS",
+      "TUREX",
+      "TURSG",
+      "ULKER",
+      "VAKBN",
+      "VESTL",
+      "YEOTK",
+      "YKBNK",
+      "ZOREN",
+      "ASELS",
+      "CVKMD",
+      "SOKM"
+    ],
+    "paidYears3y": [
+      "SASA",
+      "SISE",
+      "SKBNK",
+      "TABGD",
+      "TAVHL",
+      "TCELL",
+      "THYAO",
+      "TKFEN",
+      "TOASO",
+      "TRALT",
+      "TRENJ",
+      "TRMET",
+      "TSKB",
+      "TTKOM",
+      "TTRAK",
+      "TUKAS",
+      "TUPRS",
+      "TUREX",
+      "TURSG",
+      "ULKER",
+      "VAKBN",
+      "VESTL",
+      "YEOTK",
+      "YKBNK",
+      "ZOREN",
+      "ASELS",
+      "CVKMD",
+      "SOKM"
+    ],
+    "regularityScore": [
+      "SASA",
+      "SISE",
+      "SKBNK",
+      "TABGD",
+      "TAVHL",
+      "TCELL",
+      "THYAO",
+      "TKFEN",
+      "TOASO",
+      "TRALT",
+      "TRENJ",
+      "TRMET",
+      "TSKB",
+      "TTKOM",
+      "TTRAK",
+      "TUKAS",
+      "TUPRS",
+      "TUREX",
+      "TURSG",
+      "ULKER",
+      "VAKBN",
+      "VESTL",
+      "YEOTK",
+      "YKBNK",
+      "ZOREN",
+      "ASELS",
+      "CVKMD",
+      "SOKM"
+    ],
+    "eventCount": [
+      "SASA",
+      "SISE",
+      "SKBNK",
+      "TABGD",
+      "TAVHL",
+      "TCELL",
+      "THYAO",
+      "TKFEN",
+      "TOASO",
+      "TRALT",
+      "TRENJ",
+      "TRMET",
+      "TSKB",
+      "TTKOM",
+      "TTRAK",
+      "TUKAS",
+      "TUPRS",
+      "TUREX",
+      "TURSG",
+      "ULKER",
+      "VAKBN",
+      "VESTL",
+      "YEOTK",
+      "YKBNK",
+      "ZOREN",
+      "ASELS",
+      "CVKMD",
+      "SOKM"
+    ]
+  },
+  "reasonBuckets": {
+    "marketCap": {
+      "counts": {},
+      "samples": {}
+    },
+    "trailingPE": {
+      "counts": {},
+      "samples": {}
+    },
+    "forwardPE": {
+      "counts": {
+        "KAP tarafında ileriye dönük tahmin verisi yok; bu alan modelde üretilmiyor.": 100
+      },
+      "samples": {
+        "KAP tarafında ileriye dönük tahmin verisi yok; bu alan modelde üretilmiyor.": [
+          "AEFES",
+          "AGHOL",
+          "AKBNK",
+          "AKSA",
+          "AKSEN",
+          "ALARK",
+          "ALTNY",
+          "ANSGR",
+          "ARCLK",
+          "ASTOR",
+          "BALSU",
+          "BIMAS"
+        ]
+      }
+    },
+    "priceToBook": {
+      "counts": {},
+      "samples": {}
+    },
+    "trailingEps": {
+      "counts": {},
+      "samples": {}
+    },
+    "dividendYield": {
+      "counts": {
+        "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.": 28
+      },
+      "samples": {
+        "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.": [
+          "SASA",
+          "SISE",
+          "SKBNK",
+          "TABGD",
+          "TAVHL",
+          "TCELL",
+          "THYAO",
+          "TKFEN",
+          "TOASO",
+          "TRALT",
+          "TRENJ",
+          "TRMET"
+        ]
+      }
+    },
+    "returnOnEquity": {
+      "counts": {},
+      "samples": {}
+    },
+    "returnOnAssets": {
+      "counts": {},
+      "samples": {}
+    },
+    "debtToEquity": {
+      "counts": {},
+      "samples": {}
+    },
+    "currentRatio": {
+      "counts": {
+        "Dönen varlıklar boş olduğu için cari oran hesaplanamadı.": 9
+      },
+      "samples": {
+        "Dönen varlıklar boş olduğu için cari oran hesaplanamadı.": [
+          "AKBNK",
+          "DSTKF",
+          "GARAN",
+          "HALKB",
+          "ISCTR",
+          "KTLEV",
+          "SKBNK",
+          "VAKBN",
+          "YKBNK"
+        ]
+      }
+    },
+    "revenueGrowth": {
+      "counts": {
+        "Önceki dönem karşılaştırma baz kalemi KAP’ta çıkmadığı (veya 0 olduğu) için büyüme hesaplanamadı.": 6
+      },
+      "samples": {
+        "Önceki dönem karşılaştırma baz kalemi KAP’ta çıkmadığı (veya 0 olduğu) için büyüme hesaplanamadı.": [
+          "AKBNK",
+          "HALKB",
+          "ISCTR",
+          "SKBNK",
+          "VAKBN",
+          "YKBNK"
+        ]
+      }
+    },
+    "earningsGrowth": {
+      "counts": {},
+      "samples": {}
+    },
+    "grossMargins": {
+      "counts": {
+        "Gelir boş/0 olduğu için brüt marj hesaplanamadı.": 6,
+        "Brüt kâr boş olduğu için brüt marj hesaplanamadı.": 2
+      },
+      "samples": {
+        "Gelir boş/0 olduğu için brüt marj hesaplanamadı.": [
+          "AKBNK",
+          "HALKB",
+          "ISCTR",
+          "SKBNK",
+          "VAKBN",
+          "YKBNK"
+        ],
+        "Brüt kâr boş olduğu için brüt marj hesaplanamadı.": [
+          "ANSGR",
+          "TURSG"
+        ]
+      }
+    },
+    "operatingMargins": {
+      "counts": {
+        "Gelir boş/0 olduğu için faaliyet marjı hesaplanamadı.": 6,
+        "Faaliyet kârı boş olduğu için faaliyet marjı hesaplanamadı.": 4
+      },
+      "samples": {
+        "Gelir boş/0 olduğu için faaliyet marjı hesaplanamadı.": [
+          "AKBNK",
+          "HALKB",
+          "ISCTR",
+          "SKBNK",
+          "VAKBN",
+          "YKBNK"
+        ],
+        "Faaliyet kârı boş olduğu için faaliyet marjı hesaplanamadı.": [
+          "ANSGR",
+          "DSTKF",
+          "KTLEV",
+          "TURSG"
+        ]
+      }
+    },
+    "profitMargins": {
+      "counts": {
+        "Gelir boş/0 olduğu için net marj hesaplanamadı.": 6
+      },
+      "samples": {
+        "Gelir boş/0 olduğu için net marj hesaplanamadı.": [
+          "AKBNK",
+          "HALKB",
+          "ISCTR",
+          "SKBNK",
+          "VAKBN",
+          "YKBNK"
+        ]
+      }
+    },
+    "freeCashflow": {
+      "counts": {
+        "CFO boş olduğu için FCF hesaplanamadı.": 7,
+        "CapEx boş olduğu için FCF hesaplanamadı.": 3
+      },
+      "samples": {
+        "CFO boş olduğu için FCF hesaplanamadı.": [
+          "AKBNK",
+          "GARAN",
+          "HALKB",
+          "ISCTR",
+          "SKBNK",
+          "VAKBN",
+          "YKBNK"
+        ],
+        "CapEx boş olduğu için FCF hesaplanamadı.": [
+          "ANSGR",
+          "BRYAT",
+          "TURSG"
+        ]
+      }
+    },
+    "totalDebt": {
+      "counts": {},
+      "samples": {}
+    },
+    "totalCash": {
+      "counts": {},
+      "samples": {}
+    },
+    "enterpriseValue": {
+      "counts": {},
+      "samples": {}
+    },
+    "ebitda": {
+      "counts": {
+        "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.": 12
+      },
+      "samples": {
+        "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.": [
+          "AKBNK",
+          "ANSGR",
+          "BRYAT",
+          "DSTKF",
+          "GARAN",
+          "HALKB",
+          "ISCTR",
+          "KTLEV",
+          "SKBNK",
+          "TURSG",
+          "VAKBN",
+          "YKBNK"
+        ]
+      }
+    },
+    "pegRatio": {
+      "counts": {
+        "Kazanç büyümesi <= 0 olduğu için PEG bilinçli olarak boş bırakılıyor.": 41
+      },
+      "samples": {
+        "Kazanç büyümesi <= 0 olduğu için PEG bilinçli olarak boş bırakılıyor.": [
+          "AEFES",
+          "AGHOL",
+          "ALARK",
+          "ARCLK",
+          "BSOKE",
+          "BTCIM",
+          "CANTE",
+          "CCOLA",
+          "CIMSA",
+          "DAPGM",
+          "DOAS",
+          "EFOR"
+        ]
+      }
+    },
+    "beta": {
+      "counts": {},
+      "samples": {}
+    },
+    "priceToSalesTrailing12Months": {
+      "counts": {
+        "Gelir (revenue) boş/0 olduğu için F/S hesaplanamadı.": 6
+      },
+      "samples": {
+        "Gelir (revenue) boş/0 olduğu için F/S hesaplanamadı.": [
+          "AKBNK",
+          "HALKB",
+          "ISCTR",
+          "SKBNK",
+          "VAKBN",
+          "YKBNK"
+        ]
+      }
+    },
+    "assetTurnover": {
+      "counts": {
+        "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.": 6
+      },
+      "samples": {
+        "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.": [
+          "AKBNK",
+          "HALKB",
+          "ISCTR",
+          "SKBNK",
+          "VAKBN",
+          "YKBNK"
+        ]
+      }
+    },
+    "epsGrowth": {
+      "counts": {},
+      "samples": {}
+    },
+    "netDebtToEbitda": {
+      "counts": {
+        "FAVÖK boş/0 olduğu için NetBorç/FAVÖK hesaplanamadı.": 12
+      },
+      "samples": {
+        "FAVÖK boş/0 olduğu için NetBorç/FAVÖK hesaplanamadı.": [
+          "AKBNK",
+          "ANSGR",
+          "BRYAT",
+          "DSTKF",
+          "GARAN",
+          "HALKB",
+          "ISCTR",
+          "KTLEV",
+          "SKBNK",
+          "TURSG",
+          "VAKBN",
+          "YKBNK"
+        ]
+      }
+    },
+    "interestCoverage": {
+      "counts": {
+        "Finansman gideri boş/0 olduğu için faiz karşılama hesaplanamadı.": 8,
+        "Faaliyet kârı boş olduğu için faiz karşılama hesaplanamadı.": 4
+      },
+      "samples": {
+        "Finansman gideri boş/0 olduğu için faiz karşılama hesaplanamadı.": [
+          "AKBNK",
+          "BRYAT",
+          "GARAN",
+          "HALKB",
+          "ISCTR",
+          "SKBNK",
+          "VAKBN",
+          "YKBNK"
+        ],
+        "Faaliyet kârı boş olduğu için faiz karşılama hesaplanamadı.": [
+          "ANSGR",
+          "DSTKF",
+          "KTLEV",
+          "TURSG"
+        ]
+      }
+    },
+    "quickRatio": {
+      "counts": {
+        "Dönen varlıklar boş olduğu için likit oran hesaplanamadı.": 9
+      },
+      "samples": {
+        "Dönen varlıklar boş olduğu için likit oran hesaplanamadı.": [
+          "AKBNK",
+          "DSTKF",
+          "GARAN",
+          "HALKB",
+          "ISCTR",
+          "KTLEV",
+          "SKBNK",
+          "VAKBN",
+          "YKBNK"
+        ]
+      }
+    },
+    "cfoToNetIncome": {
+      "counts": {
+        "CFO boş olduğu için CFO/NetKâr hesaplanamadı.": 7
+      },
+      "samples": {
+        "CFO boş olduğu için CFO/NetKâr hesaplanamadı.": [
+          "AKBNK",
+          "GARAN",
+          "HALKB",
+          "ISCTR",
+          "SKBNK",
+          "VAKBN",
+          "YKBNK"
+        ]
+      }
+    },
+    "debtMaturityRatio": {
+      "counts": {
+        "Kısa vadeli borç kalemi boş olduğu için vade dağılımı oranı hesaplanamadı.": 11,
+        "Uzun vadeli borç kalemi boş/0 olduğu için vade dağılımı oranı hesaplanamadı.": 2
+      },
+      "samples": {
+        "Kısa vadeli borç kalemi boş olduğu için vade dağılımı oranı hesaplanamadı.": [
+          "AKBNK",
+          "ANSGR",
+          "DSTKF",
+          "GARAN",
+          "HALKB",
+          "ISCTR",
+          "KTLEV",
+          "SKBNK",
+          "TURSG",
+          "VAKBN",
+          "YKBNK"
+        ],
+        "Uzun vadeli borç kalemi boş/0 olduğu için vade dağılımı oranı hesaplanamadı.": [
+          "ASTOR",
+          "BRYAT"
+        ]
+      }
+    },
+    "fxNetPositionRatio": {
+      "counts": {
+        "KAP’ta net döviz pozisyon kalemi standart şekilde ayrışmadığı için oran boş.": 100
+      },
+      "samples": {
+        "KAP’ta net döviz pozisyon kalemi standart şekilde ayrışmadığı için oran boş.": [
+          "AEFES",
+          "AGHOL",
+          "AKBNK",
+          "AKSA",
+          "AKSEN",
+          "ALARK",
+          "ALTNY",
+          "ANSGR",
+          "ARCLK",
+          "ASTOR",
+          "BALSU",
+          "BIMAS"
+        ]
+      }
+    },
+    "profitabilityStability": {
+      "counts": {
+        "ROE/profit marjı ve büyüme sinyalleri tam oluşmadığı için stabilite skoru üretilmedi.": 6
+      },
+      "samples": {
+        "ROE/profit marjı ve büyüme sinyalleri tam oluşmadığı için stabilite skoru üretilmedi.": [
+          "AKBNK",
+          "HALKB",
+          "ISCTR",
+          "SKBNK",
+          "VAKBN",
+          "YKBNK"
+        ]
+      }
+    },
+    "growthStability": {
+      "counts": {
+        "Gelir ve kazanç büyümesi birlikte hesaplanamadığı için büyüme stabilitesi boş.": 6
+      },
+      "samples": {
+        "Gelir ve kazanç büyümesi birlikte hesaplanamadığı için büyüme stabilitesi boş.": [
+          "AKBNK",
+          "HALKB",
+          "ISCTR",
+          "SKBNK",
+          "VAKBN",
+          "YKBNK"
+        ]
+      }
+    },
+    "divPolicyScore": {
+      "counts": {},
+      "samples": {}
+    },
+    "buybackPolicyScore": {
+      "counts": {},
+      "samples": {}
+    },
+    "dilutionPolicyScore": {
+      "counts": {},
+      "samples": {}
+    },
+    "capitalAllocationScore": {
+      "counts": {},
+      "samples": {}
+    },
+    "governanceScore": {
+      "counts": {},
+      "samples": {}
+    },
+    "revenue": {
+      "counts": {},
+      "samples": {}
+    },
+    "netIncome": {
+      "counts": {},
+      "samples": {}
+    },
+    "equity": {
+      "counts": {},
+      "samples": {}
+    },
+    "assets": {
+      "counts": {},
+      "samples": {}
+    },
+    "cfo": {
+      "counts": {
+        "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.": 7
+      },
+      "samples": {
+        "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.": [
+          "AKBNK",
+          "GARAN",
+          "HALKB",
+          "ISCTR",
+          "SKBNK",
+          "VAKBN",
+          "YKBNK"
+        ]
+      }
+    },
+    "capex": {
+      "counts": {
+        "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.": 3
+      },
+      "samples": {
+        "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.": [
+          "ANSGR",
+          "BRYAT",
+          "TURSG"
+        ]
+      }
+    },
+    "sharesOutstanding": {
+      "counts": {},
+      "samples": {}
+    },
+    "interestExpense": {
+      "counts": {
+        "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.": 8
+      },
+      "samples": {
+        "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.": [
+          "AKBNK",
+          "BRYAT",
+          "GARAN",
+          "HALKB",
+          "ISCTR",
+          "SKBNK",
+          "VAKBN",
+          "YKBNK"
+        ]
+      }
+    },
+    "currentBorrowings": {
+      "counts": {
+        "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.": 11
+      },
+      "samples": {
+        "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.": [
+          "AKBNK",
+          "ANSGR",
+          "DSTKF",
+          "GARAN",
+          "HALKB",
+          "ISCTR",
+          "KTLEV",
+          "SKBNK",
+          "TURSG",
+          "VAKBN",
+          "YKBNK"
+        ]
+      }
+    },
+    "nonCurrentBorrowings": {
+      "counts": {
+        "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.": 10
+      },
+      "samples": {
+        "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.": [
+          "AKBNK",
+          "BRYAT",
+          "DSTKF",
+          "GARAN",
+          "HALKB",
+          "ISCTR",
+          "KTLEV",
+          "SKBNK",
+          "VAKBN",
+          "YKBNK"
+        ]
+      }
+    },
+    "inventories": {
+      "counts": {
+        "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.": 11
+      },
+      "samples": {
+        "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.": [
+          "AKBNK",
+          "BRYAT",
+          "DSTKF",
+          "GARAN",
+          "HALKB",
+          "ISCTR",
+          "KTLEV",
+          "SKBNK",
+          "TSKB",
+          "VAKBN",
+          "YKBNK"
+        ]
+      }
+    },
+    "currentAssets": {
+      "counts": {
+        "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.": 9
+      },
+      "samples": {
+        "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.": [
+          "AKBNK",
+          "DSTKF",
+          "GARAN",
+          "HALKB",
+          "ISCTR",
+          "KTLEV",
+          "SKBNK",
+          "VAKBN",
+          "YKBNK"
+        ]
+      }
+    },
+    "currentLiabilities": {
+      "counts": {
+        "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.": 9
+      },
+      "samples": {
+        "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.": [
+          "AKBNK",
+          "DSTKF",
+          "GARAN",
+          "HALKB",
+          "ISCTR",
+          "KTLEV",
+          "SKBNK",
+          "VAKBN",
+          "YKBNK"
+        ]
+      }
+    },
+    "totalLiabilities": {
+      "counts": {},
+      "samples": {}
+    },
+    "grossProfit": {
+      "counts": {
+        "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.": 2
+      },
+      "samples": {
+        "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.": [
+          "ANSGR",
+          "TURSG"
+        ]
+      }
+    },
+    "operatingProfit": {
+      "counts": {
+        "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.": 4
+      },
+      "samples": {
+        "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.": [
+          "ANSGR",
+          "DSTKF",
+          "KTLEV",
+          "TURSG"
+        ]
+      }
+    },
+    "depreciationAmortization": {
+      "counts": {
+        "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.": 10
+      },
+      "samples": {
+        "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.": [
+          "AKBNK",
+          "BRYAT",
+          "DSTKF",
+          "GARAN",
+          "HALKB",
+          "ISCTR",
+          "KTLEV",
+          "SKBNK",
+          "VAKBN",
+          "YKBNK"
+        ]
+      }
+    },
+    "annualDividendPerShare": {
+      "counts": {
+        "KAP temettü olay kaydı bulunamadı (şirket dağıtmamış olabilir veya parse edilemedi).": 28
+      },
+      "samples": {
+        "KAP temettü olay kaydı bulunamadı (şirket dağıtmamış olabilir veya parse edilemedi).": [
+          "SASA",
+          "SISE",
+          "SKBNK",
+          "TABGD",
+          "TAVHL",
+          "TCELL",
+          "THYAO",
+          "TKFEN",
+          "TOASO",
+          "TRALT",
+          "TRENJ",
+          "TRMET"
+        ]
+      }
+    },
+    "lastDividendPerShare": {
+      "counts": {
+        "KAP temettü olay kaydı bulunamadı (şirket dağıtmamış olabilir veya parse edilemedi).": 28
+      },
+      "samples": {
+        "KAP temettü olay kaydı bulunamadı (şirket dağıtmamış olabilir veya parse edilemedi).": [
+          "SASA",
+          "SISE",
+          "SKBNK",
+          "TABGD",
+          "TAVHL",
+          "TCELL",
+          "THYAO",
+          "TKFEN",
+          "TOASO",
+          "TRALT",
+          "TRENJ",
+          "TRMET"
+        ]
+      }
+    },
+    "lastDividendDateMs": {
+      "counts": {
+        "KAP temettü olay kaydı bulunamadı (şirket dağıtmamış olabilir veya parse edilemedi).": 28
+      },
+      "samples": {
+        "KAP temettü olay kaydı bulunamadı (şirket dağıtmamış olabilir veya parse edilemedi).": [
+          "SASA",
+          "SISE",
+          "SKBNK",
+          "TABGD",
+          "TAVHL",
+          "TCELL",
+          "THYAO",
+          "TKFEN",
+          "TOASO",
+          "TRALT",
+          "TRENJ",
+          "TRMET"
+        ]
+      }
+    },
+    "dividendPayoutPct": {
+      "counts": {
+        "KAP temettü olay kaydı bulunamadı (şirket dağıtmamış olabilir veya parse edilemedi).": 28
+      },
+      "samples": {
+        "KAP temettü olay kaydı bulunamadı (şirket dağıtmamış olabilir veya parse edilemedi).": [
+          "SASA",
+          "SISE",
+          "SKBNK",
+          "TABGD",
+          "TAVHL",
+          "TCELL",
+          "THYAO",
+          "TKFEN",
+          "TOASO",
+          "TRALT",
+          "TRENJ",
+          "TRMET"
+        ]
+      }
+    },
+    "paidYears3y": {
+      "counts": {
+        "KAP temettü olay kaydı bulunamadı (şirket dağıtmamış olabilir veya parse edilemedi).": 28
+      },
+      "samples": {
+        "KAP temettü olay kaydı bulunamadı (şirket dağıtmamış olabilir veya parse edilemedi).": [
+          "SASA",
+          "SISE",
+          "SKBNK",
+          "TABGD",
+          "TAVHL",
+          "TCELL",
+          "THYAO",
+          "TKFEN",
+          "TOASO",
+          "TRALT",
+          "TRENJ",
+          "TRMET"
+        ]
+      }
+    },
+    "regularityScore": {
+      "counts": {
+        "KAP temettü olay kaydı bulunamadı (şirket dağıtmamış olabilir veya parse edilemedi).": 28
+      },
+      "samples": {
+        "KAP temettü olay kaydı bulunamadı (şirket dağıtmamış olabilir veya parse edilemedi).": [
+          "SASA",
+          "SISE",
+          "SKBNK",
+          "TABGD",
+          "TAVHL",
+          "TCELL",
+          "THYAO",
+          "TKFEN",
+          "TOASO",
+          "TRALT",
+          "TRENJ",
+          "TRMET"
+        ]
+      }
+    },
+    "eventCount": {
+      "counts": {
+        "KAP temettü olay kaydı bulunamadı (şirket dağıtmamış olabilir veya parse edilemedi).": 28
+      },
+      "samples": {
+        "KAP temettü olay kaydı bulunamadı (şirket dağıtmamış olabilir veya parse edilemedi).": [
+          "SASA",
+          "SISE",
+          "SKBNK",
+          "TABGD",
+          "TAVHL",
+          "TCELL",
+          "THYAO",
+          "TKFEN",
+          "TOASO",
+          "TRALT",
+          "TRENJ",
+          "TRMET"
+        ]
+      }
+    }
+  }
+}

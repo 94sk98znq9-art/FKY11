@@ -1,0 +1,278 @@
+METRICS NULL AUDIT (BIST100, metricMode=kap_truth)
+symbolCount=100
+
+[forwardPE] null=100 coverage=0.0%
+reasons:
+- 100x KAP tarafında ileriye dönük tahmin verisi yok; bu alan modelde üretilmiyor.
+  sample: AEFES, AGHOL, AKBNK, AKSA, AKSEN, ALARK, ALTNY, ANSGR
+missingSymbols:
+AEFES, AGHOL, AKBNK, AKSA, AKSEN, ALARK, ALTNY, ANSGR, ARCLK, ASTOR, BALSU, BIMAS, BRSAN, BRYAT, BSOKE, BTCIM, CANTE, CCOLA, CIMSA, CWENE, DAPGM, DOAS, DOHOL, DSTKF, ECILC, EFOR, EGEEN, EKGYO, ENERY, ENJSA, ENKAI, EREGL, EUPWR, FENER, FROTO, GARAN, GENIL, GESAN, GLRMK, GRSEL, GRTHO, GSRAY, GUBRF, HALKB, HEKTS, ISCTR, ISMEN, IZENR, KCAER, KCHOL, KLRHO, KONTR, KRDMD, KTLEV, KUYAS, MAGEN, MAVI, MGROS, MIATK, MPARK, OBAMS, ODAS, OTKAR, OYAKC, PASEU, PATEK, PETKM, PGSUS, QUAGR, RALYH, REEDR, SAHOL, SASA, SISE, SKBNK, TABGD, TAVHL, TCELL, THYAO, TKFEN, TOASO, TRALT, TRENJ, TRMET, TSKB, TTKOM, TTRAK, TUKAS, TUPRS, TUREX, TURSG, ULKER, VAKBN, VESTL, YEOTK, YKBNK, ZOREN, ASELS, CVKMD, SOKM
+
+[fxNetPositionRatio] null=100 coverage=0.0%
+reasons:
+- 100x KAP’ta net döviz pozisyon kalemi standart şekilde ayrışmadığı için oran boş.
+  sample: AEFES, AGHOL, AKBNK, AKSA, AKSEN, ALARK, ALTNY, ANSGR
+missingSymbols:
+AEFES, AGHOL, AKBNK, AKSA, AKSEN, ALARK, ALTNY, ANSGR, ARCLK, ASTOR, BALSU, BIMAS, BRSAN, BRYAT, BSOKE, BTCIM, CANTE, CCOLA, CIMSA, CWENE, DAPGM, DOAS, DOHOL, DSTKF, ECILC, EFOR, EGEEN, EKGYO, ENERY, ENJSA, ENKAI, EREGL, EUPWR, FENER, FROTO, GARAN, GENIL, GESAN, GLRMK, GRSEL, GRTHO, GSRAY, GUBRF, HALKB, HEKTS, ISCTR, ISMEN, IZENR, KCAER, KCHOL, KLRHO, KONTR, KRDMD, KTLEV, KUYAS, MAGEN, MAVI, MGROS, MIATK, MPARK, OBAMS, ODAS, OTKAR, OYAKC, PASEU, PATEK, PETKM, PGSUS, QUAGR, RALYH, REEDR, SAHOL, SASA, SISE, SKBNK, TABGD, TAVHL, TCELL, THYAO, TKFEN, TOASO, TRALT, TRENJ, TRMET, TSKB, TTKOM, TTRAK, TUKAS, TUPRS, TUREX, TURSG, ULKER, VAKBN, VESTL, YEOTK, YKBNK, ZOREN, ASELS, CVKMD, SOKM
+
+[pegRatio] null=41 coverage=59.0%
+reasons:
+- 41x Kazanç büyümesi <= 0 olduğu için PEG bilinçli olarak boş bırakılıyor.
+  sample: AEFES, AGHOL, ALARK, ARCLK, BSOKE, BTCIM, CANTE, CCOLA
+missingSymbols:
+AEFES, AGHOL, ALARK, ARCLK, BSOKE, BTCIM, CANTE, CCOLA, CIMSA, DAPGM, DOAS, EFOR, EGEEN, EKGYO, EREGL, FROTO, GESAN, GLRMK, GSRAY, GUBRF, HEKTS, IZENR, KONTR, KRDMD, MGROS, MIATK, MPARK, ODAS, OYAKC, PETKM, QUAGR, REEDR, SASA, SKBNK, TAVHL, TKFEN, TTRAK, TUKAS, ZOREN, CVKMD, SOKM
+
+[dividendYield] null=28 coverage=72.0%
+reasons:
+- 28x KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.
+  sample: SASA, SISE, SKBNK, TABGD, TAVHL, TCELL, THYAO, TKFEN
+missingSymbols:
+SASA, SISE, SKBNK, TABGD, TAVHL, TCELL, THYAO, TKFEN, TOASO, TRALT, TRENJ, TRMET, TSKB, TTKOM, TTRAK, TUKAS, TUPRS, TUREX, TURSG, ULKER, VAKBN, VESTL, YEOTK, YKBNK, ZOREN, ASELS, CVKMD, SOKM
+
+[annualDividendPerShare] null=28 coverage=72.0%
+reasons:
+- 28x KAP temettü olay kaydı bulunamadı (şirket dağıtmamış olabilir veya parse edilemedi).
+  sample: SASA, SISE, SKBNK, TABGD, TAVHL, TCELL, THYAO, TKFEN
+missingSymbols:
+SASA, SISE, SKBNK, TABGD, TAVHL, TCELL, THYAO, TKFEN, TOASO, TRALT, TRENJ, TRMET, TSKB, TTKOM, TTRAK, TUKAS, TUPRS, TUREX, TURSG, ULKER, VAKBN, VESTL, YEOTK, YKBNK, ZOREN, ASELS, CVKMD, SOKM
+
+[lastDividendPerShare] null=28 coverage=72.0%
+reasons:
+- 28x KAP temettü olay kaydı bulunamadı (şirket dağıtmamış olabilir veya parse edilemedi).
+  sample: SASA, SISE, SKBNK, TABGD, TAVHL, TCELL, THYAO, TKFEN
+missingSymbols:
+SASA, SISE, SKBNK, TABGD, TAVHL, TCELL, THYAO, TKFEN, TOASO, TRALT, TRENJ, TRMET, TSKB, TTKOM, TTRAK, TUKAS, TUPRS, TUREX, TURSG, ULKER, VAKBN, VESTL, YEOTK, YKBNK, ZOREN, ASELS, CVKMD, SOKM
+
+[lastDividendDateMs] null=28 coverage=72.0%
+reasons:
+- 28x KAP temettü olay kaydı bulunamadı (şirket dağıtmamış olabilir veya parse edilemedi).
+  sample: SASA, SISE, SKBNK, TABGD, TAVHL, TCELL, THYAO, TKFEN
+missingSymbols:
+SASA, SISE, SKBNK, TABGD, TAVHL, TCELL, THYAO, TKFEN, TOASO, TRALT, TRENJ, TRMET, TSKB, TTKOM, TTRAK, TUKAS, TUPRS, TUREX, TURSG, ULKER, VAKBN, VESTL, YEOTK, YKBNK, ZOREN, ASELS, CVKMD, SOKM
+
+[dividendPayoutPct] null=28 coverage=72.0%
+reasons:
+- 28x KAP temettü olay kaydı bulunamadı (şirket dağıtmamış olabilir veya parse edilemedi).
+  sample: SASA, SISE, SKBNK, TABGD, TAVHL, TCELL, THYAO, TKFEN
+missingSymbols:
+SASA, SISE, SKBNK, TABGD, TAVHL, TCELL, THYAO, TKFEN, TOASO, TRALT, TRENJ, TRMET, TSKB, TTKOM, TTRAK, TUKAS, TUPRS, TUREX, TURSG, ULKER, VAKBN, VESTL, YEOTK, YKBNK, ZOREN, ASELS, CVKMD, SOKM
+
+[paidYears3y] null=28 coverage=72.0%
+reasons:
+- 28x KAP temettü olay kaydı bulunamadı (şirket dağıtmamış olabilir veya parse edilemedi).
+  sample: SASA, SISE, SKBNK, TABGD, TAVHL, TCELL, THYAO, TKFEN
+missingSymbols:
+SASA, SISE, SKBNK, TABGD, TAVHL, TCELL, THYAO, TKFEN, TOASO, TRALT, TRENJ, TRMET, TSKB, TTKOM, TTRAK, TUKAS, TUPRS, TUREX, TURSG, ULKER, VAKBN, VESTL, YEOTK, YKBNK, ZOREN, ASELS, CVKMD, SOKM
+
+[regularityScore] null=28 coverage=72.0%
+reasons:
+- 28x KAP temettü olay kaydı bulunamadı (şirket dağıtmamış olabilir veya parse edilemedi).
+  sample: SASA, SISE, SKBNK, TABGD, TAVHL, TCELL, THYAO, TKFEN
+missingSymbols:
+SASA, SISE, SKBNK, TABGD, TAVHL, TCELL, THYAO, TKFEN, TOASO, TRALT, TRENJ, TRMET, TSKB, TTKOM, TTRAK, TUKAS, TUPRS, TUREX, TURSG, ULKER, VAKBN, VESTL, YEOTK, YKBNK, ZOREN, ASELS, CVKMD, SOKM
+
+[eventCount] null=28 coverage=72.0%
+reasons:
+- 28x KAP temettü olay kaydı bulunamadı (şirket dağıtmamış olabilir veya parse edilemedi).
+  sample: SASA, SISE, SKBNK, TABGD, TAVHL, TCELL, THYAO, TKFEN
+missingSymbols:
+SASA, SISE, SKBNK, TABGD, TAVHL, TCELL, THYAO, TKFEN, TOASO, TRALT, TRENJ, TRMET, TSKB, TTKOM, TTRAK, TUKAS, TUPRS, TUREX, TURSG, ULKER, VAKBN, VESTL, YEOTK, YKBNK, ZOREN, ASELS, CVKMD, SOKM
+
+[debtMaturityRatio] null=13 coverage=87.0%
+reasons:
+- 11x Kısa vadeli borç kalemi boş olduğu için vade dağılımı oranı hesaplanamadı.
+  sample: AKBNK, ANSGR, DSTKF, GARAN, HALKB, ISCTR, KTLEV, SKBNK
+- 2x Uzun vadeli borç kalemi boş/0 olduğu için vade dağılımı oranı hesaplanamadı.
+  sample: ASTOR, BRYAT
+missingSymbols:
+AKBNK, ANSGR, ASTOR, BRYAT, DSTKF, GARAN, HALKB, ISCTR, KTLEV, SKBNK, TURSG, VAKBN, YKBNK
+
+[ebitda] null=12 coverage=88.0%
+reasons:
+- 12x KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.
+  sample: AKBNK, ANSGR, BRYAT, DSTKF, GARAN, HALKB, ISCTR, KTLEV
+missingSymbols:
+AKBNK, ANSGR, BRYAT, DSTKF, GARAN, HALKB, ISCTR, KTLEV, SKBNK, TURSG, VAKBN, YKBNK
+
+[netDebtToEbitda] null=12 coverage=88.0%
+reasons:
+- 12x FAVÖK boş/0 olduğu için NetBorç/FAVÖK hesaplanamadı.
+  sample: AKBNK, ANSGR, BRYAT, DSTKF, GARAN, HALKB, ISCTR, KTLEV
+missingSymbols:
+AKBNK, ANSGR, BRYAT, DSTKF, GARAN, HALKB, ISCTR, KTLEV, SKBNK, TURSG, VAKBN, YKBNK
+
+[interestCoverage] null=12 coverage=88.0%
+reasons:
+- 8x Finansman gideri boş/0 olduğu için faiz karşılama hesaplanamadı.
+  sample: AKBNK, BRYAT, GARAN, HALKB, ISCTR, SKBNK, VAKBN, YKBNK
+- 4x Faaliyet kârı boş olduğu için faiz karşılama hesaplanamadı.
+  sample: ANSGR, DSTKF, KTLEV, TURSG
+missingSymbols:
+AKBNK, ANSGR, BRYAT, DSTKF, GARAN, HALKB, ISCTR, KTLEV, SKBNK, TURSG, VAKBN, YKBNK
+
+[currentBorrowings] null=11 coverage=89.0%
+reasons:
+- 11x KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.
+  sample: AKBNK, ANSGR, DSTKF, GARAN, HALKB, ISCTR, KTLEV, SKBNK
+missingSymbols:
+AKBNK, ANSGR, DSTKF, GARAN, HALKB, ISCTR, KTLEV, SKBNK, TURSG, VAKBN, YKBNK
+
+[inventories] null=11 coverage=89.0%
+reasons:
+- 11x KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.
+  sample: AKBNK, BRYAT, DSTKF, GARAN, HALKB, ISCTR, KTLEV, SKBNK
+missingSymbols:
+AKBNK, BRYAT, DSTKF, GARAN, HALKB, ISCTR, KTLEV, SKBNK, TSKB, VAKBN, YKBNK
+
+[operatingMargins] null=10 coverage=90.0%
+reasons:
+- 6x Gelir boş/0 olduğu için faaliyet marjı hesaplanamadı.
+  sample: AKBNK, HALKB, ISCTR, SKBNK, VAKBN, YKBNK
+- 4x Faaliyet kârı boş olduğu için faaliyet marjı hesaplanamadı.
+  sample: ANSGR, DSTKF, KTLEV, TURSG
+missingSymbols:
+AKBNK, ANSGR, DSTKF, HALKB, ISCTR, KTLEV, SKBNK, TURSG, VAKBN, YKBNK
+
+[freeCashflow] null=10 coverage=90.0%
+reasons:
+- 7x CFO boş olduğu için FCF hesaplanamadı.
+  sample: AKBNK, GARAN, HALKB, ISCTR, SKBNK, VAKBN, YKBNK
+- 3x CapEx boş olduğu için FCF hesaplanamadı.
+  sample: ANSGR, BRYAT, TURSG
+missingSymbols:
+AKBNK, ANSGR, BRYAT, GARAN, HALKB, ISCTR, SKBNK, TURSG, VAKBN, YKBNK
+
+[nonCurrentBorrowings] null=10 coverage=90.0%
+reasons:
+- 10x KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.
+  sample: AKBNK, BRYAT, DSTKF, GARAN, HALKB, ISCTR, KTLEV, SKBNK
+missingSymbols:
+AKBNK, BRYAT, DSTKF, GARAN, HALKB, ISCTR, KTLEV, SKBNK, VAKBN, YKBNK
+
+[depreciationAmortization] null=10 coverage=90.0%
+reasons:
+- 10x KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.
+  sample: AKBNK, BRYAT, DSTKF, GARAN, HALKB, ISCTR, KTLEV, SKBNK
+missingSymbols:
+AKBNK, BRYAT, DSTKF, GARAN, HALKB, ISCTR, KTLEV, SKBNK, VAKBN, YKBNK
+
+[currentRatio] null=9 coverage=91.0%
+reasons:
+- 9x Dönen varlıklar boş olduğu için cari oran hesaplanamadı.
+  sample: AKBNK, DSTKF, GARAN, HALKB, ISCTR, KTLEV, SKBNK, VAKBN
+missingSymbols:
+AKBNK, DSTKF, GARAN, HALKB, ISCTR, KTLEV, SKBNK, VAKBN, YKBNK
+
+[quickRatio] null=9 coverage=91.0%
+reasons:
+- 9x Dönen varlıklar boş olduğu için likit oran hesaplanamadı.
+  sample: AKBNK, DSTKF, GARAN, HALKB, ISCTR, KTLEV, SKBNK, VAKBN
+missingSymbols:
+AKBNK, DSTKF, GARAN, HALKB, ISCTR, KTLEV, SKBNK, VAKBN, YKBNK
+
+[currentAssets] null=9 coverage=91.0%
+reasons:
+- 9x KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.
+  sample: AKBNK, DSTKF, GARAN, HALKB, ISCTR, KTLEV, SKBNK, VAKBN
+missingSymbols:
+AKBNK, DSTKF, GARAN, HALKB, ISCTR, KTLEV, SKBNK, VAKBN, YKBNK
+
+[currentLiabilities] null=9 coverage=91.0%
+reasons:
+- 9x KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.
+  sample: AKBNK, DSTKF, GARAN, HALKB, ISCTR, KTLEV, SKBNK, VAKBN
+missingSymbols:
+AKBNK, DSTKF, GARAN, HALKB, ISCTR, KTLEV, SKBNK, VAKBN, YKBNK
+
+[grossMargins] null=8 coverage=92.0%
+reasons:
+- 6x Gelir boş/0 olduğu için brüt marj hesaplanamadı.
+  sample: AKBNK, HALKB, ISCTR, SKBNK, VAKBN, YKBNK
+- 2x Brüt kâr boş olduğu için brüt marj hesaplanamadı.
+  sample: ANSGR, TURSG
+missingSymbols:
+AKBNK, ANSGR, HALKB, ISCTR, SKBNK, TURSG, VAKBN, YKBNK
+
+[interestExpense] null=8 coverage=92.0%
+reasons:
+- 8x KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.
+  sample: AKBNK, BRYAT, GARAN, HALKB, ISCTR, SKBNK, VAKBN, YKBNK
+missingSymbols:
+AKBNK, BRYAT, GARAN, HALKB, ISCTR, SKBNK, VAKBN, YKBNK
+
+[cfoToNetIncome] null=7 coverage=93.0%
+reasons:
+- 7x CFO boş olduğu için CFO/NetKâr hesaplanamadı.
+  sample: AKBNK, GARAN, HALKB, ISCTR, SKBNK, VAKBN, YKBNK
+missingSymbols:
+AKBNK, GARAN, HALKB, ISCTR, SKBNK, VAKBN, YKBNK
+
+[cfo] null=7 coverage=93.0%
+reasons:
+- 7x KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.
+  sample: AKBNK, GARAN, HALKB, ISCTR, SKBNK, VAKBN, YKBNK
+missingSymbols:
+AKBNK, GARAN, HALKB, ISCTR, SKBNK, VAKBN, YKBNK
+
+[revenueGrowth] null=6 coverage=94.0%
+reasons:
+- 6x Önceki dönem karşılaştırma baz kalemi KAP’ta çıkmadığı (veya 0 olduğu) için büyüme hesaplanamadı.
+  sample: AKBNK, HALKB, ISCTR, SKBNK, VAKBN, YKBNK
+missingSymbols:
+AKBNK, HALKB, ISCTR, SKBNK, VAKBN, YKBNK
+
+[profitMargins] null=6 coverage=94.0%
+reasons:
+- 6x Gelir boş/0 olduğu için net marj hesaplanamadı.
+  sample: AKBNK, HALKB, ISCTR, SKBNK, VAKBN, YKBNK
+missingSymbols:
+AKBNK, HALKB, ISCTR, SKBNK, VAKBN, YKBNK
+
+[priceToSalesTrailing12Months] null=6 coverage=94.0%
+reasons:
+- 6x Gelir (revenue) boş/0 olduğu için F/S hesaplanamadı.
+  sample: AKBNK, HALKB, ISCTR, SKBNK, VAKBN, YKBNK
+missingSymbols:
+AKBNK, HALKB, ISCTR, SKBNK, VAKBN, YKBNK
+
+[assetTurnover] null=6 coverage=94.0%
+reasons:
+- 6x KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.
+  sample: AKBNK, HALKB, ISCTR, SKBNK, VAKBN, YKBNK
+missingSymbols:
+AKBNK, HALKB, ISCTR, SKBNK, VAKBN, YKBNK
+
+[profitabilityStability] null=6 coverage=94.0%
+reasons:
+- 6x ROE/profit marjı ve büyüme sinyalleri tam oluşmadığı için stabilite skoru üretilmedi.
+  sample: AKBNK, HALKB, ISCTR, SKBNK, VAKBN, YKBNK
+missingSymbols:
+AKBNK, HALKB, ISCTR, SKBNK, VAKBN, YKBNK
+
+[growthStability] null=6 coverage=94.0%
+reasons:
+- 6x Gelir ve kazanç büyümesi birlikte hesaplanamadığı için büyüme stabilitesi boş.
+  sample: AKBNK, HALKB, ISCTR, SKBNK, VAKBN, YKBNK
+missingSymbols:
+AKBNK, HALKB, ISCTR, SKBNK, VAKBN, YKBNK
+
+[operatingProfit] null=4 coverage=96.0%
+reasons:
+- 4x KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.
+  sample: ANSGR, DSTKF, KTLEV, TURSG
+missingSymbols:
+ANSGR, DSTKF, KTLEV, TURSG
+
+[capex] null=3 coverage=97.0%
+reasons:
+- 3x KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.
+  sample: ANSGR, BRYAT, TURSG
+missingSymbols:
+ANSGR, BRYAT, TURSG
+
+[grossProfit] null=2 coverage=98.0%
+reasons:
+- 2x KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi.
+  sample: ANSGR, TURSG
+missingSymbols:
+ANSGR, TURSG

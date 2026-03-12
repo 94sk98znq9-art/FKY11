@@ -1,0 +1,1196 @@
+{
+  "summary": {
+    "generatedAt": "2026-03-10 20:26:43 +03",
+    "symbols": 100,
+    "coverage": {
+      "yahoo": 100,
+      "tradingview": 100,
+      "investing": 99
+    },
+    "stats": {
+      "tradingview_vs_yahoo": {
+        "n": 100,
+        "mean_abs_pct": 0.0,
+        "median_abs_pct": 0.0,
+        "p95_abs_pct": 0.0,
+        "max_abs_pct": 0.0
+      },
+      "investing_vs_yahoo": {
+        "n": 99,
+        "mean_abs_pct": 0.0,
+        "median_abs_pct": 0.0,
+        "p95_abs_pct": 0.0,
+        "max_abs_pct": 0.0
+      },
+      "tradingview_vs_investing": {
+        "n": 99,
+        "mean_abs_pct": 0.0,
+        "median_abs_pct": 0.0,
+        "p95_abs_pct": 0.0,
+        "max_abs_pct": 0.0
+      }
+    },
+    "top_abs_dev": {
+      "tradingview_vs_yahoo": [
+        {
+          "code": "AEFES",
+          "yahoo": 17.58,
+          "tradingview": 17.58,
+          "investing": 17.58,
+          "tv_vs_yahoo_pct": 0.0
+        },
+        {
+          "code": "AGHOL",
+          "yahoo": 30.0,
+          "tradingview": 30.0,
+          "investing": 30.0,
+          "tv_vs_yahoo_pct": 0.0
+        },
+        {
+          "code": "AKBNK",
+          "yahoo": 77.1,
+          "tradingview": 77.1,
+          "investing": 77.1,
+          "tv_vs_yahoo_pct": 0.0
+        },
+        {
+          "code": "AKSA",
+          "yahoo": 10.17,
+          "tradingview": 10.17,
+          "investing": 10.17,
+          "tv_vs_yahoo_pct": 0.0
+        },
+        {
+          "code": "AKSEN",
+          "yahoo": 71.9,
+          "tradingview": 71.9,
+          "investing": 71.9,
+          "tv_vs_yahoo_pct": 0.0
+        },
+        {
+          "code": "ALARK",
+          "yahoo": 96.2,
+          "tradingview": 96.2,
+          "investing": 96.2,
+          "tv_vs_yahoo_pct": 0.0
+        },
+        {
+          "code": "ALTNY",
+          "yahoo": 15.62,
+          "tradingview": 15.62,
+          "investing": 15.62,
+          "tv_vs_yahoo_pct": 0.0
+        },
+        {
+          "code": "ANSGR",
+          "yahoo": 27.56,
+          "tradingview": 27.56,
+          "investing": 27.56,
+          "tv_vs_yahoo_pct": 0.0
+        },
+        {
+          "code": "ARCLK",
+          "yahoo": 114.0,
+          "tradingview": 114.0,
+          "investing": 114.0,
+          "tv_vs_yahoo_pct": 0.0
+        },
+        {
+          "code": "ASTOR",
+          "yahoo": 195.1,
+          "tradingview": 195.1,
+          "investing": 195.1,
+          "tv_vs_yahoo_pct": 0.0
+        },
+        {
+          "code": "BALSU",
+          "yahoo": 14.42,
+          "tradingview": 14.42,
+          "investing": 14.42,
+          "tv_vs_yahoo_pct": 0.0
+        },
+        {
+          "code": "BIMAS",
+          "yahoo": 652.5,
+          "tradingview": 652.5,
+          "investing": 652.5,
+          "tv_vs_yahoo_pct": 0.0
+        }
+      ],
+      "investing_vs_yahoo": [
+        {
+          "code": "AEFES",
+          "yahoo": 17.58,
+          "tradingview": 17.58,
+          "investing": 17.58,
+          "inv_vs_yahoo_pct": 0.0
+        },
+        {
+          "code": "AGHOL",
+          "yahoo": 30.0,
+          "tradingview": 30.0,
+          "investing": 30.0,
+          "inv_vs_yahoo_pct": 0.0
+        },
+        {
+          "code": "AKBNK",
+          "yahoo": 77.1,
+          "tradingview": 77.1,
+          "investing": 77.1,
+          "inv_vs_yahoo_pct": 0.0
+        },
+        {
+          "code": "AKSA",
+          "yahoo": 10.17,
+          "tradingview": 10.17,
+          "investing": 10.17,
+          "inv_vs_yahoo_pct": 0.0
+        },
+        {
+          "code": "AKSEN",
+          "yahoo": 71.9,
+          "tradingview": 71.9,
+          "investing": 71.9,
+          "inv_vs_yahoo_pct": 0.0
+        },
+        {
+          "code": "ALARK",
+          "yahoo": 96.2,
+          "tradingview": 96.2,
+          "investing": 96.2,
+          "inv_vs_yahoo_pct": 0.0
+        },
+        {
+          "code": "ALTNY",
+          "yahoo": 15.62,
+          "tradingview": 15.62,
+          "investing": 15.62,
+          "inv_vs_yahoo_pct": 0.0
+        },
+        {
+          "code": "ANSGR",
+          "yahoo": 27.56,
+          "tradingview": 27.56,
+          "investing": 27.56,
+          "inv_vs_yahoo_pct": 0.0
+        },
+        {
+          "code": "ARCLK",
+          "yahoo": 114.0,
+          "tradingview": 114.0,
+          "investing": 114.0,
+          "inv_vs_yahoo_pct": 0.0
+        },
+        {
+          "code": "ASTOR",
+          "yahoo": 195.1,
+          "tradingview": 195.1,
+          "investing": 195.1,
+          "inv_vs_yahoo_pct": 0.0
+        },
+        {
+          "code": "BALSU",
+          "yahoo": 14.42,
+          "tradingview": 14.42,
+          "investing": 14.42,
+          "inv_vs_yahoo_pct": 0.0
+        },
+        {
+          "code": "BIMAS",
+          "yahoo": 652.5,
+          "tradingview": 652.5,
+          "investing": 652.5,
+          "inv_vs_yahoo_pct": 0.0
+        }
+      ],
+      "tradingview_vs_investing": [
+        {
+          "code": "AEFES",
+          "yahoo": 17.58,
+          "tradingview": 17.58,
+          "investing": 17.58,
+          "tv_vs_inv_pct": 0.0
+        },
+        {
+          "code": "AGHOL",
+          "yahoo": 30.0,
+          "tradingview": 30.0,
+          "investing": 30.0,
+          "tv_vs_inv_pct": 0.0
+        },
+        {
+          "code": "AKBNK",
+          "yahoo": 77.1,
+          "tradingview": 77.1,
+          "investing": 77.1,
+          "tv_vs_inv_pct": 0.0
+        },
+        {
+          "code": "AKSA",
+          "yahoo": 10.17,
+          "tradingview": 10.17,
+          "investing": 10.17,
+          "tv_vs_inv_pct": 0.0
+        },
+        {
+          "code": "AKSEN",
+          "yahoo": 71.9,
+          "tradingview": 71.9,
+          "investing": 71.9,
+          "tv_vs_inv_pct": 0.0
+        },
+        {
+          "code": "ALARK",
+          "yahoo": 96.2,
+          "tradingview": 96.2,
+          "investing": 96.2,
+          "tv_vs_inv_pct": 0.0
+        },
+        {
+          "code": "ALTNY",
+          "yahoo": 15.62,
+          "tradingview": 15.62,
+          "investing": 15.62,
+          "tv_vs_inv_pct": 0.0
+        },
+        {
+          "code": "ANSGR",
+          "yahoo": 27.56,
+          "tradingview": 27.56,
+          "investing": 27.56,
+          "tv_vs_inv_pct": 0.0
+        },
+        {
+          "code": "ARCLK",
+          "yahoo": 114.0,
+          "tradingview": 114.0,
+          "investing": 114.0,
+          "tv_vs_inv_pct": 0.0
+        },
+        {
+          "code": "ASTOR",
+          "yahoo": 195.1,
+          "tradingview": 195.1,
+          "investing": 195.1,
+          "tv_vs_inv_pct": 0.0
+        },
+        {
+          "code": "BALSU",
+          "yahoo": 14.42,
+          "tradingview": 14.42,
+          "investing": 14.42,
+          "tv_vs_inv_pct": 0.0
+        },
+        {
+          "code": "BIMAS",
+          "yahoo": 652.5,
+          "tradingview": 652.5,
+          "investing": 652.5,
+          "tv_vs_inv_pct": 0.0
+        }
+      ]
+    }
+  },
+  "rows": [
+    {
+      "code": "AEFES",
+      "yahoo": 17.58,
+      "tradingview": 17.58,
+      "investing": 17.58,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "AGHOL",
+      "yahoo": 30.0,
+      "tradingview": 30.0,
+      "investing": 30.0,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "AKBNK",
+      "yahoo": 77.1,
+      "tradingview": 77.1,
+      "investing": 77.1,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "AKSA",
+      "yahoo": 10.17,
+      "tradingview": 10.17,
+      "investing": 10.17,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "AKSEN",
+      "yahoo": 71.9,
+      "tradingview": 71.9,
+      "investing": 71.9,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "ALARK",
+      "yahoo": 96.2,
+      "tradingview": 96.2,
+      "investing": 96.2,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "ALTNY",
+      "yahoo": 15.62,
+      "tradingview": 15.62,
+      "investing": 15.62,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "ANSGR",
+      "yahoo": 27.56,
+      "tradingview": 27.56,
+      "investing": 27.56,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "ARCLK",
+      "yahoo": 114.0,
+      "tradingview": 114.0,
+      "investing": 114.0,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "ASTOR",
+      "yahoo": 195.1,
+      "tradingview": 195.1,
+      "investing": 195.1,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "BALSU",
+      "yahoo": 14.42,
+      "tradingview": 14.42,
+      "investing": 14.42,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "BIMAS",
+      "yahoo": 652.5,
+      "tradingview": 652.5,
+      "investing": 652.5,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "BRSAN",
+      "yahoo": 546.5,
+      "tradingview": 546.5,
+      "investing": 546.5,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "BRYAT",
+      "yahoo": 2315.0,
+      "tradingview": 2315.0,
+      "investing": 2315.0,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "BSOKE",
+      "yahoo": 33.2,
+      "tradingview": 33.2,
+      "investing": 33.2,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "BTCIM",
+      "yahoo": 5.79,
+      "tradingview": 5.79,
+      "investing": 5.79,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "CANTE",
+      "yahoo": 1.51,
+      "tradingview": 1.51,
+      "investing": 1.51,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "CCOLA",
+      "yahoo": 71.1,
+      "tradingview": 71.1,
+      "investing": 71.1,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "CIMSA",
+      "yahoo": 49.4,
+      "tradingview": 49.4,
+      "investing": 49.4,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "CWENE",
+      "yahoo": 29.88,
+      "tradingview": 29.88,
+      "investing": 29.88,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "DAPGM",
+      "yahoo": 12.41,
+      "tradingview": 12.41,
+      "investing": 12.41,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "DOAS",
+      "yahoo": 201.2,
+      "tradingview": 201.2,
+      "investing": 201.2,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "DOHOL",
+      "yahoo": 21.54,
+      "tradingview": 21.54,
+      "investing": 21.54,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "DSTKF",
+      "yahoo": 1759.0,
+      "tradingview": 1759.0,
+      "investing": 1759.0,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "ECILC",
+      "yahoo": 115.1,
+      "tradingview": 115.1,
+      "investing": 115.1,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "EFOR",
+      "yahoo": 18.63,
+      "tradingview": 18.63,
+      "investing": 18.63,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "EGEEN",
+      "yahoo": 5997.5,
+      "tradingview": 5997.5,
+      "investing": 5997.5,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "EKGYO",
+      "yahoo": 21.6,
+      "tradingview": 21.6,
+      "investing": 21.6,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "ENERY",
+      "yahoo": 9.22,
+      "tradingview": 9.22,
+      "investing": 9.22,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "ENJSA",
+      "yahoo": 111.0,
+      "tradingview": 111.0,
+      "investing": 111.0,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "ENKAI",
+      "yahoo": 93.45,
+      "tradingview": 93.45,
+      "investing": 93.45,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "EREGL",
+      "yahoo": 29.32,
+      "tradingview": 29.32,
+      "investing": 29.32,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "EUPWR",
+      "yahoo": 36.82,
+      "tradingview": 36.82,
+      "investing": 36.82,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "FENER",
+      "yahoo": 2.94,
+      "tradingview": 2.94,
+      "investing": 2.94,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "FROTO",
+      "yahoo": 112.1,
+      "tradingview": 112.1,
+      "investing": 112.1,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "GARAN",
+      "yahoo": 141.1,
+      "tradingview": 141.1,
+      "investing": 141.1,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "GENIL",
+      "yahoo": 9.43,
+      "tradingview": 9.43,
+      "investing": 9.43,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "GESAN",
+      "yahoo": 45.66,
+      "tradingview": 45.66,
+      "investing": 45.66,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "GLRMK",
+      "yahoo": 162.0,
+      "tradingview": 162.0,
+      "investing": 162.0,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "GRSEL",
+      "yahoo": 341.0,
+      "tradingview": 341.0,
+      "investing": 341.0,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "GRTHO",
+      "yahoo": 262.5,
+      "tradingview": 262.5,
+      "investing": 262.5,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "GSRAY",
+      "yahoo": 1.14,
+      "tradingview": 1.14,
+      "investing": 1.14,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "GUBRF",
+      "yahoo": 521.5,
+      "tradingview": 521.5,
+      "investing": 521.5,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "HALKB",
+      "yahoo": 49.24,
+      "tradingview": 49.24,
+      "investing": 49.24,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "HEKTS",
+      "yahoo": 2.95,
+      "tradingview": 2.95,
+      "investing": 2.95,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "ISCTR",
+      "yahoo": 14.75,
+      "tradingview": 14.75,
+      "investing": 14.75,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "ISMEN",
+      "yahoo": 45.5,
+      "tradingview": 45.5,
+      "investing": 45.5,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "IZENR",
+      "yahoo": 9.03,
+      "tradingview": 9.03,
+      "investing": 9.03,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "KCAER",
+      "yahoo": 11.7,
+      "tradingview": 11.7,
+      "investing": 11.7,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "KCHOL",
+      "yahoo": 193.5,
+      "tradingview": 193.5,
+      "investing": 193.5,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "KLRHO",
+      "yahoo": 163.0,
+      "tradingview": 163.0,
+      "investing": 163.0,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "KONTR",
+      "yahoo": 8.67,
+      "tradingview": 8.67,
+      "investing": 8.67,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "KRDMD",
+      "yahoo": 31.44,
+      "tradingview": 31.44,
+      "investing": 31.44,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "KTLEV",
+      "yahoo": 57.0,
+      "tradingview": 57.0,
+      "investing": 57.0,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "KUYAS",
+      "yahoo": 72.6,
+      "tradingview": 72.6,
+      "investing": 72.6,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "MAGEN",
+      "yahoo": 47.68,
+      "tradingview": 47.68,
+      "investing": 47.68,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "MAVI",
+      "yahoo": 42.32,
+      "tradingview": 42.32,
+      "investing": 42.32,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "MGROS",
+      "yahoo": 603.0,
+      "tradingview": 603.0,
+      "investing": 603.0,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "MIATK",
+      "yahoo": 39.4,
+      "tradingview": 39.4,
+      "investing": 39.4,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "MPARK",
+      "yahoo": 445.25,
+      "tradingview": 445.25,
+      "investing": 445.25,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "OBAMS",
+      "yahoo": 7.84,
+      "tradingview": 7.84,
+      "investing": 7.84,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "ODAS",
+      "yahoo": 6.07,
+      "tradingview": 6.07,
+      "investing": 6.07,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "OTKAR",
+      "yahoo": 379.5,
+      "tradingview": 379.5,
+      "investing": 379.5,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "OYAKC",
+      "yahoo": 23.46,
+      "tradingview": 23.46,
+      "investing": 23.46,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "PASEU",
+      "yahoo": 118.0,
+      "tradingview": 118.0,
+      "investing": 118.0,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "PATEK",
+      "yahoo": 17.94,
+      "tradingview": 17.94,
+      "investing": 17.94,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "PETKM",
+      "yahoo": 17.77,
+      "tradingview": 17.77,
+      "investing": 17.77,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "PGSUS",
+      "yahoo": 179.4,
+      "tradingview": 179.4,
+      "investing": 179.4,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "QUAGR",
+      "yahoo": 2.87,
+      "tradingview": 2.87,
+      "investing": 2.87,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "RALYH",
+      "yahoo": 140.0,
+      "tradingview": 140.0,
+      "investing": 140.0,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "REEDR",
+      "yahoo": 6.38,
+      "tradingview": 6.38,
+      "investing": 6.38,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "SAHOL",
+      "yahoo": 95.7,
+      "tradingview": 95.7,
+      "investing": 95.7,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "SASA",
+      "yahoo": 2.26,
+      "tradingview": 2.26,
+      "investing": 2.26,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "SISE",
+      "yahoo": 42.16,
+      "tradingview": 42.16,
+      "investing": 42.16,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "SKBNK",
+      "yahoo": 10.49,
+      "tradingview": 10.49,
+      "investing": 10.49,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "TABGD",
+      "yahoo": 253.75,
+      "tradingview": 253.75,
+      "investing": 253.75,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "TAVHL",
+      "yahoo": 300.75,
+      "tradingview": 300.75,
+      "investing": 300.75,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "TCELL",
+      "yahoo": 111.5,
+      "tradingview": 111.5,
+      "investing": 111.5,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "THYAO",
+      "yahoo": 297.0,
+      "tradingview": 297.0,
+      "investing": 297.0,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "TKFEN",
+      "yahoo": 80.5,
+      "tradingview": 80.5,
+      "investing": 80.5,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "TOASO",
+      "yahoo": 304.25,
+      "tradingview": 304.25,
+      "investing": 304.25,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "TRALT",
+      "yahoo": 55.4,
+      "tradingview": 55.4,
+      "investing": 55.4,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "TRENJ",
+      "yahoo": 112.7,
+      "tradingview": 112.7,
+      "investing": 112.7,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "TRMET",
+      "yahoo": 155.9,
+      "tradingview": 155.9,
+      "investing": 155.9,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "TSKB",
+      "yahoo": 12.35,
+      "tradingview": 12.35,
+      "investing": 12.35,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "TTKOM",
+      "yahoo": 61.55,
+      "tradingview": 61.55,
+      "investing": 61.55,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "TTRAK",
+      "yahoo": 450.5,
+      "tradingview": 450.5,
+      "investing": 450.5,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "TUKAS",
+      "yahoo": 2.36,
+      "tradingview": 2.36,
+      "investing": 2.36,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "TUPRS",
+      "yahoo": 248.0,
+      "tradingview": 248.0,
+      "investing": 248.0,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "TUREX",
+      "yahoo": 6.92,
+      "tradingview": 6.92,
+      "investing": 6.92,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "TURSG",
+      "yahoo": 12.25,
+      "tradingview": 12.25,
+      "investing": 12.25,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "ULKER",
+      "yahoo": 119.9,
+      "tradingview": 119.9,
+      "investing": 119.9,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "VAKBN",
+      "yahoo": 35.86,
+      "tradingview": 35.86,
+      "investing": 35.86,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "VESTL",
+      "yahoo": 28.58,
+      "tradingview": 28.58,
+      "investing": 28.58,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "YEOTK",
+      "yahoo": 42.06,
+      "tradingview": 42.06,
+      "investing": 42.06,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "YKBNK",
+      "yahoo": 37.0,
+      "tradingview": 37.0,
+      "investing": 37.0,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "ZOREN",
+      "yahoo": 3.0,
+      "tradingview": 3.0,
+      "investing": 3.0,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "ASELS",
+      "yahoo": 334.25,
+      "tradingview": 334.25,
+      "investing": 334.25,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    },
+    {
+      "code": "CVKMD",
+      "yahoo": 32.44,
+      "tradingview": 32.44,
+      "investing": null,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": null,
+      "tv_vs_inv_pct": null
+    },
+    {
+      "code": "SOKM",
+      "yahoo": 58.6,
+      "tradingview": 58.6,
+      "investing": 58.6,
+      "tv_vs_yahoo_pct": 0.0,
+      "inv_vs_yahoo_pct": 0.0,
+      "tv_vs_inv_pct": 0.0
+    }
+  ]
+}

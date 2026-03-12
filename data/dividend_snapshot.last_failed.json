@@ -1,0 +1,58 @@
+{
+  "generatedAt": "2026-03-09T16:00:17.241659+00:00",
+  "generatedAtMs": 1773072017241,
+  "source": "kap_dividend",
+  "symbolCount": 2,
+  "failureCount": 2,
+  "failures": [
+    {
+      "symbol": "AEFES",
+      "reason": "HTTPSConnectionPool(host='www.kap.org.tr', port=443): Max retries exceeded with url: /tr/api/member/filter/AEFES (Caused by NameResolutionError(\"HTTPSConnection(host='www.kap.org.tr', port=443): Failed to resolve 'www.kap.org.tr' ([Errno 8] nodename nor servname provided, or not known)\"))"
+    },
+    {
+      "symbol": "AGHOL",
+      "reason": "HTTPSConnectionPool(host='www.kap.org.tr', port=443): Max retries exceeded with url: /tr/api/member/filter/AGHOL (Caused by NameResolutionError(\"HTTPSConnection(host='www.kap.org.tr', port=443): Failed to resolve 'www.kap.org.tr' ([Errno 8] nodename nor servname provided, or not known)\"))"
+    }
+  ],
+  "audit": {
+    "processedSymbols": 2,
+    "updatedSymbols": 0,
+    "workRange": {
+      "start": 0,
+      "end": 2
+    },
+    "keptExistingOnFail": 2,
+    "mergeExisting": true,
+    "maxItems": 4,
+    "sleepSeconds": 0.1,
+    "symbolCoveragePct": 0.0,
+    "meaningfulUpdatedSymbols": 0,
+    "eventSymbols": 0,
+    "amountSymbols": 0,
+    "datedSymbols": 0,
+    "zeroLikeSymbols": 2,
+    "lastRunStatus": "failed_guard"
+  },
+  "data": {
+    "AEFES": {
+      "lastDividendDateMs": null,
+      "lastDividendPerShare": null,
+      "annualDividendPerShare": null,
+      "dividendPayoutPct": null,
+      "paidYears3y": 0.0,
+      "regularityScore": 0.0,
+      "eventCount": 0.0,
+      "events": []
+    },
+    "AGHOL": {
+      "lastDividendDateMs": null,
+      "lastDividendPerShare": null,
+      "annualDividendPerShare": null,
+      "dividendPayoutPct": null,
+      "paidYears3y": 0.0,
+      "regularityScore": 0.0,
+      "eventCount": 0.0,
+      "events": []
+    }
+  }
+}

@@ -1,0 +1,1109 @@
+{
+  "generatedAt": "2026-03-11 11:23:23 +03",
+  "symbolCount": 100,
+  "sources": {
+    "my": "KAP snapshot + Yahoo price + Yahoo-derived beta(1Y vs XU100)",
+    "tradingview": "scanner.tradingview.com/turkey/scan",
+    "investing": "investing.com/indices/ise-100-components (__NEXT_DATA__)"
+  },
+  "tradingview": {
+    "price": {
+      "coverageSymbols": 100,
+      "comparable": 100,
+      "coveragePct": 100.0,
+      "meanAbsDevPct": 0.05644143218445616,
+      "medianAbsDevPct": 0.0,
+      "p90AbsDevPct": 0.12717253073336643,
+      "p95AbsDevPct": 0.18248175182480714,
+      "maxAbsDevPct": 0.6254343293954174,
+      "topOutliers": [
+        {
+          "code": "KUYAS",
+          "devPct": 0.6254343293954174,
+          "my": 71.5,
+          "external": 71.95
+        },
+        {
+          "code": "SASA",
+          "devPct": 0.44843049327353307,
+          "my": 2.22,
+          "external": 2.23
+        },
+        {
+          "code": "TUKAS",
+          "devPct": 0.4255319148936079,
+          "my": 2.36,
+          "external": 2.35
+        },
+        {
+          "code": "FENER",
+          "devPct": 0.34602076124566733,
+          "my": 2.9,
+          "external": 2.89
+        },
+        {
+          "code": "QUAGR",
+          "devPct": 0.34246575342466545,
+          "my": 2.93,
+          "external": 2.92
+        },
+        {
+          "code": "TRENJ",
+          "devPct": 0.18248175182480714,
+          "my": 109.4,
+          "external": 109.6
+        },
+        {
+          "code": "ARCLK",
+          "devPct": 0.1769911504424804,
+          "my": 113.2,
+          "external": 113.0
+        },
+        {
+          "code": "TURSG",
+          "devPct": 0.1624695369618306,
+          "my": 12.29,
+          "external": 12.31
+        },
+        {
+          "code": "REEDR",
+          "devPct": 0.16077170418007516,
+          "my": 6.23,
+          "external": 6.22
+        },
+        {
+          "code": "CCOLA",
+          "devPct": 0.143369175627232,
+          "my": 69.65,
+          "external": 69.75
+        }
+      ]
+    },
+    "pe": {
+      "coverageSymbols": 73,
+      "comparable": 73,
+      "coveragePct": 73.0,
+      "meanAbsDevPct": 279.48994685709766,
+      "medianAbsDevPct": 12.19872742464169,
+      "p90AbsDevPct": 96.04861472309743,
+      "p95AbsDevPct": 227.76461889584348,
+      "maxAbsDevPct": 16731.201247570465,
+      "topOutliers": [
+        {
+          "code": "TSKB",
+          "devPct": 16731.201247570465,
+          "my": 511.07054873687076,
+          "external": 3.0364472578012953
+        },
+        {
+          "code": "BTCIM",
+          "devPct": 1129.1278518252993,
+          "my": -143.9169074607553,
+          "external": 13.98435648257881
+        },
+        {
+          "code": "ENERY",
+          "devPct": 348.0301671689159,
+          "my": 18.19096935664394,
+          "external": 4.060210827228873
+        },
+        {
+          "code": "GUBRF",
+          "devPct": 307.05291378862614,
+          "my": -60.52168972429289,
+          "external": 29.230059416636657
+        },
+        {
+          "code": "EKGYO",
+          "devPct": 227.76461889584348,
+          "my": 13.446883460843148,
+          "external": 4.102603724020706
+        },
+        {
+          "code": "IZENR",
+          "devPct": 160.41192255137804,
+          "my": -18.111502430459765,
+          "external": 29.980013324450365
+        },
+        {
+          "code": "ALARK",
+          "devPct": 106.62056666658088,
+          "my": -1.4620391825743186,
+          "external": 22.08329371493772
+        },
+        {
+          "code": "EREGL",
+          "devPct": 96.04861472309743,
+          "my": 15.109764987892902,
+          "external": 382.3915900131406
+        },
+        {
+          "code": "TTRAK",
+          "devPct": 94.72424723606242,
+          "my": 5.9729272109705915,
+          "external": 113.21469140477092
+        },
+        {
+          "code": "ALTNY",
+          "devPct": 92.51561451882925,
+          "my": 12.23254401223608,
+          "external": 163.44086021505376
+        }
+      ]
+    },
+    "eps": {
+      "coverageSymbols": 98,
+      "comparable": 98,
+      "coveragePct": 98.0,
+      "meanAbsDevPct": 304.57581326400475,
+      "medianAbsDevPct": 26.104014339129016,
+      "p90AbsDevPct": 331.5077577334793,
+      "p95AbsDevPct": 1196.8472935535892,
+      "maxAbsDevPct": 13972.43575012258,
+      "topOutliers": [
+        {
+          "code": "TRENJ",
+          "devPct": 13972.43575012258,
+          "my": 13.83081844287221,
+          "external": -0.0997
+        },
+        {
+          "code": "EREGL",
+          "devPct": 2430.7580251548716,
+          "my": 1.9259068571428573,
+          "external": 0.0761
+        },
+        {
+          "code": "TTRAK",
+          "devPct": 1795.4641067252132,
+          "my": 75.08881058791933,
+          "external": 3.9615
+        },
+        {
+          "code": "ALARK",
+          "devPct": 1610.444725294849,
+          "my": -63.5413887037037,
+          "external": 4.2068
+        },
+        {
+          "code": "ALTNY",
+          "devPct": 1236.1150391248595,
+          "my": 1.2425869863861194,
+          "external": 0.093
+        },
+        {
+          "code": "EGEEN",
+          "devPct": 1196.8472935535892,
+          "my": 354.45936507936506,
+          "external": -32.3162
+        },
+        {
+          "code": "ODAS",
+          "devPct": 1057.1667088718125,
+          "my": -2.8396871035714284,
+          "external": -0.2454
+        },
+        {
+          "code": "AGHOL",
+          "devPct": 760.9972673443011,
+          "my": 8.05721242780797,
+          "external": 0.9358
+        },
+        {
+          "code": "MIATK",
+          "devPct": 475.84040108548277,
+          "my": 5.815754366396761,
+          "external": -1.5474
+        },
+        {
+          "code": "MAGEN",
+          "devPct": 363.4748562075506,
+          "my": 1.0217554923728813,
+          "external": -0.3878
+        }
+      ]
+    },
+    "roe_pct": {
+      "coverageSymbols": 97,
+      "comparable": 97,
+      "coveragePct": 97.0,
+      "meanAbsDevPct": 167.86155583502938,
+      "medianAbsDevPct": 19.702944868574555,
+      "p90AbsDevPct": 250.35713581108277,
+      "p95AbsDevPct": 1030.033663849162,
+      "maxAbsDevPct": 3246.7271826534484,
+      "topOutliers": [
+        {
+          "code": "TRENJ",
+          "devPct": 3246.7271826534484,
+          "my": 7.91811777679369,
+          "external": -0.251630259542132
+        },
+        {
+          "code": "EREGL",
+          "devPct": 2224.683646215458,
+          "my": 4.534902380042095,
+          "external": 0.195076107986772
+        },
+        {
+          "code": "TTRAK",
+          "devPct": 1809.803282341549,
+          "my": 44.95378051529037,
+          "external": 2.3538435047705
+        },
+        {
+          "code": "ALARK",
+          "devPct": 1486.6622610810684,
+          "my": -36.20624617453945,
+          "external": 2.61103566389067
+        },
+        {
+          "code": "EGEEN",
+          "devPct": 1085.5849907880913,
+          "my": 14.285611930062942,
+          "external": -1.44945510164881
+        },
+        {
+          "code": "CVKMD",
+          "devPct": 1030.033663849162,
+          "my": 13.39041360182756,
+          "external": 1.18495705306837
+        },
+        {
+          "code": "MIATK",
+          "devPct": 453.5567391352262,
+          "my": 52.564850701643415,
+          "external": -14.8674441421236
+        },
+        {
+          "code": "ODAS",
+          "devPct": 377.1340241464818,
+          "my": -11.847378418549958,
+          "external": -2.48302946740029
+        },
+        {
+          "code": "GSRAY",
+          "devPct": 360.1625552894924,
+          "my": 8.953704337870564,
+          "external": -3.4415807178352202
+        },
+        {
+          "code": "KRDMD",
+          "devPct": 278.867514834404,
+          "my": -6.179923050485614,
+          "external": -1.63115675229816
+        }
+      ]
+    },
+    "roa_pct": {
+      "coverageSymbols": 98,
+      "comparable": 98,
+      "coveragePct": 98.0,
+      "meanAbsDevPct": 258.85979919663373,
+      "medianAbsDevPct": 22.888752848210647,
+      "p90AbsDevPct": 287.9053463458197,
+      "p95AbsDevPct": 940.0698932933036,
+      "maxAbsDevPct": 11543.101765825451,
+      "topOutliers": [
+        {
+          "code": "TRENJ",
+          "devPct": 11543.101765825451,
+          "my": 7.0626555830147,
+          "external": -0.06171976556310241
+        },
+        {
+          "code": "EREGL",
+          "devPct": 2219.5999488077578,
+          "my": 2.4137144210897654,
+          "external": 0.10405735792201501
+        },
+        {
+          "code": "TTRAK",
+          "devPct": 1707.6003495431853,
+          "my": 18.971855824333105,
+          "external": 1.04956030956332
+        },
+        {
+          "code": "CVKMD",
+          "devPct": 1102.160388505335,
+          "my": 5.663799153713391,
+          "external": 0.471135067156495
+        },
+        {
+          "code": "EGEEN",
+          "devPct": 1097.6166103153214,
+          "my": 10.910626140974795,
+          "external": -1.09366925411619
+        },
+        {
+          "code": "ODAS",
+          "devPct": 940.0698932933036,
+          "my": -9.828518017534352,
+          "external": -0.944986301489132
+        },
+        {
+          "code": "ALARK",
+          "devPct": 813.4487502978388,
+          "my": -11.525130561058257,
+          "external": 1.61541113587303
+        },
+        {
+          "code": "AGHOL",
+          "devPct": 645.8230716589565,
+          "my": 2.871982586763238,
+          "external": 0.385075589090453
+        },
+        {
+          "code": "MIATK",
+          "devPct": 457.828448561357,
+          "my": 40.05519086795885,
+          "external": -11.1939648814956
+        },
+        {
+          "code": "GSRAY",
+          "devPct": 432.2994684718305,
+          "my": 3.607104907699866,
+          "external": -1.08549824779682
+        }
+      ]
+    },
+    "gross_margin_pct": {
+      "coverageSymbols": 85,
+      "comparable": 85,
+      "coveragePct": 85.0,
+      "meanAbsDevPct": 68.01166539955246,
+      "medianAbsDevPct": 7.849698488626116,
+      "p90AbsDevPct": 69.41501434847164,
+      "p95AbsDevPct": 198.075722314078,
+      "maxAbsDevPct": 2177.8572713720664,
+      "topOutliers": [
+        {
+          "code": "KTLEV",
+          "devPct": 2177.8572713720664,
+          "my": 2252.549233510503,
+          "external": 98.88895418604
+        },
+        {
+          "code": "KONTR",
+          "devPct": 1075.989613856105,
+          "my": 37.2957185677116,
+          "external": 3.17143264942773
+        },
+        {
+          "code": "CANTE",
+          "devPct": 542.4738055134872,
+          "my": 24.717471466124277,
+          "external": 3.84723412129919
+        },
+        {
+          "code": "ALARK",
+          "devPct": 472.52554011425855,
+          "my": 16.701006607546464,
+          "external": -4.48318432138211
+        },
+        {
+          "code": "GSRAY",
+          "devPct": 198.075722314078,
+          "my": 0.3116891107726722,
+          "external": 0.104567090654988
+        },
+        {
+          "code": "DSTKF",
+          "devPct": 84.74617411047437,
+          "my": 11.98778276974942,
+          "external": 78.58869543005
+        },
+        {
+          "code": "ODAS",
+          "devPct": 83.5793546971678,
+          "my": 28.527652169358582,
+          "external": 15.539684305143
+        },
+        {
+          "code": "KLRHO",
+          "devPct": 75.20070170839877,
+          "my": 9.537510551352547,
+          "external": 38.4587920158314
+        },
+        {
+          "code": "HEKTS",
+          "devPct": 69.41501434847164,
+          "my": -9.681230683687899,
+          "external": -31.6535400539059
+        },
+        {
+          "code": "DOHOL",
+          "devPct": 66.51667929511895,
+          "my": 30.36978308405432,
+          "external": 18.2382829231357
+        }
+      ]
+    },
+    "oper_margin_pct": {
+      "coverageSymbols": 98,
+      "comparable": 88,
+      "coveragePct": 98.0,
+      "meanAbsDevPct": 12863.094999424864,
+      "medianAbsDevPct": 27.264629523308464,
+      "p90AbsDevPct": 230.66761147862235,
+      "p95AbsDevPct": 359.76423373469083,
+      "maxAbsDevPct": 1120210.3347563534,
+      "topOutliers": [
+        {
+          "code": "GARAN",
+          "devPct": 1120210.3347563534,
+          "my": 123058.6388447157,
+          "external": 10.9843348781995
+        },
+        {
+          "code": "BRYAT",
+          "devPct": 4716.76455410323,
+          "my": 4529.588467765209,
+          "external": 94.0379878835185
+        },
+        {
+          "code": "SISE",
+          "devPct": 1369.6285999092538,
+          "my": 2.1117260625344993,
+          "external": 0.143691138200828
+        },
+        {
+          "code": "SAHOL",
+          "devPct": 466.67775101098607,
+          "my": 35.55988491444125,
+          "external": 6.2751510626631
+        },
+        {
+          "code": "DOHOL",
+          "devPct": 359.76423373469083,
+          "my": 20.677497842405426,
+          "external": 4.49741330995692
+        },
+        {
+          "code": "BTCIM",
+          "devPct": 344.1609850129799,
+          "my": -0.6202743654196586,
+          "external": 0.254043194241981
+        },
+        {
+          "code": "ECILC",
+          "devPct": 288.7067100921626,
+          "my": 7.178357795111075,
+          "external": -3.80397591140518
+        },
+        {
+          "code": "MAGEN",
+          "devPct": 279.8693485013941,
+          "my": 14.296050881189537,
+          "external": 3.7634125884566
+        },
+        {
+          "code": "REEDR",
+          "devPct": 278.74436217617694,
+          "my": 22.197450111583798,
+          "external": -12.4185455928983
+        },
+        {
+          "code": "ODAS",
+          "devPct": 230.66761147862235,
+          "my": 5.946301216038873,
+          "external": 1.79827143924052
+        }
+      ]
+    },
+    "net_margin_pct": {
+      "coverageSymbols": 98,
+      "comparable": 92,
+      "coveragePct": 98.0,
+      "meanAbsDevPct": 17714.690764932715,
+      "medianAbsDevPct": 48.993676967766746,
+      "p90AbsDevPct": 1312.69068876154,
+      "p95AbsDevPct": 2674.2196483676958,
+      "maxAbsDevPct": 1092998.3571062395,
+      "topOutliers": [
+        {
+          "code": "GARAN",
+          "devPct": 1092998.3571062395,
+          "my": 118842.81707998452,
+          "external": 10.8721064584341
+        },
+        {
+          "code": "TURSG",
+          "devPct": 422331.3535607855,
+          "my": 102956.36758958781,
+          "external": 24.3723309649583
+        },
+        {
+          "code": "ANSGR",
+          "devPct": 78500.81671405867,
+          "my": 13526.895186282773,
+          "external": 17.2096114923235
+        },
+        {
+          "code": "TRENJ",
+          "devPct": 11348.4991861517,
+          "my": 20.268190517277997,
+          "external": -0.180185731286096
+        },
+        {
+          "code": "BRYAT",
+          "devPct": 4745.971239729148,
+          "my": 5174.548841469584,
+          "external": 106.780428225546
+        },
+        {
+          "code": "KTLEV",
+          "devPct": 2674.2196483676958,
+          "my": 1360.158386930528,
+          "external": 49.028503843624
+        },
+        {
+          "code": "EREGL",
+          "devPct": 2534.0995816733434,
+          "my": 6.453187590378673,
+          "external": 0.244986470339865
+        },
+        {
+          "code": "TTRAK",
+          "devPct": 1699.9337365041786,
+          "my": 13.95668803014208,
+          "external": 0.775400102075351
+        },
+        {
+          "code": "GSRAY",
+          "devPct": 1323.546006671164,
+          "my": 22.768256697543933,
+          "external": -1.86084189506599
+        },
+        {
+          "code": "ODAS",
+          "devPct": 1312.69068876154,
+          "my": -55.9108072456191,
+          "external": -3.95775293844644
+        }
+      ]
+    },
+    "current_ratio": {
+      "coverageSymbols": 98,
+      "comparable": 89,
+      "coveragePct": 98.0,
+      "meanAbsDevPct": 4.820808991929251,
+      "medianAbsDevPct": 1.4839911017332158e-13,
+      "p90AbsDevPct": 18.465612923366827,
+      "p95AbsDevPct": 26.958400463351335,
+      "maxAbsDevPct": 102.60916699410691,
+      "topOutliers": [
+        {
+          "code": "TSKB",
+          "devPct": 102.60916699410691,
+          "my": 0.740188441322037,
+          "external": 0.365328209134568
+        },
+        {
+          "code": "ALARK",
+          "devPct": 74.55639056412728,
+          "my": 1.637632078756316,
+          "external": 0.938167931557163
+        },
+        {
+          "code": "ANSGR",
+          "devPct": 48.62113656315362,
+          "my": 1.358293766808977,
+          "external": 2.64368200452421
+        },
+        {
+          "code": "SAHOL",
+          "devPct": 33.92593511461497,
+          "my": 0.7872216974475745,
+          "external": 0.587803771370992
+        },
+        {
+          "code": "ALTNY",
+          "devPct": 26.958400463351335,
+          "my": 1.425692289648559,
+          "external": 1.12296018573431
+        },
+        {
+          "code": "KONTR",
+          "devPct": 26.789289184709414,
+          "my": 1.2232817819024584,
+          "external": 0.96481476453453
+        },
+        {
+          "code": "MPARK",
+          "devPct": 19.11736893598704,
+          "my": 1.2881355993337547,
+          "external": 1.59259853739709
+        },
+        {
+          "code": "TRENJ",
+          "devPct": 18.8651971005166,
+          "my": 4.863495854768628,
+          "external": 5.99433988986691
+        },
+        {
+          "code": "HEKTS",
+          "devPct": 18.529673581223037,
+          "my": 0.529056677213061,
+          "external": 0.649385734007721
+        },
+        {
+          "code": "TRMET",
+          "devPct": 18.465612923366827,
+          "my": 5.063981952147558,
+          "external": 6.21085425881473
+        }
+      ]
+    },
+    "quick_ratio": {
+      "coverageSymbols": 87,
+      "comparable": 85,
+      "coveragePct": 87.0,
+      "meanAbsDevPct": 9.691186995866293,
+      "medianAbsDevPct": 2.9854677163218413,
+      "p90AbsDevPct": 30.813093350678233,
+      "p95AbsDevPct": 36.42692392820004,
+      "maxAbsDevPct": 82.54694860983577,
+      "topOutliers": [
+        {
+          "code": "ALTNY",
+          "devPct": 82.54694860983577,
+          "my": 1.000639305894956,
+          "external": 0.548154495879117
+        },
+        {
+          "code": "ALARK",
+          "devPct": 49.39828021200279,
+          "my": 1.2191051549988594,
+          "external": 0.816010166428218
+        },
+        {
+          "code": "BALSU",
+          "devPct": 45.3465091100229,
+          "my": 0.3107648780837452,
+          "external": 0.213809660780023
+        },
+        {
+          "code": "GENIL",
+          "devPct": 37.373560886956874,
+          "my": 0.9677759084377737,
+          "external": 0.704484838413809
+        },
+        {
+          "code": "REEDR",
+          "devPct": 36.42692392820004,
+          "my": 1.668327161099329,
+          "external": 1.22287237230193
+        },
+        {
+          "code": "GUBRF",
+          "devPct": 34.69068640457011,
+          "my": 1.1855592249793445,
+          "external": 0.880208763223823
+        },
+        {
+          "code": "CWENE",
+          "devPct": 32.95190497781276,
+          "my": 0.8922843401356515,
+          "external": 0.671133174274229
+        },
+        {
+          "code": "RALYH",
+          "devPct": 32.7557688363323,
+          "my": 0.8206300444257446,
+          "external": 0.618150195369255
+        },
+        {
+          "code": "DAPGM",
+          "devPct": 30.813093350678233,
+          "my": 1.9678297612640536,
+          "external": 1.50430641983886
+        },
+        {
+          "code": "HEKTS",
+          "devPct": 28.794617021134343,
+          "my": 0.3163889947906346,
+          "external": 0.444332972528975
+        }
+      ]
+    },
+    "beta": {
+      "coverageSymbols": 100,
+      "comparable": 100,
+      "coveragePct": 100.0,
+      "meanAbsDevPct": 23.65378870310601,
+      "medianAbsDevPct": 9.398421240409725,
+      "p90AbsDevPct": 41.559920849848695,
+      "p95AbsDevPct": 78.3388084424614,
+      "maxAbsDevPct": 360.79172282943944,
+      "topOutliers": [
+        {
+          "code": "TUREX",
+          "devPct": 360.79172282943944,
+          "my": 0.509732600348408,
+          "external": -0.19545582
+        },
+        {
+          "code": "TKFEN",
+          "devPct": 292.0700360274246,
+          "my": 0.6346569800778062,
+          "external": 0.16187337
+        },
+        {
+          "code": "PASEU",
+          "devPct": 128.27280820696706,
+          "my": 0.04241859322821365,
+          "external": -0.15003318
+        },
+        {
+          "code": "GENIL",
+          "devPct": 117.41630323129833,
+          "my": 0.5047283605824557,
+          "external": 0.23214835
+        },
+        {
+          "code": "ALTNY",
+          "devPct": 117.04989000088948,
+          "my": 0.4958687493077701,
+          "external": 0.22845842
+        },
+        {
+          "code": "KTLEV",
+          "devPct": 78.3388084424614,
+          "my": 0.6107903914672422,
+          "external": 0.34248877
+        },
+        {
+          "code": "KLRHO",
+          "devPct": 67.12529014558353,
+          "my": 0.4615265722842094,
+          "external": 1.4038955
+        },
+        {
+          "code": "TRMET",
+          "devPct": 62.41138433121187,
+          "my": 1.1847739955008358,
+          "external": 0.7294895
+        },
+        {
+          "code": "MAGEN",
+          "devPct": 52.59756332976663,
+          "my": 0.5993572968927611,
+          "external": 0.3927699
+        },
+        {
+          "code": "KCAER",
+          "devPct": 44.207989838453685,
+          "my": 1.0349963175334846,
+          "external": 0.7177108
+        }
+      ]
+    }
+  },
+  "investing": {
+    "price": {
+      "coverageSymbols": 99,
+      "comparable": 99,
+      "coveragePct": 99.0,
+      "meanAbsDevPct": 0.32474788969436774,
+      "medianAbsDevPct": 0.25673940949935264,
+      "p90AbsDevPct": 0.7936507936507986,
+      "p95AbsDevPct": 0.8982035928143712,
+      "maxAbsDevPct": 1.2149532710280448,
+      "topOutliers": [
+        {
+          "code": "DOHOL",
+          "devPct": 1.2149532710280448,
+          "my": 21.66,
+          "external": 21.4
+        },
+        {
+          "code": "MAGEN",
+          "devPct": 1.1301799916282944,
+          "my": 47.24,
+          "external": 47.78
+        },
+        {
+          "code": "TABGD",
+          "devPct": 1.0880316518298714,
+          "my": 255.5,
+          "external": 252.75
+        },
+        {
+          "code": "TURSG",
+          "devPct": 0.9031198686371055,
+          "my": 12.29,
+          "external": 12.18
+        },
+        {
+          "code": "KUYAS",
+          "devPct": 0.9009009009009087,
+          "my": 71.5,
+          "external": 72.15
+        },
+        {
+          "code": "TKFEN",
+          "devPct": 0.8982035928143712,
+          "my": 84.25,
+          "external": 83.5
+        },
+        {
+          "code": "GSRAY",
+          "devPct": 0.8695652173913052,
+          "my": 1.16,
+          "external": 1.15
+        },
+        {
+          "code": "BTCIM",
+          "devPct": 0.854700854700867,
+          "my": 5.9,
+          "external": 5.85
+        },
+        {
+          "code": "TUKAS",
+          "devPct": 0.8547008547008554,
+          "my": 2.36,
+          "external": 2.34
+        },
+        {
+          "code": "GENIL",
+          "devPct": 0.8105369807497474,
+          "my": 9.95,
+          "external": 9.87
+        }
+      ]
+    },
+    "pe": {
+      "coverageSymbols": 99,
+      "comparable": 87,
+      "coveragePct": 99.0,
+      "meanAbsDevPct": 288.2961984807255,
+      "medianAbsDevPct": 33.86698609225581,
+      "p90AbsDevPct": 141.64637444749988,
+      "p95AbsDevPct": 269.32136404015375,
+      "maxAbsDevPct": 16711.531208449698,
+      "topOutliers": [
+        {
+          "code": "TSKB",
+          "devPct": 16711.531208449698,
+          "my": 511.07054873687076,
+          "external": 3.04
+        },
+        {
+          "code": "BALSU",
+          "devPct": 3457.3299591018204,
+          "my": 77.89005505116224,
+          "external": -2.32
+        },
+        {
+          "code": "FENER",
+          "devPct": 906.6593414480027,
+          "my": 4.5172923121088155,
+          "external": -0.56
+        },
+        {
+          "code": "GUBRF",
+          "devPct": 311.0976272211123,
+          "my": -60.52168972429289,
+          "external": 28.67
+        },
+        {
+          "code": "GSRAY",
+          "devPct": 269.32136404015375,
+          "my": 11.395327799902352,
+          "external": -6.73
+        },
+        {
+          "code": "EKGYO",
+          "devPct": 213.44716691942068,
+          "my": 13.446883460843148,
+          "external": 4.29
+        },
+        {
+          "code": "IZENR",
+          "devPct": 148.963239876885,
+          "my": -18.111502430459765,
+          "external": 36.99
+        },
+        {
+          "code": "TUKAS",
+          "devPct": 147.97137802837725,
+          "my": 20.730407203172337,
+          "external": 8.36
+        },
+        {
+          "code": "MAGEN",
+          "devPct": 142.86894133703728,
+          "my": 46.23415323199472,
+          "external": -107.85
+        },
+        {
+          "code": "KUYAS",
+          "devPct": 141.64637444749988,
+          "my": 492.741122135897,
+          "external": 203.91
+        }
+      ]
+    },
+    "eps": {
+      "coverageSymbols": 0,
+      "comparable": 0,
+      "coveragePct": 0.0,
+      "meanAbsDevPct": null,
+      "medianAbsDevPct": null,
+      "p90AbsDevPct": null,
+      "p95AbsDevPct": null,
+      "maxAbsDevPct": null,
+      "topOutliers": []
+    },
+    "roe_pct": {
+      "coverageSymbols": 0,
+      "comparable": 0,
+      "coveragePct": 0.0,
+      "meanAbsDevPct": null,
+      "medianAbsDevPct": null,
+      "p90AbsDevPct": null,
+      "p95AbsDevPct": null,
+      "maxAbsDevPct": null,
+      "topOutliers": []
+    },
+    "roa_pct": {
+      "coverageSymbols": 0,
+      "comparable": 0,
+      "coveragePct": 0.0,
+      "meanAbsDevPct": null,
+      "medianAbsDevPct": null,
+      "p90AbsDevPct": null,
+      "p95AbsDevPct": null,
+      "maxAbsDevPct": null,
+      "topOutliers": []
+    },
+    "gross_margin_pct": {
+      "coverageSymbols": 0,
+      "comparable": 0,
+      "coveragePct": 0.0,
+      "meanAbsDevPct": null,
+      "medianAbsDevPct": null,
+      "p90AbsDevPct": null,
+      "p95AbsDevPct": null,
+      "maxAbsDevPct": null,
+      "topOutliers": []
+    },
+    "oper_margin_pct": {
+      "coverageSymbols": 0,
+      "comparable": 0,
+      "coveragePct": 0.0,
+      "meanAbsDevPct": null,
+      "medianAbsDevPct": null,
+      "p90AbsDevPct": null,
+      "p95AbsDevPct": null,
+      "maxAbsDevPct": null,
+      "topOutliers": []
+    },
+    "net_margin_pct": {
+      "coverageSymbols": 0,
+      "comparable": 0,
+      "coveragePct": 0.0,
+      "meanAbsDevPct": null,
+      "medianAbsDevPct": null,
+      "p90AbsDevPct": null,
+      "p95AbsDevPct": null,
+      "maxAbsDevPct": null,
+      "topOutliers": []
+    },
+    "current_ratio": {
+      "coverageSymbols": 0,
+      "comparable": 0,
+      "coveragePct": 0.0,
+      "meanAbsDevPct": null,
+      "medianAbsDevPct": null,
+      "p90AbsDevPct": null,
+      "p95AbsDevPct": null,
+      "maxAbsDevPct": null,
+      "topOutliers": []
+    },
+    "quick_ratio": {
+      "coverageSymbols": 0,
+      "comparable": 0,
+      "coveragePct": 0.0,
+      "meanAbsDevPct": null,
+      "medianAbsDevPct": null,
+      "p90AbsDevPct": null,
+      "p95AbsDevPct": null,
+      "maxAbsDevPct": null,
+      "topOutliers": []
+    },
+    "beta": {
+      "coverageSymbols": 99,
+      "comparable": 89,
+      "coveragePct": 99.0,
+      "meanAbsDevPct": 559.9032718877969,
+      "medianAbsDevPct": 229.01108150002588,
+      "p90AbsDevPct": 1131.4322013051649,
+      "p95AbsDevPct": 1706.688798854903,
+      "maxAbsDevPct": 13366.686650172653,
+      "topOutliers": [
+        {
+          "code": "ISCTR",
+          "devPct": 13366.686650172653,
+          "my": 1.3266686650172654,
+          "external": -0.01
+        },
+        {
+          "code": "ENERY",
+          "devPct": 3534.2234861764405,
+          "my": 0.7268446972352881,
+          "external": 0.02
+        },
+        {
+          "code": "THYAO",
+          "devPct": 2559.1443082212963,
+          "my": 0.9836577232885187,
+          "external": -0.04
+        },
+        {
+          "code": "PGSUS",
+          "devPct": 1871.589881702738,
+          "my": 1.027522131387588,
+          "external": -0.058
+        },
+        {
+          "code": "VAKBN",
+          "devPct": 1706.688798854903,
+          "my": 1.0840132793129418,
+          "external": 0.06
+        },
+        {
+          "code": "SISE",
+          "devPct": 1617.0596836015434,
+          "my": 1.0619417785210805,
+          "external": -0.07
+        },
+        {
+          "code": "TKFEN",
+          "devPct": 1486.6424501945155,
+          "my": 0.6346569800778062,
+          "external": 0.04
+        },
+        {
+          "code": "ISMEN",
+          "devPct": 1463.2397990327324,
+          "my": 1.186018625158477,
+          "external": -0.087
+        },
+        {
+          "code": "ARCLK",
+          "devPct": 1274.430896025599,
+          "my": 0.9621016272179195,
+          "external": 0.07
+        },
+        {
+          "code": "KRDMD",
+          "devPct": 1131.4322013051649,
+          "my": 1.231432201305165,
+          "external": 0.1
+        }
+      ]
+    }
+  }
+}

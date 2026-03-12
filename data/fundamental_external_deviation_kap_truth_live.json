@@ -1,0 +1,91 @@
+{
+  "generatedAt": "2026-03-11 12:00:38 +0300",
+  "symbolCount": 100,
+  "source": "kap_truth vs live TradingView scanner",
+  "summary": {
+    "trailingPE": {
+      "comparable": 73,
+      "meanAbsDevPct": 279.4932298100379,
+      "medianAbsDevPct": 12.198727424641689,
+      "p95AbsDevPct": 259.21372808986285,
+      "maxAbsDevPct": 16731.20124757046
+    },
+    "trailingEps": {
+      "comparable": 98,
+      "meanAbsDevPct": 304.57581326400475,
+      "medianAbsDevPct": 26.104014339129016,
+      "p95AbsDevPct": 1202.7374553892794,
+      "maxAbsDevPct": 13972.43575012258
+    },
+    "priceToBook": {
+      "comparable": 97,
+      "meanAbsDevPct": 11.015738058183778,
+      "medianAbsDevPct": 1.5490056268807035,
+      "p95AbsDevPct": 56.86558360708359,
+      "maxAbsDevPct": 83.31181440449897
+    },
+    "returnOnEquity": {
+      "comparable": 97,
+      "meanAbsDevPct": 167.8615558350294,
+      "medianAbsDevPct": 19.702944868574566,
+      "p95AbsDevPct": 1041.143929236947,
+      "maxAbsDevPct": 3246.7271826534484
+    },
+    "returnOnAssets": {
+      "comparable": 98,
+      "meanAbsDevPct": 258.85979919663373,
+      "medianAbsDevPct": 22.88875284821065,
+      "p95AbsDevPct": 963.701900846605,
+      "maxAbsDevPct": 11543.10176582545
+    },
+    "grossMargins": {
+      "comparable": 85,
+      "meanAbsDevPct": 68.01166539955244,
+      "medianAbsDevPct": 7.849698488626125,
+      "p95AbsDevPct": 175.40981267335695,
+      "maxAbsDevPct": 2177.857271372066
+    },
+    "operatingMargins": {
+      "comparable": 88,
+      "meanAbsDevPct": 12863.094999424862,
+      "medianAbsDevPct": 27.26462952330846,
+      "p95AbsDevPct": 354.3030966820919,
+      "maxAbsDevPct": 1120210.3347563532
+    },
+    "profitMargins": {
+      "comparable": 92,
+      "meanAbsDevPct": 17714.690764932715,
+      "medianAbsDevPct": 48.993676967766746,
+      "p95AbsDevPct": 3606.5078644803543,
+      "maxAbsDevPct": 1092998.3571062395
+    },
+    "currentRatio": {
+      "comparable": 89,
+      "meanAbsDevPct": 4.820808991929251,
+      "medianAbsDevPct": 1.4839911017332158e-13,
+      "p95AbsDevPct": 26.89075595189457,
+      "maxAbsDevPct": 102.60916699410691
+    },
+    "quickRatio": {
+      "comparable": 85,
+      "meanAbsDevPct": 9.691186995866293,
+      "medianAbsDevPct": 2.9854677163218413,
+      "p95AbsDevPct": 36.07967642347405,
+      "maxAbsDevPct": 82.54694860983577
+    },
+    "debtToEquity": {
+      "comparable": 97,
+      "meanAbsDevPct": 28947680.590430938,
+      "medianAbsDevPct": 21592.51967940827,
+      "p95AbsDevPct": 268873.67540971737,
+      "maxAbsDevPct": 2793660676.091085
+    },
+    "beta": {
+      "comparable": 100,
+      "meanAbsDevPct": 23.653969994700738,
+      "medianAbsDevPct": 9.398421240409753,
+      "p95AbsDevPct": 80.27436252038277,
+      "maxAbsDevPct": 360.79172282943944
+    }
+  }
+}

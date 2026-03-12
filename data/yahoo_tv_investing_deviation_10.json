@@ -1,0 +1,155 @@
+{
+  "generatedAt": 1773161720.37283,
+  "rows": [
+    {
+      "code": "SAHOL",
+      "yahoo": 95.7,
+      "tradingview": null,
+      "investing": null,
+      "tv_vs_yahoo_pct": null,
+      "inv_vs_yahoo_pct": null,
+      "tv_vs_inv_pct": null,
+      "errors": {
+        "yahoo": null,
+        "tradingview": null,
+        "investing": null
+      },
+      "sec": 1.1
+    },
+    {
+      "code": "FROTO",
+      "yahoo": 112.1,
+      "tradingview": null,
+      "investing": null,
+      "tv_vs_yahoo_pct": null,
+      "inv_vs_yahoo_pct": null,
+      "tv_vs_inv_pct": null,
+      "errors": {
+        "yahoo": null,
+        "tradingview": null,
+        "investing": null
+      },
+      "sec": 0.65
+    },
+    {
+      "code": "PETKM",
+      "yahoo": 17.77,
+      "tradingview": null,
+      "investing": null,
+      "tv_vs_yahoo_pct": null,
+      "inv_vs_yahoo_pct": null,
+      "tv_vs_inv_pct": null,
+      "errors": {
+        "yahoo": null,
+        "tradingview": null,
+        "investing": null
+      },
+      "sec": 0.48
+    },
+    {
+      "code": "KCHOL",
+      "yahoo": 193.5,
+      "tradingview": null,
+      "investing": null,
+      "tv_vs_yahoo_pct": null,
+      "inv_vs_yahoo_pct": null,
+      "tv_vs_inv_pct": null,
+      "errors": {
+        "yahoo": null,
+        "tradingview": null,
+        "investing": null
+      },
+      "sec": 0.65
+    },
+    {
+      "code": "THYAO",
+      "yahoo": 297.0,
+      "tradingview": null,
+      "investing": null,
+      "tv_vs_yahoo_pct": null,
+      "inv_vs_yahoo_pct": null,
+      "tv_vs_inv_pct": null,
+      "errors": {
+        "yahoo": null,
+        "tradingview": null,
+        "investing": null
+      },
+      "sec": 0.5
+    },
+    {
+      "code": "TSKB",
+      "yahoo": 12.35,
+      "tradingview": null,
+      "investing": null,
+      "tv_vs_yahoo_pct": null,
+      "inv_vs_yahoo_pct": null,
+      "tv_vs_inv_pct": null,
+      "errors": {
+        "yahoo": null,
+        "tradingview": null,
+        "investing": null
+      },
+      "sec": 0.58
+    },
+    {
+      "code": "ASELS",
+      "yahoo": 334.25,
+      "tradingview": null,
+      "investing": null,
+      "tv_vs_yahoo_pct": null,
+      "inv_vs_yahoo_pct": null,
+      "tv_vs_inv_pct": null,
+      "errors": {
+        "yahoo": null,
+        "tradingview": null,
+        "investing": null
+      },
+      "sec": 0.56
+    },
+    {
+      "code": "TUPRS",
+      "yahoo": 248.0,
+      "tradingview": null,
+      "investing": null,
+      "tv_vs_yahoo_pct": null,
+      "inv_vs_yahoo_pct": null,
+      "tv_vs_inv_pct": null,
+      "errors": {
+        "yahoo": null,
+        "tradingview": null,
+        "investing": null
+      },
+      "sec": 0.41
+    },
+    {
+      "code": "AKBNK",
+      "yahoo": 77.1,
+      "tradingview": null,
+      "investing": null,
+      "tv_vs_yahoo_pct": null,
+      "inv_vs_yahoo_pct": null,
+      "tv_vs_inv_pct": null,
+      "errors": {
+        "yahoo": null,
+        "tradingview": null,
+        "investing": null
+      },
+      "sec": 0.51
+    },
+    {
+      "code": "TRALT",
+      "yahoo": 55.4,
+      "tradingview": null,
+      "investing": null,
+      "tv_vs_yahoo_pct": null,
+      "inv_vs_yahoo_pct": null,
+      "tv_vs_inv_pct": null,
+      "errors": {
+        "yahoo": null,
+        "tradingview": null,
+        "investing": null
+      },
+      "sec": 0.5
+    }
+  ]
+}

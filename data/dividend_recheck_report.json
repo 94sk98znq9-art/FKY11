@@ -1,0 +1,83 @@
+{
+  "generatedAt": "2026-03-12 00:14:57 +0300",
+  "mode": "tv_parity",
+  "symbolCount": 100,
+  "coverage": {
+    "appDividendYieldNonNull": 51,
+    "tvDividendYieldNonNull": 51,
+    "bothNonNull": 51,
+    "bothNull": 49
+  },
+  "deviation": {
+    "meanAbsDevPct": 0.0,
+    "medianAbsDevPct": 0.0,
+    "p95AbsDevPct": 0.0,
+    "maxAbsDevPct": 0.0,
+    "mismatchCount": 0,
+    "mismatchSamples": []
+  },
+  "nullReasons": {
+    "tv_null_in_parity_mode": {
+      "count": 49,
+      "symbols": [
+        "AKSEN",
+        "ALTNY",
+        "ARCLK",
+        "BRSAN",
+        "BSOKE",
+        "BTCIM",
+        "CANTE",
+        "CWENE",
+        "DAPGM",
+        "DSTKF",
+        "EUPWR",
+        "FENER",
+        "GESAN",
+        "GLRMK",
+        "GRTHO",
+        "GSRAY",
+        "GUBRF",
+        "HALKB",
+        "HEKTS",
+        "IZENR",
+        "KLRHO",
+        "KRDMD",
+        "KUYAS",
+        "MAGEN",
+        "MIATK",
+        "MPARK",
+        "ODAS",
+        "OTKAR",
+        "PASEU",
+        "PATEK",
+        "PETKM",
+        "PGSUS",
+        "QUAGR",
+        "RALYH",
+        "REEDR",
+        "SASA",
+        "TRALT",
+        "TRENJ",
+        "TRMET",
+        "TTKOM",
+        "TUKAS",
+        "TUREX",
+        "VAKBN",
+        "VESTL",
+        "YEOTK",
+        "YKBNK",
+        "ZOREN",
+        "CVKMD",
+        "SOKM"
+      ]
+    },
+    "no_dividend_snapshot_data": {
+      "count": 0,
+      "symbols": []
+    },
+    "unknown": {
+      "count": 0,
+      "symbols": []
+    }
+  }
+}

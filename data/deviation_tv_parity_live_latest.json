@@ -1,0 +1,91 @@
+{
+  "generatedAt": "2026-03-11 20:06:05 +0300",
+  "symbolCount": 100,
+  "summary": {
+    "trailingPE": {
+      "comparable": 74,
+      "meanAbsDevPct": 0.0,
+      "medianAbsDevPct": 0.0,
+      "p95AbsDevPct": 0.0,
+      "maxAbsDevPct": 0.0
+    },
+    "trailingEps": {
+      "comparable": 98,
+      "meanAbsDevPct": 0.0,
+      "medianAbsDevPct": 0.0,
+      "p95AbsDevPct": 0.0,
+      "maxAbsDevPct": 0.0
+    },
+    "priceToBook": {
+      "comparable": 97,
+      "meanAbsDevPct": 0.0,
+      "medianAbsDevPct": 0.0,
+      "p95AbsDevPct": 0.0,
+      "maxAbsDevPct": 0.0
+    },
+    "returnOnEquity": {
+      "comparable": 97,
+      "meanAbsDevPct": 0.0,
+      "medianAbsDevPct": 0.0,
+      "p95AbsDevPct": 0.0,
+      "maxAbsDevPct": 0.0
+    },
+    "returnOnAssets": {
+      "comparable": 98,
+      "meanAbsDevPct": 0.0,
+      "medianAbsDevPct": 0.0,
+      "p95AbsDevPct": 0.0,
+      "maxAbsDevPct": 0.0
+    },
+    "grossMargins": {
+      "comparable": 85,
+      "meanAbsDevPct": 0.0,
+      "medianAbsDevPct": 0.0,
+      "p95AbsDevPct": 0.0,
+      "maxAbsDevPct": 0.0
+    },
+    "operatingMargins": {
+      "comparable": 98,
+      "meanAbsDevPct": 0.0,
+      "medianAbsDevPct": 0.0,
+      "p95AbsDevPct": 0.0,
+      "maxAbsDevPct": 0.0
+    },
+    "profitMargins": {
+      "comparable": 98,
+      "meanAbsDevPct": 0.0,
+      "medianAbsDevPct": 0.0,
+      "p95AbsDevPct": 0.0,
+      "maxAbsDevPct": 0.0
+    },
+    "currentRatio": {
+      "comparable": 98,
+      "meanAbsDevPct": 0.0,
+      "medianAbsDevPct": 0.0,
+      "p95AbsDevPct": 0.0,
+      "maxAbsDevPct": 0.0
+    },
+    "quickRatio": {
+      "comparable": 87,
+      "meanAbsDevPct": 0.0,
+      "medianAbsDevPct": 0.0,
+      "p95AbsDevPct": 0.0,
+      "maxAbsDevPct": 0.0
+    },
+    "debtToEquity": {
+      "comparable": 97,
+      "meanAbsDevPct": 0.0,
+      "medianAbsDevPct": 0.0,
+      "p95AbsDevPct": 0.0,
+      "maxAbsDevPct": 0.0
+    },
+    "beta": {
+      "comparable": 100,
+      "meanAbsDevPct": 0.0,
+      "medianAbsDevPct": 0.0,
+      "p95AbsDevPct": 0.0,
+      "maxAbsDevPct": 0.0
+    }
+  },
+  "overallMeanOfMetricMeansPct": 0.0
+}

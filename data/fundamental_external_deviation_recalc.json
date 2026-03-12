@@ -1,0 +1,196 @@
+{
+  "generatedAt": "2026-03-11 11:53:10 +0300",
+  "symbolCount": 100,
+  "sourceNote": {
+    "kap_truth": "reused from fundamental_external_deviation_report.json generatedAt=2026-03-11 11:23:23 +03",
+    "tv_parity": "recalculated against live TradingView scanner data"
+  },
+  "summary": {
+    "kap_truth_vs_tradingview": {
+      "trailingPE": {
+        "comparable": 73,
+        "meanAbsDevPct": 279.48994685709766,
+        "medianAbsDevPct": 12.19872742464169,
+        "p95AbsDevPct": 227.76461889584348,
+        "maxAbsDevPct": 16731.201247570465
+      },
+      "trailingEps": {
+        "comparable": 98,
+        "meanAbsDevPct": 304.57581326400475,
+        "medianAbsDevPct": 26.104014339129016,
+        "p95AbsDevPct": 1196.8472935535892,
+        "maxAbsDevPct": 13972.43575012258
+      },
+      "returnOnEquity": {
+        "comparable": 97,
+        "meanAbsDevPct": 167.86155583502938,
+        "medianAbsDevPct": 19.702944868574555,
+        "p95AbsDevPct": 1030.033663849162,
+        "maxAbsDevPct": 3246.7271826534484
+      },
+      "returnOnAssets": {
+        "comparable": 98,
+        "meanAbsDevPct": 258.85979919663373,
+        "medianAbsDevPct": 22.888752848210647,
+        "p95AbsDevPct": 940.0698932933036,
+        "maxAbsDevPct": 11543.101765825451
+      },
+      "grossMargins": {
+        "comparable": 85,
+        "meanAbsDevPct": 68.01166539955246,
+        "medianAbsDevPct": 7.849698488626116,
+        "p95AbsDevPct": 198.075722314078,
+        "maxAbsDevPct": 2177.8572713720664
+      },
+      "operatingMargins": {
+        "comparable": 88,
+        "meanAbsDevPct": 12863.094999424864,
+        "medianAbsDevPct": 27.264629523308464,
+        "p95AbsDevPct": 359.76423373469083,
+        "maxAbsDevPct": 1120210.3347563534
+      },
+      "profitMargins": {
+        "comparable": 92,
+        "meanAbsDevPct": 17714.690764932715,
+        "medianAbsDevPct": 48.993676967766746,
+        "p95AbsDevPct": 2674.2196483676958,
+        "maxAbsDevPct": 1092998.3571062395
+      },
+      "currentRatio": {
+        "comparable": 89,
+        "meanAbsDevPct": 4.820808991929251,
+        "medianAbsDevPct": 1.4839911017332158e-13,
+        "p95AbsDevPct": 26.958400463351335,
+        "maxAbsDevPct": 102.60916699410691
+      },
+      "quickRatio": {
+        "comparable": 85,
+        "meanAbsDevPct": 9.691186995866293,
+        "medianAbsDevPct": 2.9854677163218413,
+        "p95AbsDevPct": 36.42692392820004,
+        "maxAbsDevPct": 82.54694860983577
+      },
+      "beta": {
+        "comparable": 100,
+        "meanAbsDevPct": 23.65378870310601,
+        "medianAbsDevPct": 9.398421240409725,
+        "p95AbsDevPct": 78.3388084424614,
+        "maxAbsDevPct": 360.79172282943944
+      },
+      "price": {
+        "comparable": 100,
+        "meanAbsDevPct": 0.05644143218445616,
+        "medianAbsDevPct": 0.0,
+        "p95AbsDevPct": 0.18248175182480714,
+        "maxAbsDevPct": 0.6254343293954174
+      }
+    },
+    "tv_parity_vs_tradingview": {
+      "trailingPE": {
+        "comparable": 73,
+        "meanAbsDevPct": 0.0,
+        "medianAbsDevPct": 0.0,
+        "p95AbsDevPct": 0.0,
+        "maxAbsDevPct": 0.0
+      },
+      "trailingEps": {
+        "comparable": 98,
+        "meanAbsDevPct": 0.0,
+        "medianAbsDevPct": 0.0,
+        "p95AbsDevPct": 0.0,
+        "maxAbsDevPct": 0.0
+      },
+      "priceToBook": {
+        "comparable": 97,
+        "meanAbsDevPct": 0.0,
+        "medianAbsDevPct": 0.0,
+        "p95AbsDevPct": 0.0,
+        "maxAbsDevPct": 0.0
+      },
+      "returnOnEquity": {
+        "comparable": 97,
+        "meanAbsDevPct": 0.0,
+        "medianAbsDevPct": 0.0,
+        "p95AbsDevPct": 0.0,
+        "maxAbsDevPct": 0.0
+      },
+      "returnOnAssets": {
+        "comparable": 98,
+        "meanAbsDevPct": 0.0,
+        "medianAbsDevPct": 0.0,
+        "p95AbsDevPct": 0.0,
+        "maxAbsDevPct": 0.0
+      },
+      "grossMargins": {
+        "comparable": 85,
+        "meanAbsDevPct": 0.0,
+        "medianAbsDevPct": 0.0,
+        "p95AbsDevPct": 0.0,
+        "maxAbsDevPct": 0.0
+      },
+      "operatingMargins": {
+        "comparable": 98,
+        "meanAbsDevPct": 0.0,
+        "medianAbsDevPct": 0.0,
+        "p95AbsDevPct": 0.0,
+        "maxAbsDevPct": 0.0
+      },
+      "profitMargins": {
+        "comparable": 98,
+        "meanAbsDevPct": 0.0,
+        "medianAbsDevPct": 0.0,
+        "p95AbsDevPct": 0.0,
+        "maxAbsDevPct": 0.0
+      },
+      "currentRatio": {
+        "comparable": 98,
+        "meanAbsDevPct": 0.0,
+        "medianAbsDevPct": 0.0,
+        "p95AbsDevPct": 0.0,
+        "maxAbsDevPct": 0.0
+      },
+      "quickRatio": {
+        "comparable": 87,
+        "meanAbsDevPct": 0.0,
+        "medianAbsDevPct": 0.0,
+        "p95AbsDevPct": 0.0,
+        "maxAbsDevPct": 0.0
+      },
+      "debtToEquity": {
+        "comparable": 97,
+        "meanAbsDevPct": 0.0,
+        "medianAbsDevPct": 0.0,
+        "p95AbsDevPct": 0.0,
+        "maxAbsDevPct": 0.0
+      },
+      "beta": {
+        "comparable": 100,
+        "meanAbsDevPct": 0.0,
+        "medianAbsDevPct": 0.0,
+        "p95AbsDevPct": 0.0,
+        "maxAbsDevPct": 0.0
+      },
+      "marketCap": {
+        "comparable": 100,
+        "meanAbsDevPct": 0.0,
+        "medianAbsDevPct": 0.0,
+        "p95AbsDevPct": 0.0,
+        "maxAbsDevPct": 0.0
+      },
+      "priceToSalesTrailing12Months": {
+        "comparable": 99,
+        "meanAbsDevPct": 0.0,
+        "medianAbsDevPct": 0.0,
+        "p95AbsDevPct": 0.0,
+        "maxAbsDevPct": 0.0
+      },
+      "dividendYield": {
+        "comparable": 51,
+        "meanAbsDevPct": 0.0,
+        "medianAbsDevPct": 0.0,
+        "p95AbsDevPct": 0.0,
+        "maxAbsDevPct": 0.0
+      }
+    }
+  }
+}

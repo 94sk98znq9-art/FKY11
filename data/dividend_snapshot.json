@@ -1,0 +1,3200 @@
+{
+  "generatedAt": "2026-03-10T10:33:15.617784+00:00",
+  "generatedAtMs": 1773138795617,
+  "source": "kap_dividend",
+  "symbolCount": 100,
+  "failureCount": 28,
+  "failures": [
+    {
+      "symbol": "SASA",
+      "reason": "all_disclosures_empty oid=4028e4a240ee866c0140f20abd9500cc"
+    },
+    {
+      "symbol": "SISE",
+      "reason": "('Connection aborted.', BadStatusLine('Belirli  bir sure boyunca yogun talepte bulundugunuzdan istekleriniz engellenmistir. Bir sure sonra tekrar deneyiniz. Your request has been blocked because of excessive request. Please try again later.'))"
+    },
+    {
+      "symbol": "SKBNK",
+      "reason": "('Connection aborted.', BadStatusLine('Belirli  bir sure boyunca yogun talepte bulundugunuzdan istekleriniz engellenmistir. Bir sure sonra tekrar deneyiniz. Your request has been blocked because of excessive request. Please try again later.'))"
+    },
+    {
+      "symbol": "TABGD",
+      "reason": "('Connection aborted.', BadStatusLine('Belirli  bir sure boyunca yogun talepte bulundugunuzdan istekleriniz engellenmistir. Bir sure sonra tekrar deneyiniz. Your request has been blocked because of excessive request. Please try again later.'))"
+    },
+    {
+      "symbol": "TAVHL",
+      "reason": "('Connection aborted.', BadStatusLine('Belirli  bir sure boyunca yogun talepte bulundugunuzdan istekleriniz engellenmistir. Bir sure sonra tekrar deneyiniz. Your request has been blocked because of excessive request. Please try again later.'))"
+    },
+    {
+      "symbol": "TCELL",
+      "reason": "('Connection aborted.', BadStatusLine('Belirli  bir sure boyunca yogun talepte bulundugunuzdan istekleriniz engellenmistir. Bir sure sonra tekrar deneyiniz. Your request has been blocked because of excessive request. Please try again later.'))"
+    },
+    {
+      "symbol": "THYAO",
+      "reason": "('Connection aborted.', BadStatusLine('Belirli  bir sure boyunca yogun talepte bulundugunuzdan istekleriniz engellenmistir. Bir sure sonra tekrar deneyiniz. Your request has been blocked because of excessive request. Please try again later.'))"
+    },
+    {
+      "symbol": "TKFEN",
+      "reason": "('Connection aborted.', BadStatusLine('Belirli  bir sure boyunca yogun talepte bulundugunuzdan istekleriniz engellenmistir. Bir sure sonra tekrar deneyiniz. Your request has been blocked because of excessive request. Please try again later.'))"
+    },
+    {
+      "symbol": "TOASO",
+      "reason": "('Connection aborted.', BadStatusLine('Belirli  bir sure boyunca yogun talepte bulundugunuzdan istekleriniz engellenmistir. Bir sure sonra tekrar deneyiniz. Your request has been blocked because of excessive request. Please try again later.'))"
+    },
+    {
+      "symbol": "TRALT",
+      "reason": "('Connection aborted.', BadStatusLine('Belirli  bir sure boyunca yogun talepte bulundugunuzdan istekleriniz engellenmistir. Bir sure sonra tekrar deneyiniz. Your request has been blocked because of excessive request. Please try again later.'))"
+    },
+    {
+      "symbol": "TRENJ",
+      "reason": "('Connection aborted.', BadStatusLine('Belirli  bir sure boyunca yogun talepte bulundugunuzdan istekleriniz engellenmistir. Bir sure sonra tekrar deneyiniz. Your request has been blocked because of excessive request. Please try again later.'))"
+    },
+    {
+      "symbol": "TRMET",
+      "reason": "('Connection aborted.', BadStatusLine('Belirli  bir sure boyunca yogun talepte bulundugunuzdan istekleriniz engellenmistir. Bir sure sonra tekrar deneyiniz. Your request has been blocked because of excessive request. Please try again later.'))"
+    },
+    {
+      "symbol": "TSKB",
+      "reason": "('Connection aborted.', BadStatusLine('Belirli  bir sure boyunca yogun talepte bulundugunuzdan istekleriniz engellenmistir. Bir sure sonra tekrar deneyiniz. Your request has been blocked because of excessive request. Please try again later.'))"
+    },
+    {
+      "symbol": "TTKOM",
+      "reason": "('Connection aborted.', BadStatusLine('Belirli  bir sure boyunca yogun talepte bulundugunuzdan istekleriniz engellenmistir. Bir sure sonra tekrar deneyiniz. Your request has been blocked because of excessive request. Please try again later.'))"
+    },
+    {
+      "symbol": "TTRAK",
+      "reason": "('Connection aborted.', BadStatusLine('Belirli  bir sure boyunca yogun talepte bulundugunuzdan istekleriniz engellenmistir. Bir sure sonra tekrar deneyiniz. Your request has been blocked because of excessive request. Please try again later.'))"
+    },
+    {
+      "symbol": "TUKAS",
+      "reason": "('Connection aborted.', BadStatusLine('Belirli  bir sure boyunca yogun talepte bulundugunuzdan istekleriniz engellenmistir. Bir sure sonra tekrar deneyiniz. Your request has been blocked because of excessive request. Please try again later.'))"
+    },
+    {
+      "symbol": "TUPRS",
+      "reason": "('Connection aborted.', BadStatusLine('Belirli  bir sure boyunca yogun talepte bulundugunuzdan istekleriniz engellenmistir. Bir sure sonra tekrar deneyiniz. Your request has been blocked because of excessive request. Please try again later.'))"
+    },
+    {
+      "symbol": "TUREX",
+      "reason": "('Connection aborted.', BadStatusLine('Belirli  bir sure boyunca yogun talepte bulundugunuzdan istekleriniz engellenmistir. Bir sure sonra tekrar deneyiniz. Your request has been blocked because of excessive request. Please try again later.'))"
+    },
+    {
+      "symbol": "TURSG",
+      "reason": "('Connection aborted.', BadStatusLine('Belirli  bir sure boyunca yogun talepte bulundugunuzdan istekleriniz engellenmistir. Bir sure sonra tekrar deneyiniz. Your request has been blocked because of excessive request. Please try again later.'))"
+    },
+    {
+      "symbol": "ULKER",
+      "reason": "('Connection aborted.', BadStatusLine('Belirli  bir sure boyunca yogun talepte bulundugunuzdan istekleriniz engellenmistir. Bir sure sonra tekrar deneyiniz. Your request has been blocked because of excessive request. Please try again later.'))"
+    },
+    {
+      "symbol": "VAKBN",
+      "reason": "('Connection aborted.', BadStatusLine('Belirli  bir sure boyunca yogun talepte bulundugunuzdan istekleriniz engellenmistir. Bir sure sonra tekrar deneyiniz. Your request has been blocked because of excessive request. Please try again later.'))"
+    },
+    {
+      "symbol": "VESTL",
+      "reason": "('Connection aborted.', BadStatusLine('Belirli  bir sure boyunca yogun talepte bulundugunuzdan istekleriniz engellenmistir. Bir sure sonra tekrar deneyiniz. Your request has been blocked because of excessive request. Please try again later.'))"
+    },
+    {
+      "symbol": "YEOTK",
+      "reason": "('Connection aborted.', BadStatusLine('Belirli  bir sure boyunca yogun talepte bulundugunuzdan istekleriniz engellenmistir. Bir sure sonra tekrar deneyiniz. Your request has been blocked because of excessive request. Please try again later.'))"
+    },
+    {
+      "symbol": "YKBNK",
+      "reason": "('Connection aborted.', BadStatusLine('Belirli  bir sure boyunca yogun talepte bulundugunuzdan istekleriniz engellenmistir. Bir sure sonra tekrar deneyiniz. Your request has been blocked because of excessive request. Please try again later.'))"
+    },
+    {
+      "symbol": "ZOREN",
+      "reason": "('Connection aborted.', BadStatusLine('Belirli  bir sure boyunca yogun talepte bulundugunuzdan istekleriniz engellenmistir. Bir sure sonra tekrar deneyiniz. Your request has been blocked because of excessive request. Please try again later.'))"
+    },
+    {
+      "symbol": "ASELS",
+      "reason": "('Connection aborted.', BadStatusLine('Belirli  bir sure boyunca yogun talepte bulundugunuzdan istekleriniz engellenmistir. Bir sure sonra tekrar deneyiniz. Your request has been blocked because of excessive request. Please try again later.'))"
+    },
+    {
+      "symbol": "CVKMD",
+      "reason": "('Connection aborted.', BadStatusLine('Belirli  bir sure boyunca yogun talepte bulundugunuzdan istekleriniz engellenmistir. Bir sure sonra tekrar deneyiniz. Your request has been blocked because of excessive request. Please try again later.'))"
+    },
+    {
+      "symbol": "SOKM",
+      "reason": "('Connection aborted.', BadStatusLine('Belirli  bir sure boyunca yogun talepte bulundugunuzdan istekleriniz engellenmistir. Bir sure sonra tekrar deneyiniz. Your request has been blocked because of excessive request. Please try again later.'))"
+    }
+  ],
+  "audit": {
+    "processedSymbols": 100,
+    "updatedSymbols": 72,
+    "workRange": {
+      "start": 0,
+      "end": 100
+    },
+    "keptExistingOnFail": 28,
+    "mergeExisting": true,
+    "maxItems": 8,
+    "sleepSeconds": 0.8,
+    "symbolCoveragePct": 72.0,
+    "meaningfulUpdatedSymbols": 72,
+    "eventSymbols": 72,
+    "amountSymbols": 72,
+    "datedSymbols": 72,
+    "zeroLikeSymbols": 28,
+    "lastRunStatus": "partial"
+  },
+  "data": {
+    "AEFES": {
+      "lastDividendDateMs": 1773014400000.0,
+      "lastDividendPerShare": 9.0,
+      "annualDividendPerShare": 10.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 2.0,
+      "regularityScore": 0.6666666666666666,
+      "eventCount": 8.0,
+      "events": [
+        {
+          "dateMs": 1773014400000.0,
+          "amountPerShare": 9.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        },
+        {
+          "dateMs": 1765152000000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1765152000000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1778630400000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1771200000000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        },
+        {
+          "dateMs": 1747699200000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1747699200000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1640736000000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        }
+      ]
+    },
+    "AGHOL": {
+      "lastDividendDateMs": 1747180800000.0,
+      "lastDividendPerShare": 11.0,
+      "annualDividendPerShare": 41.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 3.0,
+      "regularityScore": 1.0,
+      "eventCount": 8.0,
+      "events": [
+        {
+          "dateMs": 1747180800000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1770768000000.0,
+          "amountPerShare": 11.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        },
+        {
+          "dateMs": 1747180800000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1730937600000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1770249600000.0,
+          "amountPerShare": 5.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        },
+        {
+          "dateMs": 1730937600000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1758758400000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1766620800000.0,
+          "amountPerShare": 25.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        }
+      ]
+    },
+    "AKBNK": {
+      "lastDividendDateMs": 1774483200000.0,
+      "lastDividendPerShare": 1.0,
+      "annualDividendPerShare": 1.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 8.0,
+      "events": [
+        {
+          "dateMs": 1774483200000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1771545600000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1770768000000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1770768000000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1770681600000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1770595200000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1770595200000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1770595200000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        }
+      ]
+    },
+    "AKSA": {
+      "lastDividendDateMs": 1775174400000.0,
+      "lastDividendPerShare": 1.0,
+      "annualDividendPerShare": 4.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 2.0,
+      "regularityScore": 0.6666666666666666,
+      "eventCount": 4.0,
+      "events": [
+        {
+          "dateMs": 1775174400000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1775174400000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1747785600000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1747785600000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "AKSEN": {
+      "lastDividendDateMs": 1758844800000.0,
+      "lastDividendPerShare": 29.0,
+      "annualDividendPerShare": 58.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 4.0,
+      "events": [
+        {
+          "dateMs": 1758844800000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        },
+        {
+          "dateMs": 1753056000000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        },
+        {
+          "dateMs": 1749772800000.0,
+          "amountPerShare": 29.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1746748800000.0,
+          "amountPerShare": 29.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "ALARK": {
+      "lastDividendDateMs": 1772668800000.0,
+      "lastDividendPerShare": 91.0,
+      "annualDividendPerShare": 92.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 2.0,
+      "regularityScore": 0.6666666666666666,
+      "eventCount": 2.0,
+      "events": [
+        {
+          "dateMs": 1772668800000.0,
+          "amountPerShare": 91.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1744243200000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "ALTNY": {
+      "lastDividendDateMs": 1748390400000.0,
+      "lastDividendPerShare": 22.0,
+      "annualDividendPerShare": 44.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 2.0,
+      "events": [
+        {
+          "dateMs": 1748390400000.0,
+          "amountPerShare": 22.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1746662400000.0,
+          "amountPerShare": 22.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "ANSGR": {
+      "lastDividendDateMs": 1775001600000.0,
+      "lastDividendPerShare": 1.0,
+      "annualDividendPerShare": 2.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 2.0,
+      "regularityScore": 0.6666666666666666,
+      "eventCount": 2.0,
+      "events": [
+        {
+          "dateMs": 1775001600000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1743120000000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "ARCLK": {
+      "lastDividendDateMs": 1771459200000.0,
+      "lastDividendPerShare": 91.0,
+      "annualDividendPerShare": 257.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 3.0,
+      "regularityScore": 1.0,
+      "eventCount": 8.0,
+      "events": [
+        {
+          "dateMs": 1771459200000.0,
+          "amountPerShare": 91.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1755043200000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1770940800000.0,
+          "amountPerShare": 13.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        },
+        {
+          "dateMs": 1755043200000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1720396800000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1767571200000.0,
+          "amountPerShare": 140.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        },
+        {
+          "dateMs": 1755043200000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1762992000000.0,
+          "amountPerShare": 13.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        }
+      ]
+    },
+    "ASTOR": {
+      "lastDividendDateMs": 1753056000000.0,
+      "lastDividendPerShare": 1.0,
+      "annualDividendPerShare": 2.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 3.0,
+      "events": [
+        {
+          "dateMs": 1753056000000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        },
+        {
+          "dateMs": 1755475200000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1755475200000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "BALSU": {
+      "lastDividendDateMs": 1763078400000.0,
+      "lastDividendPerShare": 1.0,
+      "annualDividendPerShare": 2.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 2.0,
+      "events": [
+        {
+          "dateMs": 1763078400000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1763078400000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "BIMAS": {
+      "lastDividendDateMs": 1758844800000.0,
+      "lastDividendPerShare": 19.0,
+      "annualDividendPerShare": 22.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 5.0,
+      "events": [
+        {
+          "dateMs": 1758844800000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        },
+        {
+          "dateMs": 1758412800000.0,
+          "amountPerShare": 19.0,
+          "type": "cash",
+          "title": "KAR DAGITIM POLITIKASI"
+        },
+        {
+          "dateMs": 1750204800000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1750204800000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1750204800000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "BRSAN": {
+      "lastDividendDateMs": 1745884800000.0,
+      "lastDividendPerShare": 14.0,
+      "annualDividendPerShare": 28.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 2.0,
+      "events": [
+        {
+          "dateMs": 1745884800000.0,
+          "amountPerShare": 14.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1742860800000.0,
+          "amountPerShare": 14.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "BRYAT": {
+      "lastDividendDateMs": 1745280000000.0,
+      "lastDividendPerShare": 5.0,
+      "annualDividendPerShare": 122.133188,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 3.0,
+      "events": [
+        {
+          "dateMs": 1745280000000.0,
+          "amountPerShare": 5.0,
+          "type": "cash",
+          "title": "KAR DAGITIM POLITIKASI"
+        },
+        {
+          "dateMs": 1745971200000.0,
+          "amountPerShare": 58.566594,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1742947200000.0,
+          "amountPerShare": 58.566594,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "BSOKE": {
+      "lastDividendDateMs": 1758844800000.0,
+      "lastDividendPerShare": 12.0,
+      "annualDividendPerShare": 24.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 4.0,
+      "events": [
+        {
+          "dateMs": 1758844800000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        },
+        {
+          "dateMs": 1750204800000.0,
+          "amountPerShare": 12.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1747958400000.0,
+          "amountPerShare": 12.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1745539200000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        }
+      ]
+    },
+    "BTCIM": {
+      "lastDividendDateMs": 1750204800000.0,
+      "lastDividendPerShare": 14.0,
+      "annualDividendPerShare": 28.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 2.0,
+      "events": [
+        {
+          "dateMs": 1750204800000.0,
+          "amountPerShare": 14.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1747958400000.0,
+          "amountPerShare": 14.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "CANTE": {
+      "lastDividendDateMs": 1764806400000.0,
+      "lastDividendPerShare": 16.0,
+      "annualDividendPerShare": 32.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 2.0,
+      "events": [
+        {
+          "dateMs": 1764806400000.0,
+          "amountPerShare": 16.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1762819200000.0,
+          "amountPerShare": 16.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "CCOLA": {
+      "lastDividendDateMs": 1778544000000.0,
+      "lastDividendPerShare": 1.43,
+      "annualDividendPerShare": 142.43,
+      "dividendPayoutPct": null,
+      "paidYears3y": 2.0,
+      "regularityScore": 0.6666666666666666,
+      "eventCount": 8.0,
+      "events": [
+        {
+          "dateMs": 1778544000000.0,
+          "amountPerShare": 1.43,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1771459200000.0,
+          "amountPerShare": 114.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        },
+        {
+          "dateMs": 1755734400000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1755734400000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1770163200000.0,
+          "amountPerShare": 4.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        },
+        {
+          "dateMs": 1770163200000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1769126400000.0,
+          "amountPerShare": 23.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        },
+        {
+          "dateMs": 1753401600000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        }
+      ]
+    },
+    "CIMSA": {
+      "lastDividendDateMs": 1775001600000.0,
+      "lastDividendPerShare": 1.0,
+      "annualDividendPerShare": 2.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 2.0,
+      "regularityScore": 0.6666666666666666,
+      "eventCount": 4.0,
+      "events": [
+        {
+          "dateMs": 1775001600000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1768953600000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        },
+        {
+          "dateMs": 1745539200000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        },
+        {
+          "dateMs": 1743552000000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "CWENE": {
+      "lastDividendDateMs": 1754265600000.0,
+      "lastDividendPerShare": 20.0,
+      "annualDividendPerShare": 60.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 3.0,
+      "events": [
+        {
+          "dateMs": 1754265600000.0,
+          "amountPerShare": 20.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1751500800000.0,
+          "amountPerShare": 20.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1748995200000.0,
+          "amountPerShare": 20.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "DAPGM": {
+      "lastDividendDateMs": 1758844800000.0,
+      "lastDividendPerShare": 16.0,
+      "annualDividendPerShare": 32.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 4.0,
+      "events": [
+        {
+          "dateMs": 1758844800000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        },
+        {
+          "dateMs": 1747008000000.0,
+          "amountPerShare": 16.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1745539200000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        },
+        {
+          "dateMs": 1742169600000.0,
+          "amountPerShare": 16.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "DOAS": {
+      "lastDividendDateMs": 1772150400000.0,
+      "lastDividendPerShare": 1.0,
+      "annualDividendPerShare": 29.2727272,
+      "dividendPayoutPct": null,
+      "paidYears3y": 2.0,
+      "regularityScore": 0.6666666666666666,
+      "eventCount": 7.0,
+      "events": [
+        {
+          "dateMs": 1772150400000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1762732800000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "OZEL DURUM ACIKLAMASI (GENEL)"
+        },
+        {
+          "dateMs": 1755561600000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "OZEL DURUM ACIKLAMASI (GENEL)"
+        },
+        {
+          "dateMs": 1747699200000.0,
+          "amountPerShare": 27.2727272,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1747008000000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "OZEL DURUM ACIKLAMASI (GENEL)"
+        },
+        {
+          "dateMs": 1745539200000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        },
+        {
+          "dateMs": 1743033600000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "DOHOL": {
+      "lastDividendDateMs": 1768953600000.0,
+      "lastDividendPerShare": 1.0,
+      "annualDividendPerShare": 3.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 2.0,
+      "regularityScore": 0.6666666666666666,
+      "eventCount": 6.0,
+      "events": [
+        {
+          "dateMs": 1768953600000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        },
+        {
+          "dateMs": 1760659200000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        },
+        {
+          "dateMs": 1742342400000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1753056000000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        },
+        {
+          "dateMs": 1744416000000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1742428800000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "DSTKF": {
+      "lastDividendDateMs": 1771372800000.0,
+      "lastDividendPerShare": 16.0,
+      "annualDividendPerShare": 48.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 2.0,
+      "regularityScore": 0.6666666666666666,
+      "eventCount": 4.0,
+      "events": [
+        {
+          "dateMs": 1771372800000.0,
+          "amountPerShare": 16.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1754784000000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1747353600000.0,
+          "amountPerShare": 16.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1743724800000.0,
+          "amountPerShare": 16.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "ECILC": {
+      "lastDividendDateMs": 1768953600000.0,
+      "lastDividendPerShare": 1.0,
+      "annualDividendPerShare": 2.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 2.0,
+      "regularityScore": 0.6666666666666666,
+      "eventCount": 5.0,
+      "events": [
+        {
+          "dateMs": 1768953600000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        },
+        {
+          "dateMs": 1759104000000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "OZEL DURUM ACIKLAMASI (GENEL)"
+        },
+        {
+          "dateMs": 1753056000000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        },
+        {
+          "dateMs": 1747180800000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1747180800000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "EFOR": {
+      "lastDividendDateMs": 1772409600000.0,
+      "lastDividendPerShare": 21.0,
+      "annualDividendPerShare": 340.76000000000005,
+      "dividendPayoutPct": null,
+      "paidYears3y": 2.0,
+      "regularityScore": 0.6666666666666666,
+      "eventCount": 8.0,
+      "events": [
+        {
+          "dateMs": 1772409600000.0,
+          "amountPerShare": 21.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1769990400000.0,
+          "amountPerShare": 46.45,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZSIZ)"
+        },
+        {
+          "dateMs": 1765843200000.0,
+          "amountPerShare": 47.78,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZSIZ)"
+        },
+        {
+          "dateMs": 1762905600000.0,
+          "amountPerShare": 49.81,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZSIZ)"
+        },
+        {
+          "dateMs": 1760400000000.0,
+          "amountPerShare": 57.38,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZSIZ)"
+        },
+        {
+          "dateMs": 1758844800000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        },
+        {
+          "dateMs": 1757894400000.0,
+          "amountPerShare": 58.1,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZSIZ)"
+        },
+        {
+          "dateMs": 1753747200000.0,
+          "amountPerShare": 60.24,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZSIZ)"
+        }
+      ]
+    },
+    "EGEEN": {
+      "lastDividendDateMs": 1772409600000.0,
+      "lastDividendPerShare": 16.0,
+      "annualDividendPerShare": 17.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 2.0,
+      "regularityScore": 0.6666666666666666,
+      "eventCount": 5.0,
+      "events": [
+        {
+          "dateMs": 1772409600000.0,
+          "amountPerShare": 16.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1762732800000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "OZEL DURUM ACIKLAMASI (GENEL)"
+        },
+        {
+          "dateMs": 1755561600000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "OZEL DURUM ACIKLAMASI (GENEL)"
+        },
+        {
+          "dateMs": 1747008000000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "OZEL DURUM ACIKLAMASI (GENEL)"
+        },
+        {
+          "dateMs": 1743120000000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "EKGYO": {
+      "lastDividendDateMs": 1782259200000.0,
+      "lastDividendPerShare": 0.6,
+      "annualDividendPerShare": 1.4,
+      "dividendPayoutPct": null,
+      "paidYears3y": 2.0,
+      "regularityScore": 0.6666666666666666,
+      "eventCount": 4.0,
+      "events": [
+        {
+          "dateMs": 1782259200000.0,
+          "amountPerShare": 0.6,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1758844800000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        },
+        {
+          "dateMs": 1750032000000.0,
+          "amountPerShare": 0.4,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1750032000000.0,
+          "amountPerShare": 0.4,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "ENERY": {
+      "lastDividendDateMs": 1758844800000.0,
+      "lastDividendPerShare": 1.0,
+      "annualDividendPerShare": 32.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 5.0,
+      "events": [
+        {
+          "dateMs": 1758844800000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        },
+        {
+          "dateMs": 1754870400000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1754870400000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1745539200000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        },
+        {
+          "dateMs": 1742256000000.0,
+          "amountPerShare": 30.0,
+          "type": "cash",
+          "title": "OZEL DURUM ACIKLAMASI (GENEL)"
+        }
+      ]
+    },
+    "ENJSA": {
+      "lastDividendDateMs": 1772582400000.0,
+      "lastDividendPerShare": 4.0,
+      "annualDividendPerShare": 28.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 2.0,
+      "regularityScore": 0.6666666666666666,
+      "eventCount": 8.0,
+      "events": [
+        {
+          "dateMs": 1772582400000.0,
+          "amountPerShare": 4.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        },
+        {
+          "dateMs": 1748995200000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1748995200000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1776038400000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1739404800000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1739404800000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1770854400000.0,
+          "amountPerShare": 12.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        },
+        {
+          "dateMs": 1770768000000.0,
+          "amountPerShare": 11.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        }
+      ]
+    },
+    "ENKAI": {
+      "lastDividendDateMs": 1775606400000.0,
+      "lastDividendPerShare": 2.1,
+      "annualDividendPerShare": 201.42659999999998,
+      "dividendPayoutPct": null,
+      "paidYears3y": 2.0,
+      "regularityScore": 0.6666666666666666,
+      "eventCount": 5.0,
+      "events": [
+        {
+          "dateMs": 1775606400000.0,
+          "amountPerShare": 2.1,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1768348800000.0,
+          "amountPerShare": 83.33,
+          "type": "cash",
+          "title": "KAR PAYI AVANSI ODEMESI ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1759881600000.0,
+          "amountPerShare": 83.33,
+          "type": "cash",
+          "title": "KAR PAYI AVANSI ODEMESI ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1749600000000.0,
+          "amountPerShare": 31.6666,
+          "type": "cash",
+          "title": "KAR PAYI AVANSI ODEMESI ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1744761600000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "EREGL": {
+      "lastDividendDateMs": 1772496000000.0,
+      "lastDividendPerShare": 1.0,
+      "annualDividendPerShare": 3.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 2.0,
+      "regularityScore": 0.6666666666666666,
+      "eventCount": 5.0,
+      "events": [
+        {
+          "dateMs": 1772496000000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1737590400000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1737590400000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1751414400000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1742947200000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "EUPWR": {
+      "lastDividendDateMs": 1752105600000.0,
+      "lastDividendPerShare": 27.0,
+      "annualDividendPerShare": 54.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 2.0,
+      "events": [
+        {
+          "dateMs": 1752105600000.0,
+          "amountPerShare": 27.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1750118400000.0,
+          "amountPerShare": 27.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "FENER": {
+      "lastDividendDateMs": 1758585600000.0,
+      "lastDividendPerShare": 27.0,
+      "annualDividendPerShare": 81.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 3.0,
+      "events": [
+        {
+          "dateMs": 1758585600000.0,
+          "amountPerShare": 27.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1757462400000.0,
+          "amountPerShare": 27.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1755129600000.0,
+          "amountPerShare": 27.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "FROTO": {
+      "lastDividendDateMs": 1773619200000.0,
+      "lastDividendPerShare": 3.64,
+      "annualDividendPerShare": 32.84,
+      "dividendPayoutPct": null,
+      "paidYears3y": 3.0,
+      "regularityScore": 1.0,
+      "eventCount": 6.0,
+      "events": [
+        {
+          "dateMs": 1773619200000.0,
+          "amountPerShare": 3.64,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1764720000000.0,
+          "amountPerShare": 6.05,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1764720000000.0,
+          "amountPerShare": 6.05,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1729814400000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1729814400000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1743638400000.0,
+          "amountPerShare": 17.1,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "GARAN": {
+      "lastDividendDateMs": 1769731200000.0,
+      "lastDividendPerShare": 24.77,
+      "annualDividendPerShare": 82.77,
+      "dividendPayoutPct": null,
+      "paidYears3y": 2.0,
+      "regularityScore": 0.6666666666666666,
+      "eventCount": 8.0,
+      "events": [
+        {
+          "dateMs": 1769731200000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PERFORMANS SUNUM RAPORU"
+        },
+        {
+          "dateMs": 1768867200000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "FON SUREKLI BILGILENDIRME FORMU"
+        },
+        {
+          "dateMs": 1768262400000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "ARACI KURUMA ODENEN KOMISYON VE VARLIK ALIM SATIM BILGILERI"
+        },
+        {
+          "dateMs": 1767744000000.0,
+          "amountPerShare": 24.77,
+          "type": "cash",
+          "title": "FON TOPLAM GIDER KESINTISI ORANI BILGILERI"
+        },
+        {
+          "dateMs": 1767744000000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "FON GIDER BILGILERI"
+        },
+        {
+          "dateMs": 1767657600000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "FON SUREKLI BILGILENDIRME FORMU"
+        },
+        {
+          "dateMs": 1766534400000.0,
+          "amountPerShare": 29.0,
+          "type": "cash",
+          "title": "FON SUREKLI BILGILENDIRME FORMU"
+        },
+        {
+          "dateMs": 1764028800000.0,
+          "amountPerShare": 29.0,
+          "type": "cash",
+          "title": "FON SUREKLI BILGILENDIRME FORMU"
+        }
+      ]
+    },
+    "GENIL": {
+      "lastDividendDateMs": 1772755200000.0,
+      "lastDividendPerShare": 1.0,
+      "annualDividendPerShare": 5.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 2.0,
+      "regularityScore": 0.6666666666666666,
+      "eventCount": 6.0,
+      "events": [
+        {
+          "dateMs": 1772755200000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1746576000000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1758844800000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        },
+        {
+          "dateMs": 1746576000000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1746576000000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1743033600000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "GESAN": {
+      "lastDividendDateMs": 1752105600000.0,
+      "lastDividendPerShare": 16.0,
+      "annualDividendPerShare": 32.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 3.0,
+      "events": [
+        {
+          "dateMs": 1752105600000.0,
+          "amountPerShare": 16.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1750118400000.0,
+          "amountPerShare": 16.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1745539200000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        }
+      ]
+    },
+    "GLRMK": {
+      "lastDividendDateMs": 1745539200000.0,
+      "lastDividendPerShare": 28.0,
+      "annualDividendPerShare": 56.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 4.0,
+      "events": [
+        {
+          "dateMs": 1745539200000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        },
+        {
+          "dateMs": 1744329600000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "KAR DAGITIM POLITIKASI"
+        },
+        {
+          "dateMs": 1744329600000.0,
+          "amountPerShare": 28.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1742342400000.0,
+          "amountPerShare": 28.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "GRSEL": {
+      "lastDividendDateMs": 1758844800000.0,
+      "lastDividendPerShare": 1.0,
+      "annualDividendPerShare": 4.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 5.0,
+      "events": [
+        {
+          "dateMs": 1758844800000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        },
+        {
+          "dateMs": 1752796800000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1752796800000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1747267200000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1744934400000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "GRTHO": {
+      "lastDividendDateMs": 1758844800000.0,
+      "lastDividendPerShare": 16.0,
+      "annualDividendPerShare": 32.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 4.0,
+      "events": [
+        {
+          "dateMs": 1758844800000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        },
+        {
+          "dateMs": 1745971200000.0,
+          "amountPerShare": 16.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1745539200000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        },
+        {
+          "dateMs": 1743724800000.0,
+          "amountPerShare": 16.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "GSRAY": {
+      "lastDividendDateMs": 1764288000000.0,
+      "lastDividendPerShare": 10.0,
+      "annualDividendPerShare": 20.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 2.0,
+      "events": [
+        {
+          "dateMs": 1764288000000.0,
+          "amountPerShare": 10.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1761264000000.0,
+          "amountPerShare": 10.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "GUBRF": {
+      "lastDividendDateMs": 1772755200000.0,
+      "lastDividendPerShare": 8.0,
+      "annualDividendPerShare": 191.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 2.0,
+      "regularityScore": 0.6666666666666666,
+      "eventCount": 5.0,
+      "events": [
+        {
+          "dateMs": 1772755200000.0,
+          "amountPerShare": 8.0,
+          "type": "cash",
+          "title": "OZEL DURUM ACIKLAMASI (GENEL)"
+        },
+        {
+          "dateMs": 1746748800000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "OZEL DURUM ACIKLAMASI (GENEL)"
+        },
+        {
+          "dateMs": 1745971200000.0,
+          "amountPerShare": 91.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1743552000000.0,
+          "amountPerShare": 91.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1743033600000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "OZEL DURUM ACIKLAMASI (GENEL)"
+        }
+      ]
+    },
+    "HALKB": {
+      "lastDividendDateMs": 1772496000000.0,
+      "lastDividendPerShare": 3.0,
+      "annualDividendPerShare": 33.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 2.0,
+      "regularityScore": 0.6666666666666666,
+      "eventCount": 8.0,
+      "events": [
+        {
+          "dateMs": 1772496000000.0,
+          "amountPerShare": 3.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        },
+        {
+          "dateMs": 1511136000000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1511136000000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1740441600000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1740441600000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1769731200000.0,
+          "amountPerShare": 30.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        },
+        {
+          "dateMs": 1511136000000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1511136000000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        }
+      ]
+    },
+    "HEKTS": {
+      "lastDividendDateMs": 1747958400000.0,
+      "lastDividendPerShare": 91.0,
+      "annualDividendPerShare": 182.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 2.0,
+      "events": [
+        {
+          "dateMs": 1747958400000.0,
+          "amountPerShare": 91.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1745539200000.0,
+          "amountPerShare": 91.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "ISCTR": {
+      "lastDividendDateMs": 1568764800000.0,
+      "lastDividendPerShare": 4.0,
+      "annualDividendPerShare": 57.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 2.0,
+      "regularityScore": 0.6666666666666666,
+      "eventCount": 8.0,
+      "events": [
+        {
+          "dateMs": 1568764800000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1772582400000.0,
+          "amountPerShare": 4.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        },
+        {
+          "dateMs": 1772409600000.0,
+          "amountPerShare": 2.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        },
+        {
+          "dateMs": 1775001600000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1771286400000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        },
+        {
+          "dateMs": 1769472000000.0,
+          "amountPerShare": 27.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        },
+        {
+          "dateMs": 1510012800000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1766448000000.0,
+          "amountPerShare": 23.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        }
+      ]
+    },
+    "ISMEN": {
+      "lastDividendDateMs": 1775001600000.0,
+      "lastDividendPerShare": 1.0,
+      "annualDividendPerShare": 430.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 8.0,
+      "events": [
+        {
+          "dateMs": 1775001600000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1772582400000.0,
+          "amountPerShare": 4.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        },
+        {
+          "dateMs": 1772150400000.0,
+          "amountPerShare": 62.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        },
+        {
+          "dateMs": 1771977600000.0,
+          "amountPerShare": 25.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        },
+        {
+          "dateMs": 1771804800000.0,
+          "amountPerShare": 23.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        },
+        {
+          "dateMs": 1771545600000.0,
+          "amountPerShare": 197.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        },
+        {
+          "dateMs": 1771459200000.0,
+          "amountPerShare": 114.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        },
+        {
+          "dateMs": 1770163200000.0,
+          "amountPerShare": 4.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        }
+      ]
+    },
+    "IZENR": {
+      "lastDividendDateMs": 1772150400000.0,
+      "lastDividendPerShare": 8.0,
+      "annualDividendPerShare": 49.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 4.0,
+      "events": [
+        {
+          "dateMs": 1772150400000.0,
+          "amountPerShare": 8.0,
+          "type": "cash",
+          "title": "KATILIM FINANSI ILKELERI BILGI FORMU"
+        },
+        {
+          "dateMs": 1772150400000.0,
+          "amountPerShare": 16.0,
+          "type": "cash",
+          "title": "KURUMSAL YONETIM BILGI FORMU"
+        },
+        {
+          "dateMs": 1772150400000.0,
+          "amountPerShare": 16.0,
+          "type": "cash",
+          "title": "KURUMSAL YONETIM UYUM RAPORU"
+        },
+        {
+          "dateMs": 1772150400000.0,
+          "amountPerShare": 9.0,
+          "type": "cash",
+          "title": "FINANSAL RAPOR"
+        }
+      ]
+    },
+    "KCAER": {
+      "lastDividendDateMs": 1753056000000.0,
+      "lastDividendPerShare": 1.0,
+      "annualDividendPerShare": 2.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 4.0,
+      "events": [
+        {
+          "dateMs": 1753056000000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        },
+        {
+          "dateMs": 1745539200000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        },
+        {
+          "dateMs": 1751414400000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1751414400000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "KCHOL": {
+      "lastDividendDateMs": 1773619200000.0,
+      "lastDividendPerShare": 6.83,
+      "annualDividendPerShare": 13.71,
+      "dividendPayoutPct": null,
+      "paidYears3y": 2.0,
+      "regularityScore": 0.6666666666666666,
+      "eventCount": 7.0,
+      "events": [
+        {
+          "dateMs": 1773619200000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "OZEL DURUM ACIKLAMASI (GENEL)"
+        },
+        {
+          "dateMs": 1774396800000.0,
+          "amountPerShare": 6.83,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1760486400000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "OZEL DURUM ACIKLAMASI (GENEL)"
+        },
+        {
+          "dateMs": 1744329600000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "OZEL DURUM ACIKLAMASI (GENEL)"
+        },
+        {
+          "dateMs": 1744243200000.0,
+          "amountPerShare": 6.88,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1568160000000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1743120000000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "OZEL DURUM ACIKLAMASI (GENEL)"
+        }
+      ]
+    },
+    "KLRHO": {
+      "lastDividendDateMs": 1751932800000.0,
+      "lastDividendPerShare": 16.0,
+      "annualDividendPerShare": 48.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 4.0,
+      "events": [
+        {
+          "dateMs": 1751932800000.0,
+          "amountPerShare": 16.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1751414400000.0,
+          "amountPerShare": 16.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1748822400000.0,
+          "amountPerShare": 16.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1745193600000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "OZEL DURUM ACIKLAMASI (GENEL)"
+        }
+      ]
+    },
+    "KONTR": {
+      "lastDividendDateMs": 1759881600000.0,
+      "lastDividendPerShare": 26.0,
+      "annualDividendPerShare": 104.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 4.0,
+      "events": [
+        {
+          "dateMs": 1759881600000.0,
+          "amountPerShare": 26.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1759795200000.0,
+          "amountPerShare": 26.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1759795200000.0,
+          "amountPerShare": 26.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1757462400000.0,
+          "amountPerShare": 26.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "KRDMD": {
+      "lastDividendDateMs": 1745798400000.0,
+      "lastDividendPerShare": 91.0,
+      "annualDividendPerShare": 182.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 2.0,
+      "events": [
+        {
+          "dateMs": 1745798400000.0,
+          "amountPerShare": 91.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1742515200000.0,
+          "amountPerShare": 91.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "KTLEV": {
+      "lastDividendDateMs": 1771372800000.0,
+      "lastDividendPerShare": 1.0,
+      "annualDividendPerShare": 2.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 2.0,
+      "regularityScore": 0.6666666666666666,
+      "eventCount": 2.0,
+      "events": [
+        {
+          "dateMs": 1771372800000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1744934400000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "KUYAS": {
+      "lastDividendDateMs": 1746576000000.0,
+      "lastDividendPerShare": 18.0,
+      "annualDividendPerShare": 36.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 3.0,
+      "events": [
+        {
+          "dateMs": 1746576000000.0,
+          "amountPerShare": 18.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1745539200000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        },
+        {
+          "dateMs": 1744329600000.0,
+          "amountPerShare": 18.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "MAGEN": {
+      "lastDividendDateMs": 1758844800000.0,
+      "lastDividendPerShare": 19.0,
+      "annualDividendPerShare": 38.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 4.0,
+      "events": [
+        {
+          "dateMs": 1758844800000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        },
+        {
+          "dateMs": 1747785600000.0,
+          "amountPerShare": 19.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1745798400000.0,
+          "amountPerShare": 19.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1745539200000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        }
+      ]
+    },
+    "MAVI": {
+      "lastDividendDateMs": 1757462400000.0,
+      "lastDividendPerShare": 10.0,
+      "annualDividendPerShare": 16.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 2.0,
+      "regularityScore": 0.6666666666666666,
+      "eventCount": 6.0,
+      "events": [
+        {
+          "dateMs": 1757462400000.0,
+          "amountPerShare": 10.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        },
+        {
+          "dateMs": 1701820800000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1748995200000.0,
+          "amountPerShare": 4.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        },
+        {
+          "dateMs": 1701820800000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1748217600000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1748217600000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "MGROS": {
+      "lastDividendDateMs": 1769472000000.0,
+      "lastDividendPerShare": 43.0,
+      "annualDividendPerShare": 107.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 3.0,
+      "regularityScore": 1.0,
+      "eventCount": 8.0,
+      "events": [
+        {
+          "dateMs": 1769472000000.0,
+          "amountPerShare": 43.0,
+          "type": "cash",
+          "title": "OZEL DURUM ACIKLAMASI (GENEL)"
+        },
+        {
+          "dateMs": 1762905600000.0,
+          "amountPerShare": 12.0,
+          "type": "cash",
+          "title": "KAR PAYI AVANSI ODEMESI ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1753056000000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        },
+        {
+          "dateMs": 1694649600000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1750896000000.0,
+          "amountPerShare": 26.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        },
+        {
+          "dateMs": 1748390400000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1694649600000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1742860800000.0,
+          "amountPerShare": 25.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        }
+      ]
+    },
+    "MIATK": {
+      "lastDividendDateMs": 1750377600000.0,
+      "lastDividendPerShare": 23.0,
+      "annualDividendPerShare": 46.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 3.0,
+      "events": [
+        {
+          "dateMs": 1750377600000.0,
+          "amountPerShare": 23.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1748390400000.0,
+          "amountPerShare": 23.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1745539200000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        }
+      ]
+    },
+    "MPARK": {
+      "lastDividendDateMs": 1766966400000.0,
+      "lastDividendPerShare": 29.0,
+      "annualDividendPerShare": 29.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 2.0,
+      "regularityScore": 0.6666666666666666,
+      "eventCount": 8.0,
+      "events": [
+        {
+          "dateMs": 1766966400000.0,
+          "amountPerShare": 29.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        },
+        {
+          "dateMs": 1759104000000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1759104000000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1759104000000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        },
+        {
+          "dateMs": 1759104000000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1759104000000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1710115200000.0,
+          "amountPerShare": 60.18,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZSIZ)"
+        },
+        {
+          "dateMs": 1710115200000.0,
+          "amountPerShare": 60.18,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZSIZ)"
+        }
+      ]
+    },
+    "OBAMS": {
+      "lastDividendDateMs": 1766361600000.0,
+      "lastDividendPerShare": 1.0,
+      "annualDividendPerShare": 3.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 5.0,
+      "events": [
+        {
+          "dateMs": 1766361600000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1758844800000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        },
+        {
+          "dateMs": 1766361600000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1766361600000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1745539200000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        }
+      ]
+    },
+    "ODAS": {
+      "lastDividendDateMs": 1765929600000.0,
+      "lastDividendPerShare": 22.0,
+      "annualDividendPerShare": 44.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 2.0,
+      "events": [
+        {
+          "dateMs": 1765929600000.0,
+          "amountPerShare": 22.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1762992000000.0,
+          "amountPerShare": 22.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "OTKAR": {
+      "lastDividendDateMs": 1770768000000.0,
+      "lastDividendPerShare": 91.0,
+      "annualDividendPerShare": 162.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 3.0,
+      "regularityScore": 1.0,
+      "eventCount": 8.0,
+      "events": [
+        {
+          "dateMs": 1770768000000.0,
+          "amountPerShare": 91.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1713398400000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1760918400000.0,
+          "amountPerShare": 20.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        },
+        {
+          "dateMs": 1694390400000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1751241600000.0,
+          "amountPerShare": 30.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        },
+        {
+          "dateMs": 1713398400000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1745193600000.0,
+          "amountPerShare": 21.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        },
+        {
+          "dateMs": 1694390400000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        }
+      ]
+    },
+    "OYAKC": {
+      "lastDividendDateMs": 1772755200000.0,
+      "lastDividendPerShare": 91.0,
+      "annualDividendPerShare": 92.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 2.0,
+      "regularityScore": 0.6666666666666666,
+      "eventCount": 3.0,
+      "events": [
+        {
+          "dateMs": 1772755200000.0,
+          "amountPerShare": 91.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1745539200000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        },
+        {
+          "dateMs": 1761782400000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "PASEU": {
+      "lastDividendDateMs": 1751414400000.0,
+      "lastDividendPerShare": 16.0,
+      "annualDividendPerShare": 32.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 3.0,
+      "events": [
+        {
+          "dateMs": 1751414400000.0,
+          "amountPerShare": 16.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1749513600000.0,
+          "amountPerShare": 16.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1745539200000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        }
+      ]
+    },
+    "PATEK": {
+      "lastDividendDateMs": 1748476800000.0,
+      "lastDividendPerShare": 28.0,
+      "annualDividendPerShare": 56.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 2.0,
+      "events": [
+        {
+          "dateMs": 1748476800000.0,
+          "amountPerShare": 28.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1746576000000.0,
+          "amountPerShare": 28.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "PETKM": {
+      "lastDividendDateMs": 1748476800000.0,
+      "lastDividendPerShare": 91.0,
+      "annualDividendPerShare": 182.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 2.0,
+      "events": [
+        {
+          "dateMs": 1748476800000.0,
+          "amountPerShare": 91.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1746403200000.0,
+          "amountPerShare": 91.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "PGSUS": {
+      "lastDividendDateMs": 1772582400000.0,
+      "lastDividendPerShare": 16.0,
+      "annualDividendPerShare": 32.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 2.0,
+      "regularityScore": 0.6666666666666666,
+      "eventCount": 6.0,
+      "events": [
+        {
+          "dateMs": 1772582400000.0,
+          "amountPerShare": 16.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1741651200000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1741651200000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1743120000000.0,
+          "amountPerShare": 16.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1741651200000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1741651200000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        }
+      ]
+    },
+    "QUAGR": {
+      "lastDividendDateMs": 1758844800000.0,
+      "lastDividendPerShare": 7.0,
+      "annualDividendPerShare": 54.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 7.0,
+      "events": [
+        {
+          "dateMs": 1758844800000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        },
+        {
+          "dateMs": 1751846400000.0,
+          "amountPerShare": 7.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        },
+        {
+          "dateMs": 1751846400000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1744761600000.0,
+          "amountPerShare": 14.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1742342400000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "PAY DISINDA SERMAYE PIYASASI ARACI ISLEMLERINE ILISKIN BILDIRIM (FAIZ ICEREN)"
+        },
+        {
+          "dateMs": 1742342400000.0,
+          "amountPerShare": 19.0,
+          "type": "cash",
+          "title": "BORCLANMA ARACLARI, YATIRIM FONLARI VE VARANT ITFA/KUPON/GETIRI/ NAKDI UZLASI ODEME ISLEMLERI"
+        },
+        {
+          "dateMs": 1741910400000.0,
+          "amountPerShare": 14.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "RALYH": {
+      "lastDividendDateMs": 1765756800000.0,
+      "lastDividendPerShare": 18.0,
+      "annualDividendPerShare": 36.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 5.0,
+      "events": [
+        {
+          "dateMs": 1765756800000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "OZEL DURUM ACIKLAMASI (GENEL)"
+        },
+        {
+          "dateMs": 1758844800000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        },
+        {
+          "dateMs": 1745625600000.0,
+          "amountPerShare": 18.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1745539200000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        },
+        {
+          "dateMs": 1743724800000.0,
+          "amountPerShare": 18.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "REEDR": {
+      "lastDividendDateMs": 1750896000000.0,
+      "lastDividendPerShare": 27.0,
+      "annualDividendPerShare": 54.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 1.0,
+      "regularityScore": 0.3333333333333333,
+      "eventCount": 2.0,
+      "events": [
+        {
+          "dateMs": 1750896000000.0,
+          "amountPerShare": 27.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1748476800000.0,
+          "amountPerShare": 27.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "SAHOL": {
+      "lastDividendDateMs": 1775001600000.0,
+      "lastDividendPerShare": 193.0,
+      "annualDividendPerShare": 194.0,
+      "dividendPayoutPct": null,
+      "paidYears3y": 2.0,
+      "regularityScore": 0.6666666666666666,
+      "eventCount": 3.0,
+      "events": [
+        {
+          "dateMs": 1775001600000.0,
+          "amountPerShare": 193.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        },
+        {
+          "dateMs": 1745193600000.0,
+          "amountPerShare": null,
+          "type": "cash",
+          "title": "BIST PAY ENDEKSLERI"
+        },
+        {
+          "dateMs": 1743552000000.0,
+          "amountPerShare": 1.0,
+          "type": "cash",
+          "title": "KAR PAYI DAGITIM ISLEMLERINE ILISKIN BILDIRIM"
+        }
+      ]
+    },
+    "SASA": {
+      "lastDividendDateMs": null,
+      "lastDividendPerShare": null,
+      "annualDividendPerShare": null,
+      "dividendPayoutPct": null,
+      "paidYears3y": 0.0,
+      "regularityScore": 0.0,
+      "eventCount": 0.0,
+      "events": []
+    },
+    "SISE": {
+      "lastDividendDateMs": null,
+      "lastDividendPerShare": null,
+      "annualDividendPerShare": null,
+      "dividendPayoutPct": null,
+      "paidYears3y": 0.0,
+      "regularityScore": 0.0,
+      "eventCount": 0.0,
+      "events": []
+    },
+    "SKBNK": {
+      "lastDividendDateMs": null,
+      "lastDividendPerShare": null,
+      "annualDividendPerShare": null,
+      "dividendPayoutPct": null,
+      "paidYears3y": 0.0,
+      "regularityScore": 0.0,
+      "eventCount": 0.0,
+      "events": []
+    },
+    "TABGD": {
+      "lastDividendDateMs": null,
+      "lastDividendPerShare": null,
+      "annualDividendPerShare": null,
+      "dividendPayoutPct": null,
+      "paidYears3y": 0.0,
+      "regularityScore": 0.0,
+      "eventCount": 0.0,
+      "events": []
+    },
+    "TAVHL": {
+      "lastDividendDateMs": null,
+      "lastDividendPerShare": null,
+      "annualDividendPerShare": null,
+      "dividendPayoutPct": null,
+      "paidYears3y": 0.0,
+      "regularityScore": 0.0,
+      "eventCount": 0.0,
+      "events": []
+    },
+    "TCELL": {
+      "lastDividendDateMs": null,
+      "lastDividendPerShare": null,
+      "annualDividendPerShare": null,
+      "dividendPayoutPct": null,
+      "paidYears3y": 0.0,
+      "regularityScore": 0.0,
+      "eventCount": 0.0,
+      "events": []
+    },
+    "THYAO": {
+      "lastDividendDateMs": null,
+      "lastDividendPerShare": null,
+      "annualDividendPerShare": null,
+      "dividendPayoutPct": null,
+      "paidYears3y": 0.0,
+      "regularityScore": 0.0,
+      "eventCount": 0.0,
+      "events": []
+    },
+    "TKFEN": {
+      "lastDividendDateMs": null,
+      "lastDividendPerShare": null,
+      "annualDividendPerShare": null,
+      "dividendPayoutPct": null,
+      "paidYears3y": 0.0,
+      "regularityScore": 0.0,
+      "eventCount": 0.0,
+      "events": []
+    },
+    "TOASO": {
+      "lastDividendDateMs": null,
+      "lastDividendPerShare": null,
+      "annualDividendPerShare": null,
+      "dividendPayoutPct": null,
+      "paidYears3y": 0.0,
+      "regularityScore": 0.0,
+      "eventCount": 0.0,
+      "events": []
+    },
+    "TRALT": {
+      "lastDividendDateMs": null,
+      "lastDividendPerShare": null,
+      "annualDividendPerShare": null,
+      "dividendPayoutPct": null,
+      "paidYears3y": 0.0,
+      "regularityScore": 0.0,
+      "eventCount": 0.0,
+      "events": []
+    },
+    "TRENJ": {
+      "lastDividendDateMs": null,
+      "lastDividendPerShare": null,
+      "annualDividendPerShare": null,
+      "dividendPayoutPct": null,
+      "paidYears3y": 0.0,
+      "regularityScore": 0.0,
+      "eventCount": 0.0,
+      "events": []
+    },
+    "TRMET": {
+      "lastDividendDateMs": null,
+      "lastDividendPerShare": null,
+      "annualDividendPerShare": null,
+      "dividendPayoutPct": null,
+      "paidYears3y": 0.0,
+      "regularityScore": 0.0,
+      "eventCount": 0.0,
+      "events": []
+    },
+    "TSKB": {
+      "lastDividendDateMs": null,
+      "lastDividendPerShare": null,
+      "annualDividendPerShare": null,
+      "dividendPayoutPct": null,
+      "paidYears3y": 0.0,
+      "regularityScore": 0.0,
+      "eventCount": 0.0,
+      "events": []
+    },
+    "TTKOM": {
+      "lastDividendDateMs": null,
+      "lastDividendPerShare": null,
+      "annualDividendPerShare": null,
+      "dividendPayoutPct": null,
+      "paidYears3y": 0.0,
+      "regularityScore": 0.0,
+      "eventCount": 0.0,
+      "events": []
+    },
+    "TTRAK": {
+      "lastDividendDateMs": null,
+      "lastDividendPerShare": null,
+      "annualDividendPerShare": null,
+      "dividendPayoutPct": null,
+      "paidYears3y": 0.0,
+      "regularityScore": 0.0,
+      "eventCount": 0.0,
+      "events": []
+    },
+    "TUKAS": {
+      "lastDividendDateMs": null,
+      "lastDividendPerShare": null,
+      "annualDividendPerShare": null,
+      "dividendPayoutPct": null,
+      "paidYears3y": 0.0,
+      "regularityScore": 0.0,
+      "eventCount": 0.0,
+      "events": []
+    },
+    "TUPRS": {
+      "lastDividendDateMs": null,
+      "lastDividendPerShare": null,
+      "annualDividendPerShare": null,
+      "dividendPayoutPct": null,
+      "paidYears3y": 0.0,
+      "regularityScore": 0.0,
+      "eventCount": 0.0,
+      "events": []
+    },
+    "TUREX": {
+      "lastDividendDateMs": null,
+      "lastDividendPerShare": null,
+      "annualDividendPerShare": null,
+      "dividendPayoutPct": null,
+      "paidYears3y": 0.0,
+      "regularityScore": 0.0,
+      "eventCount": 0.0,
+      "events": []
+    },
+    "TURSG": {
+      "lastDividendDateMs": null,
+      "lastDividendPerShare": null,
+      "annualDividendPerShare": null,
+      "dividendPayoutPct": null,
+      "paidYears3y": 0.0,
+      "regularityScore": 0.0,
+      "eventCount": 0.0,
+      "events": []
+    },
+    "ULKER": {
+      "lastDividendDateMs": null,
+      "lastDividendPerShare": null,
+      "annualDividendPerShare": null,
+      "dividendPayoutPct": null,
+      "paidYears3y": 0.0,
+      "regularityScore": 0.0,
+      "eventCount": 0.0,
+      "events": []
+    },
+    "VAKBN": {
+      "lastDividendDateMs": null,
+      "lastDividendPerShare": null,
+      "annualDividendPerShare": null,
+      "dividendPayoutPct": null,
+      "paidYears3y": 0.0,
+      "regularityScore": 0.0,
+      "eventCount": 0.0,
+      "events": []
+    },
+    "VESTL": {
+      "lastDividendDateMs": null,
+      "lastDividendPerShare": null,
+      "annualDividendPerShare": null,
+      "dividendPayoutPct": null,
+      "paidYears3y": 0.0,
+      "regularityScore": 0.0,
+      "eventCount": 0.0,
+      "events": []
+    },
+    "YEOTK": {
+      "lastDividendDateMs": null,
+      "lastDividendPerShare": null,
+      "annualDividendPerShare": null,
+      "dividendPayoutPct": null,
+      "paidYears3y": 0.0,
+      "regularityScore": 0.0,
+      "eventCount": 0.0,
+      "events": []
+    },
+    "YKBNK": {
+      "lastDividendDateMs": null,
+      "lastDividendPerShare": null,
+      "annualDividendPerShare": null,
+      "dividendPayoutPct": null,
+      "paidYears3y": 0.0,
+      "regularityScore": 0.0,
+      "eventCount": 0.0,
+      "events": []
+    },
+    "ZOREN": {
+      "lastDividendDateMs": null,
+      "lastDividendPerShare": null,
+      "annualDividendPerShare": null,
+      "dividendPayoutPct": null,
+      "paidYears3y": 0.0,
+      "regularityScore": 0.0,
+      "eventCount": 0.0,
+      "events": []
+    },
+    "ASELS": {
+      "lastDividendDateMs": null,
+      "lastDividendPerShare": null,
+      "annualDividendPerShare": null,
+      "dividendPayoutPct": null,
+      "paidYears3y": 0.0,
+      "regularityScore": 0.0,
+      "eventCount": 0.0,
+      "events": []
+    },
+    "CVKMD": {
+      "lastDividendDateMs": null,
+      "lastDividendPerShare": null,
+      "annualDividendPerShare": null,
+      "dividendPayoutPct": null,
+      "paidYears3y": 0.0,
+      "regularityScore": 0.0,
+      "eventCount": 0.0,
+      "events": []
+    },
+    "SOKM": {
+      "lastDividendDateMs": null,
+      "lastDividendPerShare": null,
+      "annualDividendPerShare": null,
+      "dividendPayoutPct": null,
+      "paidYears3y": 0.0,
+      "regularityScore": 0.0,
+      "eventCount": 0.0,
+      "events": []
+    }
+  }
+}

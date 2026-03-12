@@ -1,0 +1,237 @@
+{
+  "natural_na": [
+    {
+      "metric": "forwardPE",
+      "null": 100,
+      "coveragePct": 0.0,
+      "topReason": "KAP tarafında ileriye dönük tahmin verisi yok; bu alan modelde üretilmiyor."
+    },
+    {
+      "metric": "fxNetPositionRatio",
+      "null": 100,
+      "coveragePct": 0.0,
+      "topReason": "KAP’ta net döviz pozisyon kalemi standart şekilde ayrışmadığı için oran boş."
+    }
+  ],
+  "sector_conditional": [
+    {
+      "metric": "debtMaturityRatio",
+      "null": 13,
+      "coveragePct": 87.0,
+      "topReason": "Kısa vadeli borç kalemi boş olduğu için vade dağılımı oranı hesaplanamadı."
+    },
+    {
+      "metric": "netDebtToEbitda",
+      "null": 12,
+      "coveragePct": 88.0,
+      "topReason": "FAVÖK boş/0 olduğu için NetBorç/FAVÖK hesaplanamadı."
+    },
+    {
+      "metric": "interestCoverage",
+      "null": 12,
+      "coveragePct": 88.0,
+      "topReason": "Finansman gideri boş/0 olduğu için faiz karşılama hesaplanamadı."
+    }
+  ],
+  "fillable": [
+    {
+      "metric": "pegRatio",
+      "null": 41,
+      "coveragePct": 59.0,
+      "topReason": "Kazanç büyümesi <= 0 olduğu için PEG bilinçli olarak boş bırakılıyor."
+    },
+    {
+      "metric": "dividendYield",
+      "null": 28,
+      "coveragePct": 72.0,
+      "topReason": "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi."
+    },
+    {
+      "metric": "annualDividendPerShare",
+      "null": 28,
+      "coveragePct": 72.0,
+      "topReason": "KAP temettü olay kaydı bulunamadı (şirket dağıtmamış olabilir veya parse edilemedi)."
+    },
+    {
+      "metric": "lastDividendPerShare",
+      "null": 28,
+      "coveragePct": 72.0,
+      "topReason": "KAP temettü olay kaydı bulunamadı (şirket dağıtmamış olabilir veya parse edilemedi)."
+    },
+    {
+      "metric": "lastDividendDateMs",
+      "null": 28,
+      "coveragePct": 72.0,
+      "topReason": "KAP temettü olay kaydı bulunamadı (şirket dağıtmamış olabilir veya parse edilemedi)."
+    },
+    {
+      "metric": "dividendPayoutPct",
+      "null": 28,
+      "coveragePct": 72.0,
+      "topReason": "KAP temettü olay kaydı bulunamadı (şirket dağıtmamış olabilir veya parse edilemedi)."
+    },
+    {
+      "metric": "paidYears3y",
+      "null": 28,
+      "coveragePct": 72.0,
+      "topReason": "KAP temettü olay kaydı bulunamadı (şirket dağıtmamış olabilir veya parse edilemedi)."
+    },
+    {
+      "metric": "regularityScore",
+      "null": 28,
+      "coveragePct": 72.0,
+      "topReason": "KAP temettü olay kaydı bulunamadı (şirket dağıtmamış olabilir veya parse edilemedi)."
+    },
+    {
+      "metric": "eventCount",
+      "null": 28,
+      "coveragePct": 72.0,
+      "topReason": "KAP temettü olay kaydı bulunamadı (şirket dağıtmamış olabilir veya parse edilemedi)."
+    },
+    {
+      "metric": "ebitda",
+      "null": 12,
+      "coveragePct": 88.0,
+      "topReason": "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi."
+    },
+    {
+      "metric": "currentBorrowings",
+      "null": 11,
+      "coveragePct": 89.0,
+      "topReason": "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi."
+    },
+    {
+      "metric": "inventories",
+      "null": 11,
+      "coveragePct": 89.0,
+      "topReason": "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi."
+    },
+    {
+      "metric": "operatingMargins",
+      "null": 10,
+      "coveragePct": 90.0,
+      "topReason": "Gelir boş/0 olduğu için faaliyet marjı hesaplanamadı."
+    },
+    {
+      "metric": "freeCashflow",
+      "null": 10,
+      "coveragePct": 90.0,
+      "topReason": "CFO boş olduğu için FCF hesaplanamadı."
+    },
+    {
+      "metric": "nonCurrentBorrowings",
+      "null": 10,
+      "coveragePct": 90.0,
+      "topReason": "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi."
+    },
+    {
+      "metric": "depreciationAmortization",
+      "null": 10,
+      "coveragePct": 90.0,
+      "topReason": "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi."
+    },
+    {
+      "metric": "currentRatio",
+      "null": 9,
+      "coveragePct": 91.0,
+      "topReason": "Dönen varlıklar boş olduğu için cari oran hesaplanamadı."
+    },
+    {
+      "metric": "quickRatio",
+      "null": 9,
+      "coveragePct": 91.0,
+      "topReason": "Dönen varlıklar boş olduğu için likit oran hesaplanamadı."
+    },
+    {
+      "metric": "currentAssets",
+      "null": 9,
+      "coveragePct": 91.0,
+      "topReason": "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi."
+    },
+    {
+      "metric": "currentLiabilities",
+      "null": 9,
+      "coveragePct": 91.0,
+      "topReason": "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi."
+    },
+    {
+      "metric": "grossMargins",
+      "null": 8,
+      "coveragePct": 92.0,
+      "topReason": "Gelir boş/0 olduğu için brüt marj hesaplanamadı."
+    },
+    {
+      "metric": "interestExpense",
+      "null": 8,
+      "coveragePct": 92.0,
+      "topReason": "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi."
+    },
+    {
+      "metric": "cfoToNetIncome",
+      "null": 7,
+      "coveragePct": 93.0,
+      "topReason": "CFO boş olduğu için CFO/NetKâr hesaplanamadı."
+    },
+    {
+      "metric": "cfo",
+      "null": 7,
+      "coveragePct": 93.0,
+      "topReason": "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi."
+    },
+    {
+      "metric": "revenueGrowth",
+      "null": 6,
+      "coveragePct": 94.0,
+      "topReason": "Önceki dönem karşılaştırma baz kalemi KAP’ta çıkmadığı (veya 0 olduğu) için büyüme hesaplanamadı."
+    },
+    {
+      "metric": "profitMargins",
+      "null": 6,
+      "coveragePct": 94.0,
+      "topReason": "Gelir boş/0 olduğu için net marj hesaplanamadı."
+    },
+    {
+      "metric": "priceToSalesTrailing12Months",
+      "null": 6,
+      "coveragePct": 94.0,
+      "topReason": "Gelir (revenue) boş/0 olduğu için F/S hesaplanamadı."
+    },
+    {
+      "metric": "assetTurnover",
+      "null": 6,
+      "coveragePct": 94.0,
+      "topReason": "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi."
+    },
+    {
+      "metric": "profitabilityStability",
+      "null": 6,
+      "coveragePct": 94.0,
+      "topReason": "ROE/profit marjı ve büyüme sinyalleri tam oluşmadığı için stabilite skoru üretilmedi."
+    },
+    {
+      "metric": "growthStability",
+      "null": 6,
+      "coveragePct": 94.0,
+      "topReason": "Gelir ve kazanç büyümesi birlikte hesaplanamadığı için büyüme stabilitesi boş."
+    },
+    {
+      "metric": "operatingProfit",
+      "null": 4,
+      "coveragePct": 96.0,
+      "topReason": "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi."
+    },
+    {
+      "metric": "capex",
+      "null": 3,
+      "coveragePct": 97.0,
+      "topReason": "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi."
+    },
+    {
+      "metric": "grossProfit",
+      "null": 2,
+      "coveragePct": 98.0,
+      "topReason": "KAP snapshot’ta alan boş: ilgili finansal kalem kaynak tabloda bulunamadı veya eşleşmedi."
+    }
+  ],
+  "unclassified": []
+}
