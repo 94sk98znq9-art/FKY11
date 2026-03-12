@@ -163,6 +163,13 @@ app.use(express.urlencoded({ extended: false }));
 app.use(requireAuth);
 app.use(express.static(__dirname));
 
+// GEÇİCİ DEBUG — deploy sonrası /debug-env ile kontrol et, sonra sil
+app.get("/debug-env", (_req, res) => {
+  let files = [];
+  try { files = fs.readdirSync(__dirname); } catch (e) { files = [String(e)]; }
+  res.json({ __dirname, cwd: process.cwd(), indexExists: fs.existsSync(path.join(__dirname, "index.html")), files });
+});
+
 const PRICE_CACHE_MS = 60_000;
 const FUND_CACHE_MS = 36 * 60 * 60 * 1000;
 const BETA_CACHE_MS = 24 * 60 * 60 * 1000;
