@@ -779,7 +779,7 @@ body{
       <span id="ledTxt">Bağlı değil</span>
     </div>
     <button class="btn btn-outline" onclick="loadDemo()">Demo</button>
-    <button class="btn btn-gold" id="btnFetch" onclick="fetchAll()">
+    <button class="btn btn-gold" id="btnFetch" onclick="onBtnFetch()">
       <span>⚡</span> BİST'i Yükle
     </button>
   </div>
@@ -1543,6 +1543,9 @@ function renderNewsList() {
 fetchRssItems();
 setInterval(fetchRssItems, 60_000);
 
+// Sayfa açılır açılmaz arka planda sessizce yükle
+fetchAll(true);
+
 /* ════════════════════════════════════════
    TICKER SCROLL
 ════════════════════════════════════════ */
@@ -1593,37 +1596,43 @@ async function fetchBatch(tickers){
   }
 }
 
-async function fetchAll(){
+async function fetchAll(silent=false){
   if(S.fetching)return;
   S.fetching=true;
-  S.data={}; // avoid stale rows from previous failed/partial refreshes
+  S.data={};
   const ovl=document.getElementById('OVL');
-  ovl.classList.add('show');
-  startFactRotation();
+  if(!silent){
+    ovl.classList.add('show');
+    startFactRotation();
+    document.getElementById('btnFetch').disabled=true;
+  }
   setLed('busy','Yükleniyor…');
-  document.getElementById('btnFetch').disabled=true;
 
   const ticks=STOCKS.map(x=>x.t);
   const BS=12;let done=0;let totalFailed=0;
   for(let i=0;i<ticks.length;i+=BS){
     const b=ticks.slice(i,i+BS);
-    document.getElementById('ovSub').textContent='Yükleniyor: '+b.join(', ');
+    if(!silent) document.getElementById('ovSub').textContent='Yükleniyor: '+b.join(', ');
     try{
       const res=await fetchBatch(b);
       Object.assign(S.data,res?.data||{});
       totalFailed+=res?.failedCount||0;
     }catch{}
     done+=b.length;
-    const pct=Math.round(done/ticks.length*100);
-    document.getElementById('ovFill').style.width=pct+'%';
-    document.getElementById('ovStatus').textContent=`YÜKLENİYOR — %${pct}`;
-    document.getElementById('ovCnt').textContent=`${done} / ${ticks.length} hisse`;
+    if(!silent){
+      const pct=Math.round(done/ticks.length*100);
+      document.getElementById('ovFill').style.width=pct+'%';
+      document.getElementById('ovStatus').textContent=`YÜKLENİYOR — %${pct}`;
+      document.getElementById('ovCnt').textContent=`${done} / ${ticks.length} hisse`;
+    }
     if(i+BS<ticks.length)await sleep(200);
   }
-  stopFactRotation();
-  ovl.classList.remove('show');
+  if(!silent){
+    stopFactRotation();
+    ovl.classList.remove('show');
+    document.getElementById('btnFetch').disabled=false;
+  }
   S.fetching=false;
-  document.getElementById('btnFetch').disabled=false;
 
   const loaded=Object.keys(S.data).length;
   if(loaded===0){
@@ -1634,13 +1643,26 @@ async function fetchAll(){
   }else{
     S.demo=false;
     setLed('on',`${loaded} hisse canlı`);
-    toast(`✓ ${loaded} hisse başarıyla yüklendi`,'ok');
-    if(totalFailed>0)toast(`⚠ ${totalFailed} hisse alınamadı (yeniden deneyebilirsin)`,'warn');
+    if(!silent) toast(`✓ ${loaded} hisse başarıyla yüklendi`,'ok');
+    if(!silent&&totalFailed>0)toast(`⚠ ${totalFailed} hisse alınamadı (yeniden deneyebilirsin)`,'warn');
     loadFundHealth();
     buildScroll();
     renderList();
     if(S.sel)renderDetail(S.sel);
   }
+}
+
+function onBtnFetch(){
+  if(S.fetching){
+    toast('Veriler arka planda yükleniyor, lütfen bekleyin…','ok');
+    return;
+  }
+  if(Object.keys(S.data).length>0){
+    // Veri hazır — yenile
+    fetchAll(false);
+    return;
+  }
+  fetchAll(false);
 }
 
 /* ════════════════════════════════════════
