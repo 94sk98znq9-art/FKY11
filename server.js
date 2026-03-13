@@ -164,7 +164,7 @@ app.use(requireAuth);
 app.use(express.static(__dirname));
 
 
-const PRICE_CACHE_MS = 60_000;
+const PRICE_CACHE_MS = 10 * 60 * 1000; // 10 dakika
 const FUND_CACHE_MS = 36 * 60 * 60 * 1000;
 const BETA_CACHE_MS = 24 * 60 * 60 * 1000;
 const SERIES_CACHE_MS = 6 * 60 * 60 * 1000;
@@ -2454,3 +2454,25 @@ server.on("error", (err) => {
   }
   console.error("[START] Sunucu başlatma hatası:", err);
 });
+
+// ── PRICE CACHE ISITMA ────────────────────────────────────────────────────────
+async function warmPriceCache() {
+  try {
+    reloadFundCacheFromSnapshotIfNeeded(true);
+    const symbols = [...fundCache.keys()].filter(s => s.endsWith(".IS")).slice(0, 110);
+    if (!symbols.length) { console.log("[WARMUP] Snapshot boş, atlandı."); return; }
+    console.log(`[WARMUP] ${symbols.length} hisse için price cache ısıtılıyor…`);
+    let ok = 0, fail = 0;
+    for (const symbol of symbols) {
+      try { await enqueuePriceRequest(() => fetchChart(symbol)); ok++; }
+      catch { fail++; }
+    }
+    console.log(`[WARMUP] Tamamlandı — ${ok} başarılı, ${fail} başarısız.`);
+  } catch (err) {
+    console.error("[WARMUP] Hata:", err?.message || err);
+  }
+}
+
+// Sunucu hazır olduktan 3 saniye sonra arka planda başlat
+setTimeout(() => warmPriceCache(), 3000);
+// ─────────────────────────────────────────────────────────────────────────────
