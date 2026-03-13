@@ -163,12 +163,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(requireAuth);
 app.use(express.static(__dirname));
 
-// GEÇİCİ DEBUG — deploy sonrası /debug-env ile kontrol et, sonra sil
-app.get("/debug-env", (_req, res) => {
-  let files = [];
-  try { files = fs.readdirSync(__dirname); } catch (e) { files = [String(e)]; }
-  res.json({ __dirname, cwd: process.cwd(), indexExists: fs.existsSync(path.join(__dirname, "index.html")), files });
-});
 
 const PRICE_CACHE_MS = 60_000;
 const FUND_CACHE_MS = 36 * 60 * 60 * 1000;
@@ -2382,32 +2376,28 @@ app.get("/api/market-overview", async (_req, res) => {
   });
 });
 
-export default app;
+const PORT = Number(process.env.PORT || 3000);
+const HOST = process.env.HOST ? String(process.env.HOST) : null;
 
-if (!process.env.VERCEL) {
-  const PORT = Number(process.env.PORT || 3000);
-  const HOST = process.env.HOST ? String(process.env.HOST) : null;
+const server = HOST
+  ? app.listen(PORT, HOST, () => {
+      console.log(`FKY LIVE çalışıyor -> http://${HOST}:${PORT}`);
+    })
+  : app.listen(PORT, () => {
+      console.log(`FKY LIVE çalışıyor -> http://localhost:${PORT}`);
+      console.log(`Yerel erişim -> http://127.0.0.1:${PORT}`);
+    });
 
-  const server = HOST
-    ? app.listen(PORT, HOST, () => {
-        console.log(`FKY LIVE çalışıyor -> http://${HOST}:${PORT}`);
-      })
-    : app.listen(PORT, () => {
-        console.log(`FKY LIVE çalışıyor -> http://localhost:${PORT}`);
-        console.log(`Yerel erişim -> http://127.0.0.1:${PORT}`);
-      });
-
-  server.on("error", (err) => {
-    if (err?.code === "EADDRINUSE") {
-      console.error(`[START] Port kullanımda: ${HOST || "0.0.0.0"}:${PORT}. Farklı port deneyin (örn. PORT=3001 npm start).`);
-      return;
-    }
-    if (err?.code === "EPERM") {
-      console.error(
-        `[START] Port dinleme izni yok: ${HOST || "0.0.0.0"}:${PORT}. HOST=127.0.0.1 ve farklı bir PORT (örn. 3001) deneyin.`
-      );
-      return;
-    }
-    console.error("[START] Sunucu başlatma hatası:", err);
-  });
-}
+server.on("error", (err) => {
+  if (err?.code === "EADDRINUSE") {
+    console.error(`[START] Port kullanımda: ${HOST || "0.0.0.0"}:${PORT}. Farklı port deneyin (örn. PORT=3001 npm start).`);
+    return;
+  }
+  if (err?.code === "EPERM") {
+    console.error(
+      `[START] Port dinleme izni yok: ${HOST || "0.0.0.0"}:${PORT}. HOST=127.0.0.1 ve farklı bir PORT (örn. 3001) denekim.`
+    );
+    return;
+  }
+  console.error("[START] Sunucu başlatma hatası:", err);
+});

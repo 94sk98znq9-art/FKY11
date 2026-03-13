@@ -660,6 +660,15 @@ body{
 .ov-bar{width:320px;height:2px;background:var(--b5);border-radius:2px}
 .ov-fill{height:100%;background:var(--au);border-radius:2px;transition:width .3s}
 .ov-count{font-size:10px;color:var(--t4)}
+.ov-fact{
+  font-family:var(--mono);font-size:11px;color:var(--au2);
+  max-width:460px;text-align:center;line-height:1.8;
+  padding:14px 18px;margin-top:8px;
+  border:1px solid var(--au-bd);border-radius:6px;
+  background:var(--au-bg);
+  opacity:1;transition:opacity .4s ease;
+}
+.ov-fact-label{font-size:9px;color:var(--t3);letter-spacing:1px;text-transform:uppercase;margin-top:4px}
 
 /* ── TOASTS ── */
 .toast-rack{position:fixed;bottom:20px;right:20px;z-index:2000;display:flex;flex-direction:column;gap:5px;pointer-events:none}
@@ -847,6 +856,8 @@ body{
   <div class="ov-sub" id="ovSub">Yahoo backend üzerinden BİST verileri yükleniyor…</div>
   <div class="ov-bar"><div class="ov-fill" id="ovFill" style="width:0"></div></div>
   <div class="ov-count" id="ovCnt">0 / 0 hisse</div>
+  <div class="ov-fact" id="ovFact"></div>
+  <div class="ov-fact-label" id="ovFactLabel">BİLİYOR MUYDUNUZ?</div>
 </div>
 
 <!-- TOASTS -->
@@ -1106,6 +1117,130 @@ const STOCKS = (() => {
 /* ════════════════════════════════════════
    STATE
 ════════════════════════════════════════ */
+const FACTS = [
+  "Warren Buffett: 'Başkası açgözlü olduğunda korkun, başkası korktuğunda açgözlü olun.'",
+  "BİST, 1986 yılında kuruldu; bugün 500'den fazla şirketin işlem gördüğü Türkiye'nin en büyük menkul kıymet borsasıdır.",
+  "F/K oranı, bir hissenin kaç yıllık kazancına eşdeğer fiyatla işlem gördüğünü gösterir. Düşük F/K ucuz, yüksek F/K pahalı sinyali verebilir.",
+  "Diversifikasyon, portföyünüzü farklı sektörlere yayarak tek bir hissenin riskini azaltır.",
+  "PD/DD 1'in altındaysa şirket teorik olarak defter değerinin altında işlem görüyor demektir.",
+  "200 günlük hareketli ortalama, uzun vadeli trendin en önemli teknik göstergelerinden biridir.",
+  "Bileşik faiz, uzun vadede servetin katlanarak büyümesinin temelidir. Einstein bunu 'dünyanın sekizinci harikası' olarak nitelendirmiştir.",
+  "Kâr payı (temettü) verimi = Yıllık temettü / Hisse fiyatı. Yüksek verim cazip görünse de sürdürülebilirliğine bakılmalıdır.",
+  "RSI 70'in üzerindeyse aşırı alım, 30'un altındaysa aşırı satım bölgesi olarak değerlendirilir.",
+  "TL'nin değer kaybı dönemlerinde döviz kazanan şirketlerin hisseleri doğal bir hedge işlevi görebilir.",
+  "Stop-loss emri, belirlediğiniz seviyenin altına düşünce pozisyonu otomatik kapatarak kayıpları sınırlar.",
+  "Peter Lynch: 'Anlamadığınız şirkete yatırım yapmayın. Günlük hayatınızda kullandığınız ürünler en iyi araştırma kaynağınızdır.'",
+  "Serbest nakit akışı (FCF), muhasebe kârından daha az manipüle edilebilir; şirketin gerçek nakit üretme kapasitesini gösterir.",
+  "BIST'te işlemler hafta içi 09:40–18:10 saatleri arasında gerçekleşir.",
+  "Şirketin net borcu negatifse — nakit, borçtan fazlaysa — bu finansal güç ve esneklik işaretidir.",
+  "Boğa piyasası genellikle %20 üzeri yükseliş, ayı piyasası ise %20 üzeri düşüş olarak tanımlanır.",
+  "Piyasa zamanlaması (market timing) denemek, uzun vadede portföy getirisini genellikle düşürür. Sürekli yatırımda kalmak daha güçlü sonuç verir.",
+  "MACD (Hareketli Ortalama Yakınsama/Uzaklaşma), trend dönüşlerini ve momentum değişimlerini tespit eder.",
+  "Hisse geri alımı (buyback), piyasadaki hisse sayısını azaltarak hisse başına kazancı artırır.",
+  "Borç/Özkaynak oranı yüksek şirketler, faiz artırım dönemlerinde daha büyük finansal baskıyla karşılaşır.",
+  "Ortalama maliyet düşürme (DCA): düzenli aralıklarla sabit miktarda alım yaparak fiyat riskini zaman içinde yaymaktır.",
+  "Teknik analizde destek, tarihin güçlü talep gördüğü fiyat tabanı; direnç ise arzın baskın olduğu fiyat tavanıdır.",
+  "BIST'teki devre kesici mekanizması, aşırı fiyat hareketlerini önlemek için belli eşiklerde işlemleri geçici olarak durdurur.",
+  "KAP (Kamuyu Aydınlatma Platformu) bildirimlerini takip etmek, piyasayı şekillendirecek haberleri erken görmenizi sağlar.",
+  "Özkaynak kârlılığı (ROE), şirketin ortaklara ait sermayeyi ne kadar verimli kullandığını ölçer.",
+  "Kaldıraçlı işlemler hem kazancı hem de kaybı büyütür — deneyim olmadan kullanımı son derece risklidir.",
+  "Enflasyon yüksekken reel varlıklara yatırım, nakit tutmaya kıyasla satın alma gücünü koruyabilir.",
+  "Sektör rotasyonu, ekonomik döngünün farklı evrelerinde farklı sektörlerin öne çıkmasını ifade eder.",
+  "Temettü arttırma geçmişi olan şirketler genellikle sağlam nakit akışı ve güçlü rekabet avantajına sahiptir.",
+  "Hayatta kalma yanlılığı: bugün hâlâ borsada işlem gören başarılı şirketlere bakıp geçmiş ortalama getirileri abartmayın.",
+  "Benjamin Graham: 'Piyasa kısa vadede oy makinesi, uzun vadede terazidir.' Değer zamanla yüzeye çıkar.",
+  "İçeriden öğrenenlerle yapılan işlemler (insider trading) BİST'te SPK tarafından sıkı denetlenir ve ciddi yaptırımları vardır.",
+  "Volatilite, risk ile eş anlamlı değildir. Gerçek risk, satın aldığınız varlığın değerini kalıcı olarak kaybetmesidir.",
+  "TCMB faiz kararları BİST için kritik anlardır; faiz indirimleri genellikle hisseye olumlu, artırımlar olumsuz etki yapar.",
+  "Sürü psikolojisi borsanın en tehlikeli tuzaklarından biridir. Kalabalığın yönünü sorgulayın.",
+  "Ekonomik hendek (moat), şirketin rakiplerinin kolayca giremeyeceği sürdürülebilir rekabet avantajını tanımlar.",
+  "Nakit dönüşüm döngüsü, şirketin operasyonel verimlilik ve likidite yönetimi hakkında önemli bilgiler taşır.",
+  "Yatırım tezi: bir hisseyi almadan önce 'neden bu hisse?' sorusunu yanıtlayan net bir gerekçe belirlemek, duygusal kararlardan korur.",
+  "Golden cross: 50 günlük ortalama 200 günlüğü yukarı keserse yükseliş sinyali; death cross ise tam tersini gösterir.",
+  "Hisse senedi fiyatları kısa vadede psikoloji, uzun vadede temel değer tarafından belirlenir.",
+  "Küçük sermayeli (small cap) hisseler uzun vadede büyük sermayelileri geçme eğiliminde olmuştur — ancak volatiliteleri daha yüksektir.",
+  "Yabancı kurumsal yatırımcıların alım-satım akımları, BIST'in yönü hakkında güçlü ipuçları verebilir.",
+  "Portföyde negatif ya da düşük korelasyonlu varlıkları bir araya getirmek, toplam riski düşürürken getiriyi koruyabilir.",
+  "Varlık dağılımı (asset allocation), toplam portföy riskini yönetmenin en temel yoludur.",
+  "Hisse bölünmesi (split), şirketin toplam değerini değiştirmez; sadece fiyatı düşürüp adedi artırır.",
+  "Serbest dolaşım oranı düşük hisseler, az miktarda işlemle büyük fiyat hareketleri yaşayabilir — hem fırsat hem risk.",
+  "Bilanço analizinde gerçek nakit ve alınabilir varlıklara bakın; şüpheli alacaklar ve değer düşmüş stoklar kârlılığı şişirebilir.",
+  "Faiz oranlarındaki artış, gelecekteki nakit akışlarının bugünkü değerini düşürerek hisse değerlemelerini baskılayabilir.",
+  "Konjonktüre duyarlı (cyclical) şirketler ekonomiyle birlikte iner çıkar; savunmacı (defensive) şirketler dalgalanmalara daha dirençlidir.",
+  "Yüksek ROA, şirketin tüm varlıklarını verimli kullandığının göstergesidir. Düşük ROA + yüksek ROE birlikte görüldüğünde aşırı kaldıraç işareti olabilir.",
+  "Dolar/TL kuru, ithalat bağımlısı ya da döviz borçlusu şirketlerin karlılığını doğrudan etkiler.",
+  "Bollinger Bantları, volatiliteyi ölçmek ve olası fiyat kırılmalarını tespit etmek için kullanılan popüler bir teknik araçtır.",
+  "Birleşme ve satın alma (M&A) haberleri, hedef şirkette ani ve sert fiyat hareketleri yaratabilir.",
+  "Piyasa kapitalizasyonu = Hisse fiyatı × Toplam hisse sayısı. Şirketin piyasadaki toplam değerini gösterir.",
+  "Net kâr marjı ile faaliyet kâr marjını birlikte değerlendirin; fark finansman maliyeti ve vergi yükü hakkında bilgi verir.",
+  "BIST Yıldız Pazar'daki şirketler, borsanın en yüksek likidite ve şeffaflık standartlarını karşılayan firmalardır.",
+  "Orta vadeli hisse yatırımında son 3–5 yıllık finansal trend, tek çeyreklik veriden çok daha açıklayıcıdır.",
+  "Halka arz (IPO) fiyatları her zaman cazip olmayabilir; şirketin temellerini ve değerlemesini dikkatlice inceleyin.",
+  "Yatırım başarısının büyük bölümü doğru kararlar vermekten değil, yanlış kararlardan kaçınmaktan gelir.",
+  "BIST'te pay senedi dışında tahvil, sukuk, varant ve yatırım fonu gibi çok çeşitli araçlar işlem görmektedir.",
+  "Şirket yönetiminin kalitesi ve kurumsal yönetişim standartları, uzun vadeli yatırım kararlarında sayısal veriler kadar önemlidir.",
+  "Kısa satış (short selling), fiyatın düşeceğini düşündüğünüz hisselerden borçlanarak kazanç sağlama yöntemidir — teorik kayıp sınırsızdır.",
+  "Volüm artışıyla birlikte gelen fiyat hareketi, hacim desteksiz harekete göre çok daha güvenilir kabul edilir.",
+  "Kapitalizasyon ağırlıklı endekslerde büyük şirketler daha fazla ağırlık taşır; endeks yatırımcısı otomatik olarak büyüklere yönelir.",
+  "İndirgenmiş Nakit Akışı (DCF) yöntemi, gelecekteki nakit akışlarını bugünkü değerine indirgeyerek teorik fiyat hesaplar.",
+  "Şirketin Ar-Ge harcamaları ve patent portföyü, uzun vadeli rekabet gücü ve inovasyon kapasitesi hakkında fikir verir.",
+  "Stop-limit emri, stop fiyatı tetiklendiğinde belirli bir limit fiyattan satış emri verir — sert düşüşlerde çalışmayabilir.",
+  "Sabırsızlıktan yapılan alım-satım işlemleri hem komisyon hem vergi maliyetiyle portföy getirisini ciddi ölçüde aşındırabilir.",
+  "Piyasa değeri/satış (F/S) oranı, özellikle kâr açıklamayan büyüme şirketlerini değerlemek için kullanılan pratik bir çarpandır.",
+  "Borsada başarı oranı yüksek yatırımcılar, kayıpları kabul etme konusunda disiplinlidir; kazananı uzun, kaybedeni kısa tutmak idealdir.",
+  "Konsantre portföy riski: az sayıda hissede yüksek yoğunlaşma, sektör krizi karşısında portföyü savunmasız bırakabilir.",
+  "Yıllıklaştırılmış getiri (CAGR), farklı sürelerdeki yatırım performanslarını adil şekilde karşılaştırmanın en doğru yoludur.",
+  "Şeffaf yönetim ve azınlık hissedarlarına saygı kurumsal yönetişimin temelidir; bu kültürün olmadığı şirketlerden uzak durun.",
+  "Piyasa etkinliği tartışması hâlâ sürmektedir: etkin piyasa hipotezi anormal getiri elde etmenin ne kadar zor olduğunu açıklar.",
+  "Sabır, borsanın ödüllendirdiği en önemli erdemdir. Kısa vadeli volatiliteye rağmen kaliteli hisseler uzun vadede değer yaratır.",
+  "Enflasyona göre düzeltilmiş (reel) getiri, nominal getiriden çok daha anlamlı bir performans göstergesidir.",
+  "Şirketin müşteri tabanının büyüklüğü ve müşteri başına geliri, gelecekteki büyüme potansiyelinin güçlü göstergelerindendir.",
+  "Ağırlıklı Ortalama Sermaye Maliyeti (WACC), şirketin tüm finansman kaynaklarının maliyetini yansıtır ve değerleme modellerinde kilit rol oynar.",
+  "BIST'te bağımsız denetimden geçmiş yıllık finansal tablolar kamuoyuyla paylaşılmak zorundadır — bu tablolar analiz için temel kaynaktır.",
+  "Teknik analizde fibonaccci düzeltme seviyeleri (%23.6, %38.2, %61.8), olası destek ve direnç noktalarını işaret eder.",
+  "Gelir tablosunda tekrarlayan gelirler ile tek seferlik kalemleri ayırt etmek, şirketin gerçek kazanç gücünü anlamak için kritiktir.",
+  "Birleşik faizin gücü: yılda %12 getiriyle 6 yılda paranız ikilenebilir (72 kuralı: 72 ÷ yıllık getiri = ikiye katlanma yılı).",
+  "Emeklilik fonları ve sigorta şirketleri, BIST'te en büyük kurumsal yatırımcılar arasındadır.",
+  "Bir hissenin geçmişteki yüksek getirisinin gelecekte tekrarlanacağının garantisi yoktur — geçmiş performans gelecek performansı garanti etmez.",
+  "Seçici dikkat yanlılığı (confirmation bias): yatırımcılar genellikle kendi görüşlerini destekleyen bilgilere daha çok ağırlık verir. Aksi görüşleri de araştırın.",
+  "Şirketin sektördeki pazar payı ve bu payın trendi, rekabet dinamiklerini anlamak için temel bir göstergedir.",
+  "Temettü politikası bir şirketin yönetim anlayışı ve geleceğe bakışı hakkında önemli ipuçları taşır.",
+  "Türkiye'de gelişen genç nüfus, kentleşme ve dijitalleşme gibi yapısal temalar belirli sektörlere uzun vadeli fırsatlar sunabilir.",
+  "İşlem maliyetleri küçük görünse de sık alım-satım yapıldığında portföy getirisini yıllar içinde ciddi biçimde aşındırır.",
+  "Repo işlemleri, kısa vadeli nakit fazlasını değerlendirmek için borsaya alternatif düşük riskli bir araçtır.",
+  "Şirket değerlemesinde çarpan analizi (F/K, PD/DD, FD/FAVÖK) ve DCF yöntemlerini birlikte kullanmak daha sağlıklı sonuç verir.",
+  "Borsa tarihsel olarak her krizden toparlanmış ve uzun vadede yeni zirvelere ulaşmıştır — ancak toparlanma süresi öngörülemez.",
+  "Küçük piyasa değerli şirketlerde analist takibi azdır; bu 'takipsiz köşeler' fırsat sunar ama araştırma yükü de yatırımcıya düşer.",
+  "Piyasaya zamanında girmekten çok piyasada ne kadar süre kaldığınız, uzun vadeli servet yaratmada belirleyici faktördür.",
+  "Hisse senedi, bir şirkete sahiplik hakkıdır. Sadece fiyat grafiğine değil, arkasındaki işin gerçek değerine odaklanın.",
+  "Kayıp yaşandığında 'geri dönene kadar beklerim' düşüncesi, fırsat maliyetini ve alternatifleri gözden kaçırmanıza yol açabilir.",
+  "BIST'te dolar bazlı getiriyi hesaplarken TL getirisinden kur etkisini çıkarmayı unutmayın; iki ölçüt birbirinden çok farklı sonuçlar verebilir.",
+  "Yüksek likiditeli hisseler, büyük pozisyon açarken ve kapatırken daha az fiyat etkisi (slippage) yaratır.",
+];
+
+let _factTimer = null;
+let _factIdx = 0;
+
+function startFactRotation() {
+  const el = document.getElementById('ovFact');
+  if (!el) return;
+  _factIdx = Math.floor(Math.random() * FACTS.length);
+  el.style.opacity = '1';
+  el.textContent = FACTS[_factIdx];
+  _factTimer = setInterval(() => {
+    el.style.opacity = '0';
+    setTimeout(() => {
+      _factIdx = (_factIdx + 1) % FACTS.length;
+      el.textContent = FACTS[_factIdx];
+      el.style.opacity = '1';
+    }, 400);
+  }, 10000);
+}
+
+function stopFactRotation() {
+  if (_factTimer) { clearInterval(_factTimer); _factTimer = null; }
+}
+
 const S = {
   data:{}, sector:'ALL', search:'', sort:'ticker', asc:true,
   page:1, ps:28, sel:null, checks:{}, fetching:false, demo:false, lastFetchError:'',
@@ -1300,6 +1435,7 @@ async function fetchAll(){
   S.data={}; // avoid stale rows from previous failed/partial refreshes
   const ovl=document.getElementById('OVL');
   ovl.classList.add('show');
+  startFactRotation();
   setLed('busy','Yükleniyor…');
   document.getElementById('btnFetch').disabled=true;
 
@@ -1320,6 +1456,7 @@ async function fetchAll(){
     document.getElementById('ovCnt').textContent=`${done} / ${ticks.length} hisse`;
     if(i+BS<ticks.length)await sleep(200);
   }
+  stopFactRotation();
   ovl.classList.remove('show');
   S.fetching=false;
   document.getElementById('btnFetch').disabled=false;
