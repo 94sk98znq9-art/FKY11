@@ -2065,6 +2065,59 @@ async function getQuote(symbol, options = {}) {
   return merged;
 }
 
+// ── RSS ───────────────────────────────────────────────────────────────────────
+const RSS_URL      = "https://bigpara.hurriyet.com.tr/rss/";
+const RSS_CACHE_MS = 55_000;
+let _rssCacheData  = null;
+let _rssCacheTime  = 0;
+
+function extractRssTag(xml, tag) {
+  const cdataRe = new RegExp(`<${tag}[^>]*>\\s*<!\\[CDATA\\[([\\s\\S]*?)\\]\\]>\\s*<\\/${tag}>`, "i");
+  const plainRe = new RegExp(`<${tag}[^>]*>([^<]*)<\\/${tag}>`, "i");
+  const m = xml.match(cdataRe) || xml.match(plainRe);
+  return m ? m[1].trim() : "";
+}
+
+function parseRssXml(xml) {
+  const items = [];
+  const itemRe = /<item>([\s\S]*?)<\/item>/g;
+  let m;
+  while ((m = itemRe.exec(xml)) !== null && items.length < 20) {
+    const inner = m[1];
+    const link = extractRssTag(inner, "link") || extractRssTag(inner, "guid");
+    items.push({
+      title:       extractRssTag(inner, "title"),
+      link,
+      pubDate:     extractRssTag(inner, "pubDate"),
+      description: extractRssTag(inner, "description"),
+    });
+  }
+  return items.filter(it => it.title);
+}
+
+app.get("/api/rss", async (_req, res) => {
+  const now = Date.now();
+  if (_rssCacheData && (now - _rssCacheTime) < RSS_CACHE_MS) {
+    return res.json(_rssCacheData);
+  }
+  try {
+    const r = await fetch(RSS_URL, {
+      headers: { "User-Agent": "Mozilla/5.0 (compatible; FKY/1.0)" },
+      signal: AbortSignal.timeout(10_000),
+    });
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    const xml = await r.text();
+    const items = parseRssXml(xml);
+    _rssCacheData = { items, ts: now };
+    _rssCacheTime = now;
+    res.json(_rssCacheData);
+  } catch (err) {
+    if (_rssCacheData) return res.json(_rssCacheData);
+    res.status(502).json({ error: String(err?.message || err), items: [] });
+  }
+});
+// ─────────────────────────────────────────────────────────────────────────────
+
 // ── AUTH ROUTES ───────────────────────────────────────────────────────────────
 app.get("/auth/login", (_req, res) => {
   res.setHeader("Content-Type", "text/html; charset=utf-8");

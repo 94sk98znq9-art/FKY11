@@ -670,6 +670,45 @@ body{
 }
 .ov-fact-label{font-size:9px;color:var(--t3);letter-spacing:1px;text-transform:uppercase;margin-top:4px}
 
+/* ── RSS BİLDİRİMLER ── */
+.rss-rack{position:fixed;top:58px;right:16px;z-index:1500;display:flex;flex-direction:column;gap:8px;pointer-events:none;width:300px}
+.rss-notif{
+  background:var(--b3);border:1px solid var(--cy-bd);border-left:3px solid var(--cy);
+  border-radius:var(--r6);padding:10px 12px;pointer-events:all;
+  transform:translateX(320px);opacity:0;transition:transform .3s ease,opacity .3s ease;
+}
+.rss-notif.show{transform:translateX(0);opacity:1}
+.rss-notif-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:5px}
+.rss-notif-badge{font-size:9px;color:var(--cy);letter-spacing:1px;text-transform:uppercase}
+.rss-notif-close{background:none;border:none;color:var(--t3);cursor:pointer;font-size:12px;padding:0;line-height:1}
+.rss-notif-close:hover{color:var(--t1)}
+.rss-notif-title{font-size:11px;color:var(--t1);line-height:1.5;display:block;text-decoration:none}
+.rss-notif-title:hover{color:var(--cy)}
+.rss-notif-time{font-size:9px;color:var(--t4);margin-top:4px}
+
+/* ── HABER PANELİ ── */
+.news-panel{
+  position:fixed;top:0;right:0;width:360px;height:100vh;
+  background:var(--b1);border-left:1px solid var(--l3);
+  z-index:950;display:flex;flex-direction:column;
+  transform:translateX(100%);transition:transform .25s ease;
+  box-shadow:-4px 0 24px rgba(0,0,0,.5);
+}
+.news-panel.open{transform:translateX(0)}
+.news-panel-head{
+  padding:14px 16px;border-bottom:1px solid var(--l2);
+  display:flex;align-items:center;justify-content:space-between;flex-shrink:0;
+}
+.news-panel-ttl{font-family:var(--disp);font-size:13px;font-weight:700;color:var(--t1);letter-spacing:1px;text-transform:uppercase}
+.news-panel-sub{font-size:9px;color:var(--t3);margin-top:2px}
+.news-panel-list{overflow-y:auto;flex:1;padding:4px 0}
+.news-item{display:block;padding:11px 16px;border-bottom:1px solid var(--l1);text-decoration:none;transition:background .12s}
+.news-item:hover{background:var(--b2)}
+.news-item-title{font-size:11px;color:var(--t1);line-height:1.55;margin-bottom:3px}
+.news-item-date{font-size:9px;color:var(--t3)}
+.news-panel-empty{padding:24px 16px;font-size:11px;color:var(--t3);text-align:center}
+.news-panel-footer{padding:10px 16px;border-top:1px solid var(--l1);font-size:9px;color:var(--t4);flex-shrink:0}
+
 /* ── TOASTS ── */
 .toast-rack{position:fixed;bottom:20px;right:20px;z-index:2000;display:flex;flex-direction:column;gap:5px;pointer-events:none}
 .toast{
@@ -724,6 +763,9 @@ body{
       BİST Profesyonel Analiz Terminali
     </div>
   </div>
+  <button class="btn btn-outline" onclick="showNewsPanel()" id="btnNews" style="font-size:10px;padding:5px 10px;gap:5px">
+    <span style="font-size:11px">📰</span> Son Haberler
+  </button>
   <div class="tb-divider"></div>
   <div class="tb-market" id="tbMarket"></div>
   <div class="tb-right">
@@ -858,6 +900,24 @@ body{
   <div class="ov-count" id="ovCnt">0 / 0 hisse</div>
   <div class="ov-fact" id="ovFact"></div>
   <div class="ov-fact-label" id="ovFactLabel">BİLİYOR MUYDUNUZ?</div>
+</div>
+
+<!-- RSS BİLDİRİMLER -->
+<div class="rss-rack" id="rssRack"></div>
+
+<!-- HABER PANELİ -->
+<div class="news-panel" id="newsPanel">
+  <div class="news-panel-head">
+    <div>
+      <div class="news-panel-ttl">Son Haberler</div>
+      <div class="news-panel-sub" id="newsPanelSub">Bigpara / Hürriyet</div>
+    </div>
+    <button class="btn btn-outline" onclick="closeNewsPanel()" style="font-size:10px;padding:4px 10px">✕ Kapat</button>
+  </div>
+  <div class="news-panel-list" id="newsPanelList">
+    <div class="news-panel-empty">Yükleniyor…</div>
+  </div>
+  <div class="news-panel-footer" id="newsPanelFooter">Son güncelleme: —</div>
 </div>
 
 <!-- TOASTS -->
@@ -1378,6 +1438,110 @@ loadFundHealth();
 setInterval(loadTopBar,15000);
 setInterval(loadMacroOfficial,120000);
 setInterval(loadFundHealth,120000);
+
+/* ════════════════════════════════════════
+   RSS HABER TAKİP
+════════════════════════════════════════ */
+let _rssItems  = [];
+let _rssKnown  = new Set();
+let _rssLastTs = null;
+
+function _escRss(str) {
+  return String(str||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function _fmtRssDate(pubDate) {
+  if (!pubDate) return '';
+  try {
+    const d = new Date(pubDate);
+    if (isNaN(d.getTime())) return pubDate;
+    return d.toLocaleString('tr-TR',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'});
+  } catch { return pubDate; }
+}
+
+function _safeLink(url) {
+  if (!url) return '#';
+  try { const u = new URL(url); return (u.protocol==='https:'||u.protocol==='http:') ? url : '#'; }
+  catch { return '#'; }
+}
+
+async function fetchRssItems() {
+  try {
+    const res = await fetch('/api/rss');
+    if (!res.ok) return;
+    const data = await res.json();
+    const items = data.items || [];
+    if (!items.length) return;
+
+    if (_rssKnown.size === 0) {
+      // İlk yükleme: mevcut haberleri bilinen olarak işaretle, bildirim gösterme
+      items.forEach(it => _rssKnown.add(it.link || it.title));
+    } else {
+      // Sonraki yüklemeler: yeni haberleri bul ve bildirim göster
+      items.forEach(it => {
+        const key = it.link || it.title;
+        if (!_rssKnown.has(key)) {
+          _rssKnown.add(key);
+          showRssNotif(it);
+        }
+      });
+    }
+    _rssItems  = items;
+    _rssLastTs = data.ts ? new Date(data.ts) : new Date();
+    // Panel açıksa güncelle
+    if (document.getElementById('newsPanel').classList.contains('open')) renderNewsList();
+  } catch(e) { console.warn('[RSS]', e); }
+}
+
+function showRssNotif(item) {
+  const rack = document.getElementById('rssRack');
+  if (!rack) return;
+  const el = document.createElement('div');
+  el.className = 'rss-notif';
+  el.innerHTML =
+    `<div class="rss-notif-head">` +
+      `<span class="rss-notif-badge">📰 Yeni Haber</span>` +
+      `<button class="rss-notif-close" onclick="this.closest('.rss-notif').remove()">✕</button>` +
+    `</div>` +
+    `<a class="rss-notif-title" href="${_safeLink(item.link)}" target="_blank" rel="noopener noreferrer">${_escRss(item.title)}</a>` +
+    `<div class="rss-notif-time">${_fmtRssDate(item.pubDate)}</div>`;
+  rack.appendChild(el);
+  requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add('show')));
+  setTimeout(() => {
+    el.classList.remove('show');
+    setTimeout(() => el.remove(), 350);
+  }, 10000);
+}
+
+function showNewsPanel() {
+  renderNewsList();
+  document.getElementById('newsPanel').classList.add('open');
+}
+
+function closeNewsPanel() {
+  document.getElementById('newsPanel').classList.remove('open');
+}
+
+function renderNewsList() {
+  const list   = document.getElementById('newsPanelList');
+  const footer = document.getElementById('newsPanelFooter');
+  if (!list) return;
+  if (!_rssItems.length) {
+    list.innerHTML = '<div class="news-panel-empty">Henüz haber yüklenmedi.<br>Bir dakika içinde otomatik yüklenecek.</div>';
+    return;
+  }
+  list.innerHTML = _rssItems.slice(0, 10).map(it =>
+    `<a class="news-item" href="${_safeLink(it.link)}" target="_blank" rel="noopener noreferrer">` +
+      `<div class="news-item-title">${_escRss(it.title)}</div>` +
+      `<div class="news-item-date">${_fmtRssDate(it.pubDate)}</div>` +
+    `</a>`
+  ).join('');
+  if (footer && _rssLastTs) footer.textContent = 'Son güncelleme: ' + _fmtRssDate(_rssLastTs.toUTCString());
+}
+
+// Başlangıçta bir kez çek, sonra her 60 saniyede bir
+fetchRssItems();
+setInterval(fetchRssItems, 60_000);
 
 /* ════════════════════════════════════════
    TICKER SCROLL
