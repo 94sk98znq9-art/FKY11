@@ -1596,15 +1596,26 @@ async function fetchBatch(tickers){
   }
 }
 
+// _ovVisible: overlay şu an ekranda mı? (arka plan modunda false, buton sonrası true)
+let _ovVisible = false;
+
 async function fetchAll(silent=false){
   if(S.fetching)return;
   S.fetching=true;
+  _ovVisible=!silent;
   S.data={};
   const ovl=document.getElementById('OVL');
-  if(!silent){
+  const btn=document.getElementById('btnFetch');
+
+  // Progress sıfırla (gizli olsa bile DOM hazır olsun)
+  document.getElementById('ovFill').style.width='0';
+  document.getElementById('ovStatus').textContent='YÜKLENİYOR — %0';
+  document.getElementById('ovCnt').textContent='0 / '+STOCKS.length+' hisse';
+
+  if(_ovVisible){
     ovl.classList.add('show');
     startFactRotation();
-    document.getElementById('btnFetch').disabled=true;
+    btn.disabled=true;
   }
   setLed('busy','Yükleniyor…');
 
@@ -1612,56 +1623,61 @@ async function fetchAll(silent=false){
   const BS=12;let done=0;let totalFailed=0;
   for(let i=0;i<ticks.length;i+=BS){
     const b=ticks.slice(i,i+BS);
-    if(!silent) document.getElementById('ovSub').textContent='Yükleniyor: '+b.join(', ');
+    // DOM'u her zaman güncelle — overlay gizli olsa bile açıldığında doğru % görünsün
+    document.getElementById('ovSub').textContent='Yükleniyor: '+b.join(', ');
     try{
       const res=await fetchBatch(b);
       Object.assign(S.data,res?.data||{});
       totalFailed+=res?.failedCount||0;
     }catch{}
     done+=b.length;
-    if(!silent){
-      const pct=Math.round(done/ticks.length*100);
-      document.getElementById('ovFill').style.width=pct+'%';
-      document.getElementById('ovStatus').textContent=`YÜKLENİYOR — %${pct}`;
-      document.getElementById('ovCnt').textContent=`${done} / ${ticks.length} hisse`;
-    }
+    const pct=Math.round(done/ticks.length*100);
+    document.getElementById('ovFill').style.width=pct+'%';
+    document.getElementById('ovStatus').textContent=`YÜKLENİYOR — %${pct}`;
+    document.getElementById('ovCnt').textContent=`${done} / ${ticks.length} hisse`;
     if(i+BS<ticks.length)await sleep(200);
   }
-  if(!silent){
+
+  // Temizlik
+  if(_ovVisible){
     stopFactRotation();
     ovl.classList.remove('show');
-    document.getElementById('btnFetch').disabled=false;
+    btn.disabled=false;
   }
   S.fetching=false;
+  _ovVisible=false;
 
   const loaded=Object.keys(S.data).length;
   if(loaded===0){
     const reason=S.lastFetchError?`Sebep: ${S.lastFetchError}`:'Sebep: bilinmiyor';
-    toast(`Canlı veri alınamadı (backend/Yahoo). ${reason}`,'warn');
+    if(!silent) toast(`Canlı veri alınamadı (backend/Yahoo). ${reason}`,'warn');
     setLed('off','Bağlantı hatası');
     return;
-  }else{
-    S.demo=false;
-    setLed('on',`${loaded} hisse canlı`);
-    if(!silent) toast(`✓ ${loaded} hisse başarıyla yüklendi`,'ok');
-    if(!silent&&totalFailed>0)toast(`⚠ ${totalFailed} hisse alınamadı (yeniden deneyebilirsin)`,'warn');
-    loadFundHealth();
-    buildScroll();
-    renderList();
-    if(S.sel)renderDetail(S.sel);
   }
+  S.demo=false;
+  setLed('on',`${loaded} hisse canlı`);
+  if(!silent) toast(`✓ ${loaded} hisse başarıyla yüklendi`,'ok');
+  if(!silent&&totalFailed>0) toast(`⚠ ${totalFailed} hisse alınamadı (yeniden deneyebilirsin)`,'warn');
+  loadFundHealth();
+  buildScroll();
+  renderList();
+  if(S.sel)renderDetail(S.sel);
 }
 
 function onBtnFetch(){
   if(S.fetching){
-    toast('Veriler arka planda yükleniyor, lütfen bekleyin…','ok');
+    if(!_ovVisible){
+      // Arka planda yükleniyor — overlay'i aç, kaldığı yerden devam etsin
+      _ovVisible=true;
+      const ovl=document.getElementById('OVL');
+      stopFactRotation();
+      startFactRotation();
+      ovl.classList.add('show');
+      document.getElementById('btnFetch').disabled=true;
+    }
     return;
   }
-  if(Object.keys(S.data).length>0){
-    // Veri hazır — yenile
-    fetchAll(false);
-    return;
-  }
+  // Yükleme bitti veya hiç başlamadı — normal yükle
   fetchAll(false);
 }
 
