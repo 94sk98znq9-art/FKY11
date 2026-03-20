@@ -895,7 +895,7 @@ body{
 <div class="overlay" id="OVL">
   <div class="ov-logo">FKY</div>
   <div class="ov-status" id="ovStatus">BAĞLANIYOR</div>
-  <div class="ov-sub" id="ovSub">Yahoo backend üzerinden BİST verileri yükleniyor…</div>
+  <div class="ov-sub" id="ovSub">FKY backend üzerinden BİST verileri yükleniyor…</div>
   <div class="ov-bar"><div class="ov-fill" id="ovFill" style="width:0"></div></div>
   <div class="ov-count" id="ovCnt">0 / 0 hisse</div>
   <div class="ov-fact" id="ovFact"></div>
@@ -1543,6 +1543,9 @@ function renderNewsList() {
 fetchRssItems();
 setInterval(fetchRssItems, 60_000);
 
+// _ovVisible: overlay şu an ekranda mı? (arka plan modunda false, buton sonrası true)
+let _ovVisible = false;
+
 // Sayfa açılır açılmaz arka planda sessizce yükle
 fetchAll(true);
 
@@ -1596,8 +1599,6 @@ async function fetchBatch(tickers){
   }
 }
 
-// _ovVisible: overlay şu an ekranda mı? (arka plan modunda false, buton sonrası true)
-let _ovVisible = false;
 
 async function fetchAll(silent=false){
   if(S.fetching)return;

@@ -174,7 +174,7 @@ const SYMBOL_REGEX = /^[A-Z0-9.]{1,15}$/;
 const BETA_BENCHMARK_SYMBOL = "XU100.IS";
 const FUND_SOURCE = String(process.env.FUND_SOURCE || "snapshot").toLowerCase();
 const FUND_SYNC_TOPUP = String(process.env.FUND_SYNC_TOPUP || "1") !== "0";
-const FUND_ALLOW_YAHOO_FUND = String(process.env.FUND_ALLOW_YAHOO_FUND || "0") === "1";
+const FUND_ALLOW_YAHOO_FUND = process.env.FUND_ALLOW_YAHOO_FUND === "true";
 const FUND_SNAPSHOT_PATH = path.join(__dirname, "data", "fundamentals_snapshot.json");
 const FUND_SNAPSHOT_RELOAD_MS = 15_000;
 const DIVIDEND_SNAPSHOT_PATH = path.join(__dirname, "data", "dividend_snapshot.json");
@@ -187,7 +187,7 @@ const EVDS_SERIES_CPI = String(process.env.EVDS_SERIES_CPI || "").trim();
 const EVDS_SERIES_GROWTH = String(process.env.EVDS_SERIES_GROWTH || "").trim();
 const EVDS_SERIES_UNEMP = String(process.env.EVDS_SERIES_UNEMP || "").trim();
 const FUND_METRIC_MODES = ["kap_truth", "tv_parity"];
-const FUND_METRIC_MODE_DEFAULT = normalizeFundMetricMode(process.env.FUND_METRIC_MODE || "kap_truth");
+const FUND_METRIC_MODE_DEFAULT = normalizeFundMetricMode(process.env.FUND_METRIC_MODE || "tv_parity");
 const TV_SCANNER_URL = "https://scanner.tradingview.com/turkey/scan";
 const TV_PARITY_CACHE_MS = Math.max(30_000, toNum(process.env.TV_PARITY_CACHE_MS) || 2 * 60 * 1000);
 const TV_PARITY_CHUNK_SIZE = Math.max(5, toNum(process.env.TV_PARITY_CHUNK_SIZE) || 50);
@@ -232,6 +232,48 @@ const TV_PARITY_FIELDS = [
   "averageVolume",
   "totalDebt",
   "totalCash",
+];
+
+// ── TradingView FULL columns (price + fundamentals in one request) ─────────
+const TV_FULL_COLUMNS = [
+  // Price fields
+  "close", "open", "high", "low", "change", "change_abs",
+  "volume", "average_volume_60d_calc", "average_volume_10d_calc",
+  "market_cap_basic",
+  "price_52_week_high", "price_52_week_low",
+  // Fundamental fields
+  "price_earnings_ttm",
+  "earnings_per_share_basic_ttm",
+  "price_book_fq",
+  "return_on_equity",
+  "return_on_assets",
+  "gross_margin_ttm",
+  "operating_margin_ttm",
+  "net_margin_ttm",
+  "current_ratio",
+  "quick_ratio",
+  "debt_to_equity",
+  "beta_1_year",
+  "price_sales",
+  "dividend_yield_recent",
+  "total_debt",
+  "net_debt",
+  "enterprise_value_fq",
+  "number_of_employees",
+];
+const TV_GLOBAL_SCANNER_URL = "https://scanner.tradingview.com/global/scan";
+const TV_MARKET_COLUMNS = ["close", "change", "change_abs", "open", "high", "low", "volume", "description"];
+const TV_MARKET_SYMBOLS = [
+  { id: "XU100",  tv: "BIST:XU100" },
+  { id: "XU030",  tv: "BIST:XU030" },
+  { id: "SPX",    tv: "SP:SPX" },
+  { id: "DXY",    tv: "TVC:DXY" },
+  { id: "USDTRY", tv: "FX_IDC:USDTRY" },
+  { id: "EURTRY", tv: "FX_IDC:EURTRY" },
+  { id: "XAU",    tv: "TVC:GOLD" },
+  { id: "XAG",    tv: "TVC:SILVER" },
+  { id: "BRENT",  tv: "PEPPERSTONE:BRENT" },
+  { id: "VIX",    tv: "TVC:VIX" },
 ];
 
 const priceCache = new Map();
@@ -1269,6 +1311,175 @@ function applyFundMetricMode(quote, symbol, metricMode, tvParityMap) {
   return out;
 }
 
+// ── TradingView FULL data fetch (price + fundamentals) ───────────────────────
+function mapTradingViewFullRow(base, raw) {
+  const price = toNum(raw.close);
+  const changeAbs = toNum(raw.change_abs);
+  const changePct = toNum(raw.change);
+  const prevClose = (Number.isFinite(price) && Number.isFinite(changeAbs))
+    ? price - changeAbs
+    : null;
+
+  return {
+    symbol: `${base}.IS`,
+    shortName: base,
+    regularMarketPrice: price,
+    regularMarketChange: changeAbs,
+    regularMarketChangePercent: changePct,
+    regularMarketPreviousClose: prevClose,
+    regularMarketOpen: toNum(raw.open),
+    regularMarketDayHigh: toNum(raw.high),
+    regularMarketDayLow: toNum(raw.low),
+    regularMarketTime: Date.now(),
+    regularMarketVolume: toNum(raw.volume),
+    marketCap: toNum(raw.market_cap_basic),
+    trailingPE: toNum(raw.price_earnings_ttm),
+    forwardPE: null,
+    priceToBook: toNum(raw.price_book_fq),
+    trailingEps: toNum(raw.earnings_per_share_basic_ttm),
+    dividendYield: toUnitRatioFromPercent(raw.dividend_yield_recent),
+    returnOnEquity: toUnitRatioFromPercent(raw.return_on_equity),
+    returnOnAssets: toUnitRatioFromPercent(raw.return_on_assets),
+    grossMargins: toUnitRatioFromPercent(raw.gross_margin_ttm),
+    operatingMargins: toUnitRatioFromPercent(raw.operating_margin_ttm),
+    profitMargins: toUnitRatioFromPercent(raw.net_margin_ttm),
+    debtToEquity: toNum(raw.debt_to_equity),
+    currentRatio: toNum(raw.current_ratio),
+    quickRatio: toNum(raw.quick_ratio),
+    revenueGrowth: null,
+    earningsGrowth: null,
+    freeCashflow: null,
+    totalDebt: toNum(raw.total_debt),
+    totalCash: (() => {
+      const nd = toNum(raw.net_debt);
+      const td = toNum(raw.total_debt);
+      if (Number.isFinite(td) && Number.isFinite(nd)) return td - nd;
+      return null;
+    })(),
+    enterpriseValue: toNum(raw.enterprise_value_fq),
+    ebitda: null,
+    pegRatio: null,
+    fiftyTwoWeekHigh: toNum(raw.price_52_week_high),
+    fiftyTwoWeekLow: toNum(raw.price_52_week_low),
+    averageVolume: pickBestNumber(
+      toNum(raw.average_volume_60d_calc),
+      toNum(raw.average_volume_10d_calc),
+      toNum(raw.volume)
+    ),
+    priceToSalesTrailing12Months: toNum(raw.price_sales),
+    beta: toNum(raw.beta_1_year),
+    annualDividendPerShare: null,
+    lastDividendPerShare: null,
+    lastDividendDateMs: null,
+    dividendPayoutPct: null,
+    paidYears3y: null,
+    regularityScore: null,
+    eventCount: null,
+    events: [],
+    _provider: "tradingview_scanner",
+    _providerTs: Date.now(),
+  };
+}
+
+async function fetchTradingViewFullBatch(baseSymbols) {
+  if (!Array.isArray(baseSymbols) || !baseSymbols.length) return new Map();
+  const payload = {
+    symbols: {
+      tickers: baseSymbols.map((b) => `BIST:${b}`),
+      query: { types: [] },
+    },
+    columns: TV_FULL_COLUMNS,
+  };
+  const response = await fetchWithRetry(
+    TV_SCANNER_URL,
+    {
+      method: "POST",
+      headers: {
+        ...buildHeaders(),
+        "Content-Type": "application/json",
+        Origin: "https://www.tradingview.com",
+        Referer: "https://www.tradingview.com/",
+      },
+      body: JSON.stringify(payload),
+    },
+    2
+  );
+  if (!response.ok) {
+    const detail = await response.text().catch(() => "");
+    throw new Error(`tv_full_scan_${response.status}:${detail.slice(0, 180)}`);
+  }
+  const json = await response.json();
+  const rows = Array.isArray(json?.data) ? json.data : [];
+  const out = new Map();
+  for (const row of rows) {
+    const base = tvSymbolToBase(row?.s);
+    if (!base) continue;
+    const arr = Array.isArray(row?.d) ? row.d : [];
+    const raw = {};
+    for (let i = 0; i < TV_FULL_COLUMNS.length; i++) {
+      raw[TV_FULL_COLUMNS[i]] = arr[i];
+    }
+    const mapped = mapTradingViewFullRow(base, raw);
+    if (Number.isFinite(mapped.regularMarketPrice)) {
+      out.set(base, mapped);
+    }
+  }
+  return out;
+}
+
+async function fetchTradingViewMarketOverview() {
+  const payload = {
+    symbols: {
+      tickers: TV_MARKET_SYMBOLS.map((m) => m.tv),
+      query: { types: [] },
+    },
+    columns: TV_MARKET_COLUMNS,
+  };
+  const response = await fetchWithRetry(
+    TV_GLOBAL_SCANNER_URL,
+    {
+      method: "POST",
+      headers: {
+        ...buildHeaders(),
+        "Content-Type": "application/json",
+        Origin: "https://www.tradingview.com",
+        Referer: "https://www.tradingview.com/",
+      },
+      body: JSON.stringify(payload),
+    },
+    2
+  );
+  if (!response.ok) {
+    const detail = await response.text().catch(() => "");
+    throw new Error(`tv_market_scan_${response.status}:${detail.slice(0, 180)}`);
+  }
+  const json = await response.json();
+  const rows = Array.isArray(json?.data) ? json.data : [];
+  const tvTickerToId = new Map(TV_MARKET_SYMBOLS.map((m) => [m.tv.toUpperCase(), m.id]));
+  const out = {};
+  for (const row of rows) {
+    const sym = String(row?.s || "").toUpperCase();
+    const id = tvTickerToId.get(sym);
+    if (!id) continue;
+    const arr = Array.isArray(row?.d) ? row.d : [];
+    const raw = {};
+    for (let i = 0; i < TV_MARKET_COLUMNS.length; i++) {
+      raw[TV_MARKET_COLUMNS[i]] = arr[i];
+    }
+    const price = toNum(raw.close);
+    const changePct = toNum(raw.change);
+    if (Number.isFinite(price)) {
+      out[id] = {
+        symbol: sym,
+        price,
+        changePercent: Number.isFinite(changePct) ? changePct : null,
+        time: Date.now(),
+      };
+    }
+  }
+  return out;
+}
+
 function deriveKapFundamentals(quote) {
   const out = { ...quote };
   const sourceMap = { ...(out._fundSourceMap || {}) };
@@ -1684,13 +1895,6 @@ async function ensureQuoteCompleteness(quote, symbol) {
 
   let betaVal = toNum(out.beta);
   if (!Number.isFinite(betaVal)) {
-    const est = await estimateBetaFromCharts(symbol);
-    if (Number.isFinite(est)) {
-      betaVal = est;
-      out._betaSource = "derived_chart_covariance_1y";
-    }
-  }
-  if (!Number.isFinite(betaVal)) {
     betaVal = 1;
     out._betaSource = out._betaSource || "fallback_neutral_1_00";
   }
@@ -2015,54 +2219,38 @@ function refreshFundInBackground(symbol) {
   })();
 }
 
+async function getQuoteFromTvRow(tvRow, symbol, options = {}) {
+  const metricMode = normalizeFundMetricMode(options?.metricMode || FUND_METRIC_MODE_DEFAULT);
+  const tvParityMap = options?.tvParityMap instanceof Map ? options.tvParityMap : new Map([[baseSymbol(symbol), tvRow]]);
+  if (!tvRow || !Number.isFinite(tvRow.regularMarketPrice)) {
+    throw new Error("tv_price_unavailable");
+  }
+  stabilizePriceFields(tvRow);
+  priceCache.set(symbol, { ts: Date.now(), data: tvRow });
+
+  // Merge with KAP snapshot fundamentals (TV data takes priority, KAP fills gaps)
+  let fund = getFundFromCache(symbol);
+  const dividend = getDividendFromCache(symbol);
+  let merged = mergeQuoteDividend(mergeQuoteFund(tvRow, fund), dividend);
+  merged = await ensureQuoteCompleteness(merged, symbol);
+  merged = applyFundMetricMode(merged, symbol, metricMode, tvParityMap);
+  return merged;
+}
+
+// Legacy Yahoo-based getQuote — kept as fallback (currently unused)
 async function getQuote(symbol, options = {}) {
   const metricMode = normalizeFundMetricMode(options?.metricMode || FUND_METRIC_MODE_DEFAULT);
   const tvParityMap = options?.tvParityMap instanceof Map ? options.tvParityMap : null;
   const cached = priceCache.get(symbol);
   if (cached && Date.now() - cached.ts < PRICE_CACHE_MS) {
     let fund = getFundFromCache(symbol);
-    if (FUND_ALLOW_YAHOO_FUND && FUND_SYNC_TOPUP && needsFundRefresh(fund)) {
-      fund = await fetchFundNow(symbol, fund);
-    }
     const dividend = getDividendFromCache(symbol);
     let mergedCached = mergeQuoteDividend(mergeQuoteFund(cached.data, fund), dividend);
     mergedCached = await ensureQuoteCompleteness(mergedCached, symbol);
     mergedCached = applyFundMetricMode(mergedCached, symbol, metricMode, tvParityMap);
-    refreshFundInBackground(symbol);
     return mergedCached;
   }
-
-  let chartQuote = null;
-  let quotePrice = null;
-  try {
-    chartQuote = await enqueuePriceRequest(() => fetchChart(symbol));
-  } catch {
-    // keep trying with quote endpoint below
-  }
-
-  try {
-    quotePrice = await enqueuePriceRequest(() => fetchQuotePrice(symbol));
-  } catch {
-    // keep chart result if quote failed
-  }
-
-  const quote = mergePriceSources(chartQuote, quotePrice);
-  if (!quote || !Number.isFinite(quote.regularMarketPrice)) {
-    throw new Error("yahoo_price_unavailable");
-  }
-  stabilizePriceFields(quote);
-
-  priceCache.set(symbol, { ts: Date.now(), data: quote });
-  let fund = getFundFromCache(symbol);
-  if (FUND_ALLOW_YAHOO_FUND && FUND_SYNC_TOPUP && needsFundRefresh(fund)) {
-    fund = await fetchFundNow(symbol, fund);
-  }
-  const dividend = getDividendFromCache(symbol);
-  let merged = mergeQuoteDividend(mergeQuoteFund(quote, fund), dividend);
-  merged = await ensureQuoteCompleteness(merged, symbol);
-  merged = applyFundMetricMode(merged, symbol, metricMode, tvParityMap);
-  refreshFundInBackground(symbol);
-  return merged;
+  throw new Error("cache_miss_yahoo_disabled");
 }
 
 // ── RSS ───────────────────────────────────────────────────────────────────────
@@ -2159,43 +2347,51 @@ app.get("/api/quotes", async (req, res) => {
     const symbols = [...new Set(symbolsParam.split(",").map(normalizeSymbol).filter(Boolean))];
     if (!symbols.length) return res.status(400).json({ error: "geçerli sembol bulunamadı" });
     const metricMode = normalizeFundMetricMode(req.query.metricMode || FUND_METRIC_MODE_DEFAULT);
-    const tvParityMap = metricMode === "tv_parity" ? await getTradingViewParityForSymbols(symbols) : null;
 
+    // Reload snapshot caches before processing
+    reloadFundCacheFromSnapshotIfNeeded();
+    reloadDividendCacheFromSnapshotIfNeeded();
+
+    const bases = symbols.map(baseSymbol);
     const data = {};
     const failures = [];
 
-    // Correctness-first: process sequentially to reduce provider pressure and partial failures.
-    for (const symbol of symbols) {
+    // Fetch all symbols from TradingView in chunks
+    const chunks = chunkArray(bases, TV_PARITY_CHUNK_SIZE);
+    for (const chunk of chunks) {
       try {
-        const quote = await getQuote(symbol, { metricMode, tvParityMap });
-        data[baseSymbol(symbol)] = withQualityFlags(quote);
+        const tvMap = await fetchTradingViewFullBatch(chunk);
+        for (const base of chunk) {
+          const symbol = normalizeSymbol(base);
+          if (!symbol) continue;
+          const tvRow = tvMap.get(base);
+          if (!tvRow) {
+            failures.push({ symbol, reason: "tv_no_data" });
+            continue;
+          }
+          try {
+            const quote = await getQuoteFromTvRow(tvRow, symbol, { metricMode });
+            data[base] = withQualityFlags(quote);
+          } catch (err) {
+            failures.push({ symbol, reason: String(err?.message || err) });
+          }
+        }
       } catch (err) {
-        failures.push({ symbol, reason: String(err?.message || err) });
+        // Entire chunk failed
+        for (const base of chunk) {
+          failures.push({ symbol: normalizeSymbol(base) || base, reason: String(err?.message || err) });
+        }
       }
+      if (chunks.length > 1) await sleep(200);
     }
     enforceBatchCompleteness(data);
-    const tvMatched =
-      metricMode === "tv_parity" && tvParityMap instanceof Map
-        ? symbols.map(baseSymbol).filter((b) => tvParityMap.has(b)).length
-        : null;
 
     res.json({
-      provider:
-        metricMode === "tv_parity"
-          ? "yahoo_price+tradingview_parity+kap_dividend"
-          : "yahoo_price+kap_fund+kap_dividend",
+      provider: "tradingview_scanner+kap_snapshot+kap_dividend",
       metricMode,
       metricModeDefault: FUND_METRIC_MODE_DEFAULT,
       quoteCount: Object.keys(data).length,
       failedCount: failures.length,
-      tvParityCoverage:
-        metricMode === "tv_parity"
-          ? {
-              requestedSymbols: symbols.length,
-              matchedSymbols: tvMatched || 0,
-              coveragePct: symbols.length ? +(((tvMatched || 0) / symbols.length) * 100).toFixed(1) : 0,
-            }
-          : null,
       data,
       failures,
       ts: Date.now(),
@@ -2393,40 +2589,26 @@ app.get("/api/macro-official", async (_req, res) => {
 });
 
 app.get("/api/market-overview", async (_req, res) => {
-  const marketSymbols = [
-    { id: "XU100", symbol: "XU100.IS" },
-    { id: "XU030", symbol: "XU030.IS" },
-    { id: "SPX", symbol: "^GSPC" },
-    { id: "DXY", symbol: "DX-Y.NYB" },
-    { id: "USDTRY", symbol: "TRY=X" },
-    { id: "EURTRY", symbol: "EURTRY=X" },
-    { id: "XAU", symbol: "GC=F" },
-    { id: "XAG", symbol: "SI=F" },
-    { id: "BRENT", symbol: "BZ=F" },
-    { id: "VIX", symbol: "^VIX" },
-  ];
-
-  const data = {};
-  const failures = [];
-  await Promise.all(
-    marketSymbols.map(async (item) => {
-      try {
-        // Keep top-bar data fresh; these are only a few symbols.
-        const row = await fetchMarketChart(item.symbol);
-        if (Number.isFinite(row.price)) data[item.id] = row;
-        else failures.push({ id: item.id, symbol: item.symbol, reason: "price_unavailable" });
-      } catch (err) {
-        failures.push({ id: item.id, symbol: item.symbol, reason: String(err?.message || err) });
-      }
-    })
-  );
-
-  res.json({
-    provider: "yahoo_chart",
-    data,
-    failures,
-    ts: Date.now(),
-  });
+  try {
+    const data = await fetchTradingViewMarketOverview();
+    const missing = TV_MARKET_SYMBOLS.filter((m) => !data[m.id]).map((m) => ({
+      id: m.id, symbol: m.tv, reason: "tv_no_data",
+    }));
+    res.json({
+      provider: "tradingview_global_scanner",
+      data,
+      failures: missing,
+      ts: Date.now(),
+    });
+  } catch (err) {
+    console.error("[/api/market-overview] fatal", err);
+    res.status(500).json({
+      provider: "tradingview_global_scanner",
+      data: {},
+      failures: TV_MARKET_SYMBOLS.map((m) => ({ id: m.id, symbol: m.tv, reason: String(err?.message || err) })),
+      ts: Date.now(),
+    });
+  }
 });
 
 const PORT = Number(process.env.PORT || 3000);
