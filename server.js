@@ -2496,3 +2496,4 @@ server.on("error", (err) => {
   console.error("[START] Sunucu başlatma hatası:", err);
 });
 
+export default app;
